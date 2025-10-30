@@ -73,6 +73,7 @@ export default {
         destinations: {
           bg: "hsl(var(--destinations-bg))",
           title: "hsl(var(--destinations-title))",
+          hover: "hsl(var(--destinations-hover))",
         },
       },
       borderRadius: {
