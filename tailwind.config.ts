@@ -57,6 +57,16 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        desert: {
+          sand: "hsl(var(--desert-sand))",
+          gold: "hsl(var(--desert-gold))",
+          brown: "hsl(var(--earth-brown))",
+          tan: "hsl(var(--warm-tan))",
+        },
+        hero: {
+          text: "hsl(var(--hero-text))",
+          overlay: "hsl(var(--hero-overlay))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
