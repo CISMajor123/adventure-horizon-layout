@@ -12,6 +12,7 @@ const destinations = [
     price: "$9,055 to $18,086 Per Person",
     image: botswanaImage,
     slug: "botswana-conservation-safari",
+    hoverDescription: "Zanzibar is a tropical paradise off Tanzania's coast, known for its white-sand beaches, turquoise waters, and rich blend of African, Arab, and European cultures. Visitors can explore historic Stone Town, tour fragrant spice plantations, or dive among vibrant coral reefs—all while enjoying stunning sunsets and warm island hospitality.",
   },
   {
     title: "Giraffe Conservation Safari",

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Clock, DollarSign, ArrowRight } from "lucide-react";
+import { useState } from "react";
 
 interface DestinationCardProps {
   title: string;
@@ -8,6 +9,7 @@ interface DestinationCardProps {
   price: string;
   image: string;
   slug: string;
+  hoverDescription?: string;
 }
 
 const DestinationCard = ({
@@ -17,9 +19,16 @@ const DestinationCard = ({
   price,
   image,
   slug,
+  hoverDescription,
 }: DestinationCardProps) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-500">
+    <div 
+      className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-500"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <Link to={`/destinations/${slug}`} className="block relative h-[500px]">
         <img
           src={image}
@@ -35,26 +44,36 @@ const DestinationCard = ({
         
         {/* Content overlay */}
         <div className="absolute bottom-0 left-0 right-0 p-6 text-white z-10">
-          <h3 className="text-2xl font-bold uppercase mb-4 tracking-wide">
-            {title}
-          </h3>
-          
-          <div className="space-y-2 text-sm">
-            <div className="flex items-start gap-2">
-              <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-              <span className="leading-tight">{location}</span>
+          {isHovered && hoverDescription ? (
+            <div className="animate-fade-in">
+              <p className="text-sm leading-relaxed">
+                {hoverDescription}
+              </p>
             </div>
-            
-            <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4 flex-shrink-0" />
-              <span>{duration}</span>
-            </div>
-            
-            <div className="flex items-center gap-2">
-              <DollarSign className="w-4 h-4 flex-shrink-0" />
-              <span>{price}</span>
-            </div>
-          </div>
+          ) : (
+            <>
+              <h3 className="text-2xl font-bold uppercase mb-4 tracking-wide">
+                {title}
+              </h3>
+              
+              <div className="space-y-2 text-sm">
+                <div className="flex items-start gap-2">
+                  <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span className="leading-tight">{location}</span>
+                </div>
+                
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 flex-shrink-0" />
+                  <span>{duration}</span>
+                </div>
+                
+                <div className="flex items-center gap-2">
+                  <DollarSign className="w-4 h-4 flex-shrink-0" />
+                  <span>{price}</span>
+                </div>
+              </div>
+            </>
+          )}
         </div>
         
         {/* Arrow button - always visible */}
