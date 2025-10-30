@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import { MapPin, Clock, DollarSign, ArrowRight } from "lucide-react";
+import { Clock, DollarSign, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 interface DestinationCardProps {
   title: string;
-  location: string;
   duration: string;
   price: string;
   image: string;
@@ -14,7 +13,6 @@ interface DestinationCardProps {
 
 const DestinationCard = ({
   title,
-  location,
   duration,
   price,
   image,
@@ -50,11 +48,6 @@ const DestinationCard = ({
             </h3>
             
             <div className="space-y-2 text-sm">
-              <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span className="leading-tight">{location}</span>
-              </div>
-              
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 flex-shrink-0" />
                 <span>{duration}</span>

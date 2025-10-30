@@ -7,7 +7,6 @@ import midRangeSafariImage from "@/assets/mid-range-safari.jpg";
 const destinations = [
   {
     title: "Zanzibar Beach Vacation",
-    location: "Mizingani Seafront Hotel, Stone Town",
     duration: "2–7 Days",
     price: "$1,400 – $4,000",
     image: zanzibarImage,
@@ -16,7 +15,6 @@ const destinations = [
   },
   {
     title: "Kilimanjaro Trekking Expedition",
-    location: "Huts on the Route",
     duration: "5–8 Days",
     price: "$1,950 – $3,020",
     image: kilimanjaroImage,
@@ -25,7 +23,6 @@ const destinations = [
   },
   {
     title: "Mid-Range Safari",
-    location: "Okavango Delta & Khwai Private Reserve",
     duration: "7 Days",
     price: "From $8,782 to $15,262 Per Couple",
     image: midRangeSafariImage,
