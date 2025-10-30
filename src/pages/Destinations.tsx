@@ -1,17 +1,17 @@
 import Navigation from "@/components/Navigation";
 import DestinationCard from "@/components/DestinationCard";
-import botswanaImage from "@/assets/botswana-safari.jpg";
+import zanzibarImage from "@/assets/zanzibar-beach.jpg";
 import giraffeImage from "@/assets/giraffe-safari.jpg";
 import okavango from "@/assets/okavango-honeymoon.jpg";
 
 const destinations = [
   {
-    title: "Botswana Conservation Safari",
+    title: "Zanzibar Beach Vacation",
     location: "Makgadikgadi National Park, Khwai Private Game Reserve & Okavango Delta",
     duration: "7 Nights / 8 Days",
     price: "$9,055 to $18,086 Per Person",
-    image: botswanaImage,
-    slug: "botswana-conservation-safari",
+    image: zanzibarImage,
+    slug: "zanzibar-beach-vacation",
     hoverDescription: "Zanzibar is a tropical paradise off Tanzania's coast, known for its white-sand beaches, turquoise waters, and rich blend of African, Arab, and European cultures. Visitors can explore historic Stone Town, tour fragrant spice plantations, or dive among vibrant coral reefs—all while enjoying stunning sunsets and warm island hospitality.",
   },
   {
