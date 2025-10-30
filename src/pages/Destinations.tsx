@@ -7,9 +7,9 @@ import okavango from "@/assets/okavango-honeymoon.jpg";
 const destinations = [
   {
     title: "Zanzibar Beach Vacation",
-    location: "Makgadikgadi National Park, Khwai Private Game Reserve & Okavango Delta",
-    duration: "7 Nights / 8 Days",
-    price: "$9,055 to $18,086 Per Person",
+    location: "Mizingani Seafront Hotel, Stone Town",
+    duration: "2–7 Days",
+    price: "$1,400 – $4,000",
     image: zanzibarImage,
     slug: "zanzibar-beach-vacation",
     hoverDescription: "Zanzibar is a tropical paradise off Tanzania's coast, known for its white-sand beaches, turquoise waters, and rich blend of African, Arab, and European cultures. Visitors can explore historic Stone Town, tour fragrant spice plantations, or dive among vibrant coral reefs—all while enjoying stunning sunsets and warm island hospitality.",
