@@ -30,6 +30,7 @@ const destinations = [
     price: "From $8,782 to $15,262 Per Couple",
     image: okavango,
     slug: "okavango-delta-honeymoon",
+    hoverDescription: "A Tanzania safari is an unforgettable journey through some of Africa's most iconic landscapes. From the vast plains of the Serengeti—home to the Great Migration—to the wildlife-rich Ngorongoro Crater and the elephants of Tarangire National Park, visitors can witness Africa's Big Five up close. With breathtaking scenery, diverse wildlife, and warm local hospitality, Tanzania offers the ultimate African safari experience.",
   },
 ];
 
