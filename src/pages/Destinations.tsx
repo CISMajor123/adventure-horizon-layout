@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import DestinationCard from "@/components/DestinationCard";
 import zanzibarImage from "@/assets/zanzibar-beach.jpg";
 import kilimanjaroImage from "@/assets/kilimanjaro-trekking.jpg";
-import okavango from "@/assets/okavango-honeymoon.jpg";
+import midRangeSafariImage from "@/assets/mid-range-safari.jpg";
 
 const destinations = [
   {
@@ -24,12 +24,12 @@ const destinations = [
     hoverDescription: "A Kilimanjaro trekking expedition offers the adventure of a lifetime—ascending Africa's highest peak through lush rainforests, alpine meadows, and rugged volcanic terrain. Trekkers experience breathtaking views, diverse ecosystems, and the thrill of reaching Uhuru Peak, the \"Roof of Africa,\" where sunrise over the clouds rewards every step of the journey.",
   },
   {
-    title: "Okavango Delta Honeymoon in the Wild",
+    title: "Mid-Range Safari",
     location: "Okavango Delta & Khwai Private Reserve",
     duration: "7 Days",
     price: "From $8,782 to $15,262 Per Couple",
-    image: okavango,
-    slug: "okavango-delta-honeymoon",
+    image: midRangeSafariImage,
+    slug: "mid-range-safari",
     hoverDescription: "A Tanzania safari is an unforgettable journey through some of Africa's most iconic landscapes. From the vast plains of the Serengeti—home to the Great Migration—to the wildlife-rich Ngorongoro Crater and the elephants of Tarangire National Park, visitors can witness Africa's Big Five up close. With breathtaking scenery, diverse wildlife, and warm local hospitality, Tanzania offers the ultimate African safari experience.",
   },
 ];
