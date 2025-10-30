@@ -47,6 +47,10 @@ All colors MUST be HSL.
     /* Hero specific */
     --hero-text: 0 0% 100%;
     --hero-overlay: 30 20% 15%;
+    
+    /* Destinations page */
+    --destinations-bg: 35 30% 88%;
+    --destinations-title: 180 35% 45%;
 
     --sidebar-background: 0 0% 98%;
 

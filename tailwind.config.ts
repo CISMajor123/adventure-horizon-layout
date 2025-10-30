@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        playfair: ['Playfair Display', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -66,6 +69,10 @@ export default {
         hero: {
           text: "hsl(var(--hero-text))",
           overlay: "hsl(var(--hero-overlay))",
+        },
+        destinations: {
+          bg: "hsl(var(--destinations-bg))",
+          title: "hsl(var(--destinations-title))",
         },
       },
       borderRadius: {
