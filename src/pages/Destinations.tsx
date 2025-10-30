@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import DestinationCard from "@/components/DestinationCard";
 import zanzibarImage from "@/assets/zanzibar-beach.jpg";
-import giraffeImage from "@/assets/giraffe-safari.jpg";
+import kilimanjaroImage from "@/assets/kilimanjaro-trekking.jpg";
 import okavango from "@/assets/okavango-honeymoon.jpg";
 
 const destinations = [
@@ -15,12 +15,12 @@ const destinations = [
     hoverDescription: "Zanzibar is a tropical paradise off Tanzania's coast, known for its white-sand beaches, turquoise waters, and rich blend of African, Arab, and European cultures. Visitors can explore historic Stone Town, tour fragrant spice plantations, or dive among vibrant coral reefs—all while enjoying stunning sunsets and warm island hospitality.",
   },
   {
-    title: "Giraffe Conservation Safari",
+    title: "Kilimanjaro Trekking Expedition",
     location: "Etosha Mountain Lodge, Hoanib Valley Camp to Shipwreck Lodge",
     duration: "9 Days",
     price: "NAD 334,930 (price may vary depending on numbers)",
-    image: giraffeImage,
-    slug: "giraffe-conservation-safari",
+    image: kilimanjaroImage,
+    slug: "kilimanjaro-trekking-expedition",
     hoverDescription: "A Kilimanjaro trekking expedition offers the adventure of a lifetime—ascending Africa's highest peak through lush rainforests, alpine meadows, and rugged volcanic terrain. Trekkers experience breathtaking views, diverse ecosystems, and the thrill of reaching Uhuru Peak, the \"Roof of Africa,\" where sunrise over the clouds rewards every step of the journey.",
   },
   {
