@@ -42,39 +42,40 @@ const DestinationCard = ({
         {/* Solid color overlay - hover state */}
         <div className="absolute inset-0 bg-destinations-hover opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
         
-        {/* Content overlay */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 text-white z-10">
-          {isHovered && hoverDescription ? (
-            <div className="animate-fade-in">
-              <p className="text-sm leading-relaxed">
-                {hoverDescription}
-              </p>
-            </div>
-          ) : (
-            <>
-              <h3 className="text-2xl font-bold uppercase mb-4 tracking-wide">
-                {title}
-              </h3>
-              
-              <div className="space-y-2 text-sm">
-                <div className="flex items-start gap-2">
-                  <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                  <span className="leading-tight">{location}</span>
-                </div>
-                
-                <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4 flex-shrink-0" />
-                  <span>{duration}</span>
-                </div>
-                
-                <div className="flex items-center gap-2">
-                  <DollarSign className="w-4 h-4 flex-shrink-0" />
-                  <span>{price}</span>
-                </div>
+        {/* Content overlay - default state */}
+        {!isHovered && (
+          <div className="absolute bottom-0 left-0 right-0 p-6 text-white z-10">
+            <h3 className="text-2xl font-bold uppercase mb-4 tracking-wide">
+              {title}
+            </h3>
+            
+            <div className="space-y-2 text-sm">
+              <div className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span className="leading-tight">{location}</span>
               </div>
-            </>
-          )}
-        </div>
+              
+              <div className="flex items-center gap-2">
+                <Clock className="w-4 h-4 flex-shrink-0" />
+                <span>{duration}</span>
+              </div>
+              
+              <div className="flex items-center gap-2">
+                <DollarSign className="w-4 h-4 flex-shrink-0" />
+                <span>{price}</span>
+              </div>
+            </div>
+          </div>
+        )}
+        
+        {/* Hover description overlay - aligned to top */}
+        {isHovered && hoverDescription && (
+          <div className="absolute top-0 left-0 right-0 p-6 text-white z-10 animate-fade-in">
+            <p className="text-base leading-relaxed">
+              {hoverDescription}
+            </p>
+          </div>
+        )}
         
         {/* Arrow button - always visible */}
         <div className="absolute bottom-6 right-6 z-10">
