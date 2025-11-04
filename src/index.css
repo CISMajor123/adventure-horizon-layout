@@ -52,6 +52,11 @@ All colors MUST be HSL.
     --destinations-bg: 35 30% 88%;
     --destinations-title: 166 15% 42%;
     --destinations-hover: 127 5% 59%;
+    
+    /* Contact page */
+    --contact-teal: 180 28% 50%;
+    --contact-teal-hover: 180 28% 45%;
+    --contact-bg: 40 40% 88%;
 
     --sidebar-background: 0 0% 98%;
 
