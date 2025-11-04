@@ -30,19 +30,21 @@ const Contact = () => {
     <div className="min-h-screen bg-[#e6e0d0]">
       <Navigation />
       
-      <main className="min-h-screen pt-24 md:pt-0">
+      <main className="min-h-screen">
         <div className="grid md:grid-cols-2 min-h-screen">
           {/* Left Column - Image */}
-          <div className="relative h-64 md:h-screen">
-            <img
-              src={giraffeImage}
-              alt="Giraffes in Tanzania safari landscape"
-              className="w-full h-full object-cover"
-            />
+          <div className="relative h-64 md:h-auto md:min-h-screen flex items-center pt-24 md:pt-28 pb-8 md:pb-16">
+            <div className="w-full h-full md:h-[90vh] flex items-center">
+              <img
+                src={giraffeImage}
+                alt="Giraffes in Tanzania safari landscape"
+                className="w-full h-full object-cover rounded-sm"
+              />
+            </div>
           </div>
 
           {/* Right Column - Content */}
-          <div className="flex items-center justify-center p-8 md:p-16">
+          <div className="flex items-center justify-center p-8 md:p-16 min-h-screen">
             <div className="w-full max-w-2xl">
               <h1 className="font-playfair text-5xl md:text-6xl lg:text-7xl text-[#5c8f8f] mb-12 tracking-wider">
                 CONTACT
