@@ -12,6 +12,12 @@ const Navigation = () => {
           
           <div className="flex items-center gap-8">
             <Link
+              to="/"
+              className="text-hero-text text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-desert-gold"
+            >
+              HOME
+            </Link>
+            <Link
               to="/about"
               className="text-hero-text text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-desert-gold"
             >
