@@ -61,7 +61,7 @@ const Contact = () => {
         </div>
 
         {/* Right Column - Contact Form */}
-        <div className="w-full lg:w-[55%] bg-[hsl(var(--contact-bg))] flex items-center justify-center px-6 py-16 lg:py-24">
+        <div className="w-full lg:w-[55%] bg-destinations-bg flex items-center justify-center px-6 py-16 lg:py-24">
           <div className="w-full max-w-5xl">
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-[hsl(var(--contact-teal))] mb-12 tracking-wide">
               CONTACT
