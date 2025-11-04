@@ -40,7 +40,7 @@ const Contact = () => {
         {/* Right Column - Form and Contact Info */}
         <div className="bg-[#e8e0cd] px-8 md:px-16 py-20 flex items-center">
           <div className="w-full max-w-2xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-playfair mb-12 text-[#5B8A8A]">
+            <h1 className="text-5xl md:text-6xl font-playfair mb-12 text-destinations-title">
               CONTACT
             </h1>
 
