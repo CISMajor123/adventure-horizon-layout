@@ -3,7 +3,7 @@ import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[hsl(var(--destinations-bg))]">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="transition-opacity hover:opacity-80">
@@ -13,25 +13,25 @@ const Navigation = () => {
           <div className="flex items-center gap-8">
             <Link
               to="/"
-              className="text-foreground text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-[hsl(var(--contact-teal))]"
+              className="text-hero-text text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-desert-gold"
             >
               HOME
             </Link>
             <Link
               to="/about"
-              className="text-foreground text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-[hsl(var(--contact-teal))]"
+              className="text-hero-text text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-desert-gold"
             >
               ABOUT
             </Link>
             <Link
               to="/destinations"
-              className="text-foreground text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-[hsl(var(--contact-teal))]"
+              className="text-hero-text text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-desert-gold"
             >
               DESTINATIONS
             </Link>
             <Link
               to="/contact"
-              className="text-foreground text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-[hsl(var(--contact-teal))]"
+              className="text-hero-text text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-desert-gold"
             >
               CONTACT
             </Link>
