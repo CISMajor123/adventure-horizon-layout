@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
-const Navigation = () => {
+interface NavigationProps {
+  bgColor?: string;
+}
+
+const Navigation = ({ bgColor = "transparent" }: NavigationProps) => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent">
+    <nav className={`fixed top-0 left-0 right-0 z-50 ${bgColor === "transparent" ? "bg-transparent" : ""}`} style={bgColor !== "transparent" ? { backgroundColor: `hsl(var(${bgColor}))` } : {}}>
       <div className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="transition-opacity hover:opacity-80">

@@ -49,7 +49,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      <Navigation bgColor="--contact-header-bg" />
       <main className="flex flex-col lg:flex-row min-h-screen pt-24 lg:pt-28">
         {/* Left Column - Team Photo */}
         <div className="w-full lg:w-[45%] h-[40vh] lg:h-screen">
