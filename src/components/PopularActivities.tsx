@@ -26,7 +26,7 @@ const activities = [
 
 const PopularActivities = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-[#e8e0cd]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-16 font-playfair">
           Our Popular Activities
