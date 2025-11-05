@@ -1,6 +1,4 @@
 import Navigation from "@/components/Navigation";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import kilimanjaroHero from "@/assets/kilimanjaro-hero.jpg";
 
 const Kilimanjaro = () => {
@@ -42,7 +40,7 @@ const Kilimanjaro = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen" style={{ backgroundColor: '#f9f8f6' }}>
       <Navigation bgColor="--destinations-bg" />
       
       {/* Hero Section */}
@@ -51,42 +49,72 @@ const Kilimanjaro = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${kilimanjaroHero})` }}
         >
-          <div className="absolute inset-0 bg-hero-overlay/30" />
+          <div className="absolute inset-0 bg-black/20" />
         </div>
         
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-5xl md:text-7xl font-bold text-hero-text tracking-tight font-serif">
+          <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
             Mount Kilimanjaro
           </h1>
         </div>
       </section>
 
       {/* Tours Section */}
-      <main className="container mx-auto px-6 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <main className="container mx-auto px-6 py-16 md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {tours.map((tour, index) => (
-            <Card key={index} className="border-2 border-foreground/10 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardHeader className="bg-desert-gold p-4">
-                <CardTitle className="text-lg font-semibold text-foreground">
+            <div 
+              key={index} 
+              className="bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+              style={{ 
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
+                border: '1px solid #e5e3df'
+              }}
+            >
+              {/* Title Bar */}
+              <div 
+                className="px-5 py-3.5" 
+                style={{ backgroundColor: '#d5cdac' }}
+              >
+                <h3 className="text-base md:text-lg font-bold text-gray-800">
                   {tour.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-6 space-y-6">
+                </h3>
+              </div>
+              
+              {/* Content */}
+              <div className="p-6 space-y-6">
+                {/* Itinerary */}
                 <div className="space-y-2">
                   {tour.itinerary.map((day, dayIndex) => (
-                    <p key={dayIndex} className="text-sm text-foreground/80 leading-relaxed">
+                    <p 
+                      key={dayIndex} 
+                      className="text-xs md:text-sm leading-relaxed"
+                      style={{ color: '#3a3a3a' }}
+                    >
                       {day}
                     </p>
                   ))}
                 </div>
-                <Button 
-                  className="w-full bg-desert-gold hover:bg-desert-sand text-foreground font-semibold py-6 rounded-md transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
-                  size="lg"
+                
+                {/* Book Now Button */}
+                <button
+                  className="w-full py-3.5 rounded-lg font-semibold text-white text-base transition-all duration-300 hover:-translate-y-0.5"
+                  style={{ 
+                    backgroundColor: '#b1976b',
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#8c7a4f';
+                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#b1976b';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
                 >
                   Book Now
-                </Button>
-              </CardContent>
-            </Card>
+                </button>
+              </div>
+            </div>
           ))}
         </div>
       </main>
