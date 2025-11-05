@@ -22,7 +22,7 @@ const About = () => {
       <Navigation bgColor="--destinations-bg" />
       
       <main className="container mx-auto px-6 pt-32 pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto mb-20">
           {/* Left Column - Text Content */}
           <div className="flex flex-col justify-center">
             <div className="bg-white border border-foreground/20 rounded-lg p-10 md:p-12 shadow-sm h-full flex flex-col justify-center">
