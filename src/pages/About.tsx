@@ -2,8 +2,21 @@ import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import zebraImage from "@/assets/zebra-about.jpg";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    // Load CommonNinja script for Google Reviews widget
+    const script = document.createElement('script');
+    script.src = "https://cdn.commoninja.com/sdk/latest/commonninja.js";
+    script.defer = true;
+    document.body.appendChild(script);
+    
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-destinations-bg">
       <Navigation bgColor="--destinations-bg" />
@@ -12,7 +25,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
           {/* Left Column - Text Content */}
           <div className="flex flex-col justify-center">
-            <div className="bg-white border border-foreground/20 rounded-lg p-10 md:p-12 shadow-sm">
+            <div className="bg-white border border-foreground/20 rounded-lg p-10 md:p-12 shadow-sm h-full flex flex-col justify-center">
               <h1 className="font-playfair text-4xl md:text-5xl font-bold text-destinations-title mb-8 italic">
                 What We Do
               </h1>
@@ -41,8 +54,8 @@ const About = () => {
           </div>
           
           {/* Right Column - Zebra Image */}
-          <div className="flex items-center justify-center lg:justify-end">
-            <div className="w-full h-full min-h-[400px] lg:min-h-[600px] rounded-lg overflow-hidden shadow-lg">
+          <div className="flex items-stretch">
+            <div className="w-full rounded-lg overflow-hidden shadow-lg">
               <img 
                 src={zebraImage} 
                 alt="Zebra standing on natural terrain"
@@ -50,6 +63,11 @@ const About = () => {
               />
             </div>
           </div>
+        </div>
+
+        {/* Google Reviews Section */}
+        <div className="mt-20 max-w-7xl mx-auto">
+          <div className="commonninja_component pid-2e72d824-b5b8-4dc5-bb75-5921103e655b"></div>
         </div>
       </main>
     </div>
