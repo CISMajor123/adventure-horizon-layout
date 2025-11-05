@@ -53,7 +53,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-destinations-bg">
       <Navigation bgColor="--destinations-bg" />
-      <main className="min-h-screen flex items-center justify-center px-6 py-24">
+      <main className="min-h-screen flex items-center justify-center px-6 pt-32 pb-24 md:pt-40">
         <div className="w-full max-w-4xl">
           {/* Heading */}
           <div className="text-center mb-12">
