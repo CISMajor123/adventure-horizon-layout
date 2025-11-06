@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 import bookingBg from "@/assets/booking-background.jpg";
@@ -23,10 +22,12 @@ const bookingSchema = z.object({
 
 const Booking = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitMessage(null);
 
     try {
       const formData = new FormData(e.currentTarget);
@@ -61,25 +62,23 @@ const Booking = () => {
 
       if (error) throw error;
 
-      toast({
-        title: "Booking Submitted!",
-        description: "We've received your booking request and will contact you soon.",
+      setSubmitMessage({ 
+        type: 'success', 
+        text: "Booking submitted successfully! We'll contact you soon." 
       });
 
       // Reset form
       e.currentTarget.reset();
     } catch (error) {
       if (error instanceof z.ZodError) {
-        toast({
-          variant: "destructive",
-          title: "Validation Error",
-          description: error.errors[0].message,
+        setSubmitMessage({ 
+          type: 'error', 
+          text: error.errors[0].message 
         });
       } else {
-        toast({
-          variant: "destructive",
-          title: "Error",
-          description: "Failed to submit booking. Please try again.",
+        setSubmitMessage({ 
+          type: 'error', 
+          text: "Failed to submit booking. Please try again." 
         });
       }
     } finally {
@@ -108,6 +107,15 @@ const Booking = () => {
         <div className="flex justify-center">
           {/* Form Container - Centered */}
           <div className="bg-[#E8DCC8] border-2 border-[#2C1810] p-10 max-w-lg w-full">
+            {submitMessage && (
+              <div className={`mb-6 p-4 rounded-lg ${
+                submitMessage.type === 'success' 
+                  ? 'bg-green-100 text-green-800 border border-green-300' 
+                  : 'bg-red-100 text-red-800 border border-red-300'
+              }`}>
+                {submitMessage.text}
+              </div>
+            )}
             <form className="space-y-5" onSubmit={handleSubmit}>
               {/* Name */}
               <div>
