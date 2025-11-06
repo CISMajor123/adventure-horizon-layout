@@ -5,8 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { toast } from "@/hooks/use-toast";
 import { Send } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,38 +16,56 @@ const Contact = () => {
     location: "",
     message: "",
   });
+  const [submitMessage, setSubmitMessage] = useState<{ text: string; type: 'success' | 'error' } | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
     if (!formData.fullName.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.location || !formData.message.trim()) {
-      toast({
-        title: "Error",
-        description: "Please fill in all required fields",
-        variant: "destructive",
-      });
+      setSubmitMessage({ text: "Please fill in all required fields", type: 'error' });
+      setTimeout(() => setSubmitMessage(null), 5000);
       return;
     }
 
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
-      toast({
-        title: "Error",
-        description: "Please enter a valid email address",
-        variant: "destructive",
-      });
+      setSubmitMessage({ text: "Please enter a valid email address", type: 'error' });
+      setTimeout(() => setSubmitMessage(null), 5000);
       return;
     }
 
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you soon.",
-    });
+    try {
+      const { error } = await supabase
+        .from('contact_inquiries')
+        .insert([
+          {
+            full_name: formData.fullName,
+            email: formData.email,
+            phone: formData.phone,
+            location: formData.location,
+            message: formData.message,
+          }
+        ]);
 
-    // Reset form
-    setFormData({ fullName: "", email: "", phone: "", location: "", message: "" });
+      if (error) {
+        console.error('Supabase error:', error);
+        setSubmitMessage({ text: "Failed to submit inquiry. Please try again.", type: 'error' });
+        setTimeout(() => setSubmitMessage(null), 5000);
+        return;
+      }
+
+      setSubmitMessage({ text: "Message sent! We'll get back to you soon.", type: 'success' });
+      setTimeout(() => setSubmitMessage(null), 5000);
+
+      // Reset form
+      setFormData({ fullName: "", email: "", phone: "", location: "", message: "" });
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitMessage({ text: "An unexpected error occurred. Please try again.", type: 'error' });
+      setTimeout(() => setSubmitMessage(null), 5000);
+    }
   };
 
   return (
@@ -166,6 +184,17 @@ const Contact = () => {
           </div>
         </div>
       </main>
+
+      {/* Toast notification - bottom right */}
+      {submitMessage && (
+        <div className={`fixed bottom-6 right-6 p-4 rounded-lg shadow-lg max-w-md z-50 animate-in slide-in-from-bottom-5 ${
+          submitMessage.type === 'success' 
+            ? 'bg-green-100 text-green-800 border border-green-300' 
+            : 'bg-red-100 text-red-800 border border-red-300'
+        }`}>
+          {submitMessage.text}
+        </div>
+      )}
     </div>
   );
 };
