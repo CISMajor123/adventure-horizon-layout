@@ -7,7 +7,7 @@ import bookingBg from "@/assets/booking-background.jpg";
 
 const Booking = () => {
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative flex flex-col">
       <Navigation bgColor="--destinations-bg" />
       
       {/* Full background image */}
@@ -16,10 +16,17 @@ const Booking = () => {
         style={{ backgroundImage: `url(${bookingBg})` }}
       />
       
-      <div className="container mx-auto px-6 pt-32 pb-16">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-8rem)]">
-          {/* Form Container - Left Side */}
-          <div className="bg-[#E8DCC8] border-2 border-[#2C1810] p-10 max-w-lg w-full mx-auto lg:ml-0">
+      {/* Static Heading */}
+      <div className="container mx-auto px-6 pt-32 pb-8">
+        <h1 className="font-serif text-5xl md:text-6xl xl:text-7xl text-[#2C1810] italic text-center">
+          Booking Form
+        </h1>
+      </div>
+      
+      <div className="container mx-auto px-6 pb-16">
+        <div className="flex justify-center">
+          {/* Form Container - Centered */}
+          <div className="bg-[#E8DCC8] border-2 border-[#2C1810] p-10 max-w-lg w-full">
             <form className="space-y-5">
               {/* Name */}
               <div>
@@ -131,13 +138,6 @@ const Booking = () => {
                 </Button>
               </div>
             </form>
-          </div>
-
-          {/* Heading - Right Side */}
-          <div className="flex items-center justify-center">
-            <h1 className="font-serif text-6xl xl:text-7xl 2xl:text-8xl text-[#2C1810] italic text-center leading-tight">
-              Booking Form
-            </h1>
           </div>
         </div>
       </div>
