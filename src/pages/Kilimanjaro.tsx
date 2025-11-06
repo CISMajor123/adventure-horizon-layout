@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
-import kilimanjaroImage from "@/assets/kilimanjaro-trekking.jpg";
+import kilimanjaroImage from "@/assets/kilimanjaro-hero.jpg";
 
 const routes = [
   {
