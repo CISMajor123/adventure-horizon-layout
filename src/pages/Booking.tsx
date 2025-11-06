@@ -8,7 +8,7 @@ import bookingBg from "@/assets/booking-background.jpg";
 const Booking = () => {
   return (
     <div className="min-h-screen relative">
-      <Navigation />
+      <Navigation bgColor="--destinations-bg" />
       
       {/* Full background image */}
       <div 
