@@ -1,11 +1,95 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
+import { z } from "zod";
 import bookingBg from "@/assets/booking-background.jpg";
 
+const bookingSchema = z.object({
+  name: z.string().trim().min(1, "Name is required").max(100),
+  email: z.string().trim().email("Invalid email address").max(255),
+  arrival_date: z.string().min(1, "Arrival date is required"),
+  duration: z.string().trim().min(1, "Duration is required").max(50),
+  adults: z.number().int().min(1, "At least 1 adult required"),
+  children: z.number().int().min(0),
+  budget: z.string().trim().min(1, "Budget is required").max(100),
+  destination: z.string().trim().min(1, "Destination is required").max(200),
+  additional_info: z.string().max(1000).optional(),
+});
+
+type BookingFormData = z.infer<typeof bookingSchema>;
+
 const Booking = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(e.currentTarget);
+      
+      const data = {
+        name: formData.get("name") as string,
+        email: formData.get("email") as string,
+        arrival_date: formData.get("arrival_date") as string,
+        duration: formData.get("duration") as string,
+        adults: parseInt(formData.get("adults") as string),
+        children: parseInt(formData.get("children") as string) || 0,
+        budget: formData.get("budget") as string,
+        destination: formData.get("destination") as string,
+        additional_info: (formData.get("additional_info") as string) || "",
+      };
+
+      // Validate with zod
+      const validated = bookingSchema.parse(data);
+
+      // Save to Supabase  
+      const { error } = await supabase.from("bookings").insert({
+        name: validated.name,
+        email: validated.email,
+        arrival_date: validated.arrival_date,
+        duration: validated.duration,
+        adults: validated.adults,
+        children: validated.children,
+        budget: validated.budget,
+        destination: validated.destination,
+        additional_info: validated.additional_info || null,
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Booking Submitted!",
+        description: "We've received your booking request and will contact you soon.",
+      });
+
+      // Reset form
+      e.currentTarget.reset();
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        toast({
+          variant: "destructive",
+          title: "Validation Error",
+          description: error.errors[0].message,
+        });
+      } else {
+        toast({
+          variant: "destructive",
+          title: "Error",
+          description: "Failed to submit booking. Please try again.",
+        });
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen relative flex flex-col">
       <Navigation bgColor="--destinations-bg" />
@@ -27,12 +111,13 @@ const Booking = () => {
         <div className="flex justify-center">
           {/* Form Container - Centered */}
           <div className="bg-[#E8DCC8] border-2 border-[#2C1810] p-10 max-w-lg w-full">
-            <form className="space-y-5">
+            <form className="space-y-5" onSubmit={handleSubmit}>
               {/* Name */}
               <div>
                 <Label htmlFor="name" className="text-[#2C1810] font-serif text-base">Name *</Label>
                 <Input 
-                  id="name" 
+                  id="name"
+                  name="name"
                   type="text" 
                   required 
                   className="mt-1 bg-white border-none rounded-full h-11"
@@ -43,7 +128,8 @@ const Booking = () => {
               <div>
                 <Label htmlFor="email" className="text-[#2C1810] font-serif text-base">Email *</Label>
                 <Input 
-                  id="email" 
+                  id="email"
+                  name="email"
                   type="email" 
                   required 
                   className="mt-1 bg-white border-none rounded-full h-11"
@@ -55,7 +141,8 @@ const Booking = () => {
                 <div>
                   <Label htmlFor="arrival" className="text-[#2C1810] font-serif text-base">Arrival Date *</Label>
                   <Input 
-                    id="arrival" 
+                    id="arrival_date"
+                    name="arrival_date"
                     type="date" 
                     required 
                     className="mt-1 bg-white border-none rounded-full h-11"
@@ -64,7 +151,8 @@ const Booking = () => {
                 <div>
                   <Label htmlFor="duration" className="text-[#2C1810] font-serif text-base">Duration *</Label>
                   <Input 
-                    id="duration" 
+                    id="duration"
+                    name="duration"
                     type="text" 
                     required 
                     className="mt-1 bg-white border-none rounded-full h-11"
@@ -77,7 +165,8 @@ const Booking = () => {
                 <div>
                   <Label htmlFor="adults" className="text-[#2C1810] font-serif text-base">Adults *</Label>
                   <Input 
-                    id="adults" 
+                    id="adults"
+                    name="adults"
                     type="number" 
                     required 
                     min="1"
@@ -87,7 +176,8 @@ const Booking = () => {
                 <div>
                   <Label htmlFor="children" className="text-[#2C1810] font-serif text-base">Children*</Label>
                   <Input 
-                    id="children" 
+                    id="children"
+                    name="children"
                     type="number" 
                     min="0"
                     defaultValue="0"
@@ -100,7 +190,8 @@ const Booking = () => {
               <div>
                 <Label htmlFor="budget" className="text-[#2C1810] font-serif text-base">What's your budget? *</Label>
                 <Input 
-                  id="budget" 
+                  id="budget"
+                  name="budget"
                   type="text" 
                   required 
                   className="mt-1 bg-white border-none rounded-full h-11"
@@ -111,7 +202,8 @@ const Booking = () => {
               <div>
                 <Label htmlFor="destination" className="text-[#2C1810] font-serif text-base">Destination *</Label>
                 <Input 
-                  id="destination" 
+                  id="destination"
+                  name="destination"
                   type="text" 
                   required 
                   className="mt-1 bg-white border-none rounded-full h-11"
@@ -122,7 +214,8 @@ const Booking = () => {
               <div>
                 <Label htmlFor="additional" className="text-[#2C1810] font-serif text-base">Additional Information</Label>
                 <Textarea 
-                  id="additional" 
+                  id="additional_info"
+                  name="additional_info"
                   rows={3}
                   className="mt-1 bg-white border-none rounded-2xl resize-none"
                 />
@@ -132,9 +225,10 @@ const Booking = () => {
               <div className="flex justify-center pt-2">
                 <Button 
                   type="submit"
-                  className="bg-[#4A9B8E] hover:bg-[#3D8275] text-white px-10 py-2.5 rounded-full text-base font-medium"
+                  disabled={isSubmitting}
+                  className="bg-[#4A9B8E] hover:bg-[#3D8275] text-white px-10 py-2.5 rounded-full text-base font-medium disabled:opacity-50"
                 >
-                  Book Now
+                  {isSubmitting ? "Submitting..." : "Book Now"}
                 </Button>
               </div>
             </form>
