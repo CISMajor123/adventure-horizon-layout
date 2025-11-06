@@ -43,7 +43,7 @@ const routes = [
 const Kilimanjaro = () => {
   return (
     <div className="min-h-screen bg-destinations-bg">
-      <Navigation />
+      <Navigation bgColor="--destinations-bg" />
       
       {/* Hero Section */}
       <section className="relative h-[60vh] w-full flex items-center justify-center mt-20">
