@@ -16,10 +16,10 @@ const Booking = () => {
         style={{ backgroundImage: `url(${bookingBg})` }}
       />
       
-      <div className="container mx-auto px-6 pt-32 pb-16">
-        <div className="grid lg:grid-cols-2 gap-8 items-center min-h-[calc(100vh-12rem)]">
+      <div className="container mx-auto px-6 pt-24 pb-16">
+        <div className="grid lg:grid-cols-2 gap-8 items-start min-h-screen">
           {/* Form Container - Left Side */}
-          <div className="bg-[#E8DCC8] rounded-lg shadow-lg p-8 max-w-md mx-auto lg:mx-0 w-full">
+          <div className="bg-[#E8DCC8] rounded-lg shadow-lg p-8 max-w-md mx-auto lg:mx-0 w-full sticky top-24">
             <form className="space-y-6">
               {/* Name */}
               <div>
