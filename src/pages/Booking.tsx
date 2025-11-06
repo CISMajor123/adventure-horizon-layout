@@ -16,52 +16,51 @@ const Booking = () => {
         style={{ backgroundImage: `url(${bookingBg})` }}
       />
       
-      <div className="container mx-auto px-6 pt-24 pb-16">
-        <div className="grid lg:grid-cols-2 gap-8 items-start min-h-screen">
+      <div className="container mx-auto px-6 pt-32 pb-16">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-8rem)]">
           {/* Form Container - Left Side */}
-          <div className="bg-[#E8DCC8] rounded-lg shadow-lg p-8 max-w-md mx-auto lg:mx-0 w-full sticky top-24">
-            <form className="space-y-6">
+          <div className="bg-[#E8DCC8] border-2 border-[#2C1810] p-10 max-w-lg w-full mx-auto lg:ml-0">
+            <form className="space-y-5">
               {/* Name */}
               <div>
-                <Label htmlFor="name" className="text-[#2C1810] font-serif">Name *</Label>
+                <Label htmlFor="name" className="text-[#2C1810] font-serif text-base">Name *</Label>
                 <Input 
                   id="name" 
                   type="text" 
                   required 
-                  className="mt-2 bg-white border-none rounded-full"
+                  className="mt-1 bg-white border-none rounded-full h-11"
                 />
               </div>
 
               {/* Email */}
               <div>
-                <Label htmlFor="email" className="text-[#2C1810] font-serif">Email *</Label>
+                <Label htmlFor="email" className="text-[#2C1810] font-serif text-base">Email *</Label>
                 <Input 
                   id="email" 
                   type="email" 
                   required 
-                  className="mt-2 bg-white border-none rounded-full"
+                  className="mt-1 bg-white border-none rounded-full h-11"
                 />
               </div>
 
               {/* Arrival Date & Duration - Side by Side */}
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="arrival" className="text-[#2C1810] font-serif">Arrival Date *</Label>
+                  <Label htmlFor="arrival" className="text-[#2C1810] font-serif text-base">Arrival Date *</Label>
                   <Input 
                     id="arrival" 
                     type="date" 
                     required 
-                    className="mt-2 bg-white border-none rounded-full"
+                    className="mt-1 bg-white border-none rounded-full h-11"
                   />
                 </div>
                 <div>
-                  <Label htmlFor="duration" className="text-[#2C1810] font-serif">Duration *</Label>
+                  <Label htmlFor="duration" className="text-[#2C1810] font-serif text-base">Duration *</Label>
                   <Input 
                     id="duration" 
                     type="text" 
                     required 
-                    placeholder="e.g. 7 days"
-                    className="mt-2 bg-white border-none rounded-full"
+                    className="mt-1 bg-white border-none rounded-full h-11"
                   />
                 </div>
               </div>
@@ -69,66 +68,64 @@ const Booking = () => {
               {/* Adults & Children - Side by Side */}
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="adults" className="text-[#2C1810] font-serif">Adults *</Label>
+                  <Label htmlFor="adults" className="text-[#2C1810] font-serif text-base">Adults *</Label>
                   <Input 
                     id="adults" 
                     type="number" 
                     required 
                     min="1"
-                    className="mt-2 bg-white border-none rounded-full"
+                    className="mt-1 bg-white border-none rounded-full h-11"
                   />
                 </div>
                 <div>
-                  <Label htmlFor="children" className="text-[#2C1810] font-serif">Children*</Label>
+                  <Label htmlFor="children" className="text-[#2C1810] font-serif text-base">Children*</Label>
                   <Input 
                     id="children" 
                     type="number" 
                     min="0"
                     defaultValue="0"
-                    className="mt-2 bg-white border-none rounded-full"
+                    className="mt-1 bg-white border-none rounded-full h-11"
                   />
                 </div>
               </div>
 
               {/* Budget */}
               <div>
-                <Label htmlFor="budget" className="text-[#2C1810] font-serif">What's your budget? *</Label>
+                <Label htmlFor="budget" className="text-[#2C1810] font-serif text-base">What's your budget? *</Label>
                 <Input 
                   id="budget" 
                   type="text" 
                   required 
-                  placeholder="e.g. $5000"
-                  className="mt-2 bg-white border-none rounded-full"
+                  className="mt-1 bg-white border-none rounded-full h-11"
                 />
               </div>
 
               {/* Destination */}
               <div>
-                <Label htmlFor="destination" className="text-[#2C1810] font-serif">Destination *</Label>
+                <Label htmlFor="destination" className="text-[#2C1810] font-serif text-base">Destination *</Label>
                 <Input 
                   id="destination" 
                   type="text" 
                   required 
-                  placeholder="e.g. Serengeti, Kilimanjaro"
-                  className="mt-2 bg-white border-none rounded-full"
+                  className="mt-1 bg-white border-none rounded-full h-11"
                 />
               </div>
 
               {/* Additional Information */}
               <div>
-                <Label htmlFor="additional" className="text-[#2C1810] font-serif">Additional Information</Label>
+                <Label htmlFor="additional" className="text-[#2C1810] font-serif text-base">Additional Information</Label>
                 <Textarea 
                   id="additional" 
-                  rows={4}
-                  className="mt-2 bg-white border-none rounded-lg"
+                  rows={3}
+                  className="mt-1 bg-white border-none rounded-2xl resize-none"
                 />
               </div>
 
               {/* Submit Button */}
-              <div className="flex justify-center pt-4">
+              <div className="flex justify-center pt-2">
                 <Button 
                   type="submit"
-                  className="bg-[#4A9B8E] hover:bg-[#3D8275] text-white px-12 py-6 rounded-full text-base font-medium"
+                  className="bg-[#4A9B8E] hover:bg-[#3D8275] text-white px-10 py-2.5 rounded-full text-base font-medium"
                 >
                   Book Now
                 </Button>
@@ -137,15 +134,8 @@ const Booking = () => {
           </div>
 
           {/* Heading - Right Side */}
-          <div className="hidden lg:flex items-center justify-center">
-            <h1 className="font-serif text-6xl xl:text-7xl text-[#2C1810] italic text-center">
-              Booking Form
-            </h1>
-          </div>
-
-          {/* Mobile Heading - Above Form */}
-          <div className="lg:hidden col-span-full order-first">
-            <h1 className="font-serif text-5xl text-[#2C1810] italic text-center mb-8">
+          <div className="flex items-center justify-center">
+            <h1 className="font-serif text-6xl xl:text-7xl 2xl:text-8xl text-[#2C1810] italic text-center leading-tight">
               Booking Form
             </h1>
           </div>
