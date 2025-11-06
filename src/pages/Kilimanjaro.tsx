@@ -48,7 +48,7 @@ const Kilimanjaro = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] w-full flex items-center justify-center mt-20">
         <div 
-          className="absolute inset-0 bg-contain bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${kilimanjaroImage})` }}
         >
           <div className="absolute inset-0 bg-hero-overlay/30" />
