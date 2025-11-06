@@ -66,14 +66,14 @@ const Kilimanjaro = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* First Two Cards */}
           {routes.slice(0, 2).map((route, index) => (
-            <div key={index} className="bg-card border border-border rounded-lg shadow-sm overflow-hidden">
+            <div key={index} className="bg-card border border-border rounded-lg shadow-sm overflow-hidden flex flex-col">
               <div className="bg-destinations-title px-6 py-4">
                 <h2 className="font-playfair text-2xl text-card font-semibold">
                   {route.title}
                 </h2>
               </div>
-              <div className="p-6">
-                <div className="space-y-3 mb-6">
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="space-y-3 mb-6 flex-grow">
                   {route.itinerary.map((day, dayIndex) => (
                     <p key={dayIndex} className="text-sm text-foreground leading-relaxed">
                       {day}
