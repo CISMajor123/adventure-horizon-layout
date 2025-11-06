@@ -18,7 +18,7 @@ const destinations = [
     duration: "5–8 Days",
     price: "$1,950 – $3,020",
     image: kilimanjaroImage,
-    slug: "kilimanjaro-trekking-expedition",
+    slug: "/kilimanjaro",
     hoverDescription: "A Kilimanjaro trekking expedition offers the adventure of a lifetime—ascending Africa's highest peak through lush rainforests, alpine meadows, and rugged volcanic terrain. Trekkers experience breathtaking views, diverse ecosystems, and the thrill of reaching Uhuru Peak, the \"Roof of Africa,\" where sunrise over the clouds rewards every step of the journey.",
   },
   {
