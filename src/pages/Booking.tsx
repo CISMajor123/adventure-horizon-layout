@@ -119,15 +119,6 @@ const Booking = () => {
         <div className="flex justify-center">
           {/* Form Container - Centered */}
           <div className="bg-[#E8DCC8] border-2 border-[#2C1810] p-10 max-w-lg w-full">
-            {submitMessage && (
-              <div className={`mb-6 p-4 rounded-lg ${
-                submitMessage.type === 'success' 
-                  ? 'bg-green-100 text-green-800 border border-green-300' 
-                  : 'bg-red-100 text-red-800 border border-red-300'
-              }`}>
-                {submitMessage.text}
-              </div>
-            )}
             <form className="space-y-5" onSubmit={handleSubmit}>
               {/* Name */}
               <div>
@@ -249,9 +240,20 @@ const Booking = () => {
                 </Button>
               </div>
             </form>
-          </div>
         </div>
       </div>
+      
+      {/* Toast notification - bottom right */}
+      {submitMessage && (
+        <div className={`fixed bottom-6 right-6 p-4 rounded-lg shadow-lg max-w-md z-50 animate-in slide-in-from-bottom-5 ${
+          submitMessage.type === 'success' 
+            ? 'bg-green-100 text-green-800 border border-green-300' 
+            : 'bg-red-100 text-red-800 border border-red-300'
+        }`}>
+          {submitMessage.text}
+        </div>
+      )}
+    </div>
     </div>
   );
 };
