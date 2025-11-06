@@ -80,7 +80,7 @@ const Kilimanjaro = () => {
                     </p>
                   ))}
                 </div>
-                <Link to="/contact">
+                <Link to="/booking">
                   <Button 
                     className="w-full bg-desert-gold hover:bg-desert-gold/90 text-primary-foreground rounded-full py-6 text-base font-medium"
                   >
@@ -109,7 +109,7 @@ const Kilimanjaro = () => {
                     </p>
                   ))}
                 </div>
-                <Link to="/contact">
+                <Link to="/booking">
                   <Button 
                     className="w-full bg-desert-gold hover:bg-desert-gold/90 text-primary-foreground rounded-full py-6 text-base font-medium"
                   >
