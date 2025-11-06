@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 import bookingBg from "@/assets/booking-background.jpg";
@@ -21,10 +21,7 @@ const bookingSchema = z.object({
   additional_info: z.string().max(1000).optional(),
 });
 
-type BookingFormData = z.infer<typeof bookingSchema>;
-
 const Booking = () => {
-  const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
