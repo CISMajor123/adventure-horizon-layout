@@ -60,20 +60,32 @@ const Booking = () => {
         additional_info: validated.additional_info || null,
       });
 
-      if (error) throw error;
+      if (error) {
+        console.error("Supabase error:", error);
+        throw error;
+      }
 
       setSubmitMessage({ 
         type: 'success', 
         text: "Booking submitted successfully! We'll contact you soon." 
       });
 
-      // Reset form
-      e.currentTarget.reset();
+      // Reset form after a short delay to ensure state updates
+      setTimeout(() => {
+        e.currentTarget.reset();
+      }, 100);
+      
     } catch (error) {
+      console.error("Form submission error:", error);
       if (error instanceof z.ZodError) {
         setSubmitMessage({ 
           type: 'error', 
           text: error.errors[0].message 
+        });
+      } else if (error && typeof error === 'object' && 'message' in error) {
+        setSubmitMessage({ 
+          type: 'error', 
+          text: (error as any).message || "Failed to submit booking. Please try again." 
         });
       } else {
         setSubmitMessage({ 
