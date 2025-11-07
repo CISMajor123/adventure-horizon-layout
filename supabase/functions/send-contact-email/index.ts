@@ -35,8 +35,8 @@ const handler = async (req: Request): Promise<Response> => {
         "Authorization": `Bearer ${resendApiKey}`,
       },
       body: JSON.stringify({
-        from: "Contact Form <onboarding@resend.dev>", // Replace with your verified domain email
-        to: ["power2md@dukes.jmu.edu"], // REPLACE THIS with your actual email address
+        from: "onboarding@resend.dev",
+        to: ["power2md@dukes.jmu.edu"],
         subject: `New Contact Inquiry from ${fullName}`,
         html: `
           <h2>New Contact Inquiry</h2>
