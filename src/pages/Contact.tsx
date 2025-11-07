@@ -157,7 +157,7 @@ const Contact = () => {
                   </Label>
                   <Select value={formData.location} onValueChange={(value) => setFormData({ ...formData, location: value })}>
                     <SelectTrigger className="bg-muted border-0 focus:ring-1 focus:ring-ring">
-                      <SelectValue placeholder="Select your city" />
+                      <SelectValue placeholder="Select your trip" />
                     </SelectTrigger>
                     <SelectContent className="bg-popover z-50">
                       <SelectItem value="zanzibar">Zanzibar</SelectItem>
