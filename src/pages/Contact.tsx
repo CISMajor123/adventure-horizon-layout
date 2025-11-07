@@ -153,7 +153,7 @@ const Contact = () => {
 
                 <div className="space-y-2">
                   <Label htmlFor="location" className="text-foreground font-semibold">
-                    Preferred Location
+                    Preferred Trip Package
                   </Label>
                   <Select value={formData.location} onValueChange={(value) => setFormData({ ...formData, location: value })}>
                     <SelectTrigger className="bg-muted border-0 focus:ring-1 focus:ring-ring">
