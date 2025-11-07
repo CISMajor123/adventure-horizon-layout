@@ -35,8 +35,8 @@ const handler = async (req: Request): Promise<Response> => {
         "Authorization": `Bearer ${resendApiKey}`,
       },
       body: JSON.stringify({
-        from: "Contact Form <onboarding@resend.dev>",
-        to: ["onboarding@resend.dev"], // Replace with your actual email
+        from: "Contact Form <onboarding@resend.dev>", // Replace with your verified domain email
+        to: ["your-email@example.com"], // REPLACE THIS with your actual email address
         subject: `New Contact Inquiry from ${fullName}`,
         html: `
           <h2>New Contact Inquiry</h2>
