@@ -56,6 +56,21 @@ const Contact = () => {
         return;
       }
 
+      // Send email notification
+      const { error: emailError } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          fullName: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          location: formData.location,
+          message: formData.message,
+        }
+      });
+
+      if (emailError) {
+        console.error('Email error:', emailError);
+      }
+
       setSubmitMessage({ text: "Message sent! We'll get back to you soon.", type: 'success' });
       setTimeout(() => setSubmitMessage(null), 5000);
 
