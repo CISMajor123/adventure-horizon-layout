@@ -160,12 +160,9 @@ const Contact = () => {
                       <SelectValue placeholder="Select your city" />
                     </SelectTrigger>
                     <SelectContent className="bg-popover z-50">
-                      <SelectItem value="arusha">Arusha</SelectItem>
-                      <SelectItem value="serengeti">Serengeti</SelectItem>
                       <SelectItem value="zanzibar">Zanzibar</SelectItem>
-                      <SelectItem value="kilimanjaro">Kilimanjaro</SelectItem>
-                      <SelectItem value="ngorongoro">Ngorongoro</SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
+                      <SelectItem value="mount-kilimanjaro">Mount Kilimanjaro</SelectItem>
+                      <SelectItem value="mid-range-safari">Mid-Range Safari</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
