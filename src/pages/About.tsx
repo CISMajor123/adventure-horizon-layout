@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import safariVehicle from "@/assets/safari-vehicle.png";
+import teamPhoto from "@/assets/team-photo.png";
 import { useEffect } from "react";
 
 const About = () => {
@@ -55,8 +55,8 @@ const About = () => {
           <div className="flex items-stretch">
             <div className="w-full rounded-lg overflow-hidden shadow-lg">
               <img 
-                src={safariVehicle} 
-                alt="Grant Expedition safari vehicle in the wilderness"
+                src={teamPhoto} 
+                alt="Grant Expedition team with clients and safari vehicle"
                 className="w-full h-full object-cover object-center"
               />
             </div>
