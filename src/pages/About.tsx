@@ -32,13 +32,11 @@ const About = () => {
               
               <div className="space-y-6 text-foreground/80 leading-relaxed">
                 <p className="text-base md:text-lg">
-                  Grant Expedition crafts unforgettable safaris across Tanzania—combining luxury, comfort, and authenticity. 
-                  From the vast plains of the Serengeti to the majesty of Mount Kilimanjaro, our personalized itineraries 
-                  connect you with wildlife, culture, and adventure.
+                  At Grant Expedition, we specialize in creating unforgettable safari experiences across Tanzania's most stunning landscapes. From the vast plains of Serengeti to the majestic Mount Kilimanjaro, our expertly crafted tours connect you with nature, culture, and adventure. We deliver personalized itineraries blending luxury, comfort, and authenticity.
                 </p>
                 
                 <p className="text-base md:text-lg">
-                  With expert guides and seamless planning, we are your trusted partner in discovering the real Tanzania, your way.
+                  Whether you are seeking thrilling wildlife encounters, breathtaking natural wonders, or immersive cultural experiences, Grant Expedition is your trusted partner in discovering the best of Tanzania.
                 </p>
               </div>
               
