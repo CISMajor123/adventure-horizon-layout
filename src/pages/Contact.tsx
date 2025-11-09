@@ -91,7 +91,7 @@ const Contact = () => {
           {/* Heading */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Send us Your Inquiry
+              Send us your Inquiry
             </h1>
             <p className="text-muted-foreground text-base md:text-lg">
               Fill out the form below and we'll get back to you within 24 hours
