@@ -35,12 +35,6 @@ const Navigation = ({ bgColor = "transparent" }: NavigationProps) => {
               DESTINATIONS
             </Link>
             <Link
-              to="/products"
-              className="text-hero-text text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-desert-gold"
-            >
-              TOUR PACKAGES
-            </Link>
-            <Link
               to="/contact"
               className="text-hero-text text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-desert-gold"
             >

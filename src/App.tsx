@@ -9,7 +9,6 @@ import Destinations from "./pages/Destinations";
 import Contact from "./pages/Contact";
 import Kilimanjaro from "./pages/Kilimanjaro";
 import Booking from "./pages/Booking";
-import Products from "./pages/Products";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,7 +23,6 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/destinations" element={<Destinations />} />
-          <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/kilimanjaro" element={<Kilimanjaro />} />
           <Route path="/booking" element={<Booking />} />
