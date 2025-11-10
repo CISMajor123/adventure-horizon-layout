@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
+import { CartDrawer } from "./CartDrawer";
 
 interface NavigationProps {
   bgColor?: string;
@@ -34,11 +35,18 @@ const Navigation = ({ bgColor = "transparent" }: NavigationProps) => {
               DESTINATIONS
             </Link>
             <Link
+              to="/products"
+              className="text-hero-text text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-desert-gold"
+            >
+              TOUR PACKAGES
+            </Link>
+            <Link
               to="/contact"
               className="text-hero-text text-sm font-medium tracking-wider uppercase transition-all duration-300 hover:text-desert-gold"
             >
               CONTACT
             </Link>
+            <CartDrawer />
           </div>
         </div>
       </div>
