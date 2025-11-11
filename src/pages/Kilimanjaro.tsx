@@ -1,123 +1,96 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import { Button } from "@/components/ui/button";
-import kilimanjaroImage from "@/assets/kilimanjaro-hero.jpg";
+import { ChevronDown, ChevronRight } from "lucide-react";
+import kilimanjaroHero from "@/assets/kilimanjaro_hero.png";
+import experience1 from "@/assets/experience_1.png";
+import experience2 from "@/assets/experience_2.png";
+import experience3 from "@/assets/experience_3.png";
 
-const routes = [
+const experiences = [
   {
-    title: "5 Days Mount Kilimanjaro Marangu Route",
-    itinerary: [
-      "DAY 1: MARANGU GATE → MANDARA HUTS: 7km | 4–5 hrs | Rainforest",
-      "DAY 2: MANDARA HUTS → HOROMBO HUTS: 11km/6mi | 6–8 hrs | Moorland",
-      "DAY 3: HOROMBO HUTS → KIBO HUTS: 10km/6mi | 6–8 hrs | Semi-Desert",
-      "DAY 4: KIBO HUTS → SUMMIT → 21.5km | up 7–8 hrs | down 4–5 hrs | Alpine Desert",
-      "DAY 5: HOROMBO HUTS → MARANGU GATE → MOSHI: 18km/11mi | 6–7hrs | Rainforest",
-    ],
+    title: "6-Day Luxury Highlights of Tanzania Safari",
+    image: experience1,
+    link: "/luxury-highlights",
   },
   {
-    title: "6 Days Mount Kilimanjaro Marangu Route",
-    itinerary: [
-      "DAY 1: MACHAME GATE → MACHAME CAMP: 10.75km/7mi | 5–7 hrs | Rainforest",
-      "DAY 2: MACHAME CAMP → SHIRA CAMP: 5.3km/3.4mi | 4–5 hrs | Moorland",
-      "DAY 3: SHIRA CAMP → LAVA TOWER → BARRANCO CAMP: 10.75km/6mi | 6–8 hrs | Semi-Desert",
-      "DAY 4: BARRANCO CAMP → KARANGA CAMP → BARAFU CAMP: 8.5km/5mi | 8–9 hrs | Alpine Desert",
-      "DAY 5: BARAFU CAMP → SUMMIT → 18.6km/11.5mi | up 7–8 hrs | down 4–6 hrs | Alpine/Glaciers",
-      "DAY 6: MWEKA CAMP → MWEKA GATE → MOSHI: 9.1km/6mi | 3–4 hrs | Rainforest",
-    ],
+    title: "7 Day Mid-Range Epic Adventure (Stay on the Crater Rim)",
+    image: experience2,
+    link: "/midrange-epic",
   },
   {
-    title: "8 Days Mount Kilimanjaro Marangu Route",
-    itinerary: [
-      "DAY 1: LEMOSHO GATE → MTI MKUBWA CAMP: 4.8km/3mi | 3–4 hrs | Rainforest",
-      "DAY 2: MTI MKUBWA CAMP → SHIRA 1 CAMP: 7.9km/5mi | 5–7 hrs | Moorland",
-      "DAY 3: SHIRA CAMP → SHIRA HUT: 6.9km/4.3mi | 5 hrs | Moorland",
-      "DAY 4: SHIRA HUT → LAVA TOWER → BARRANCO CAMP: 10km/6mi | 4–6 hrs | Semi-Desert",
-      "DAY 5: BARRANCO CAMP → KARANGA CAMP: 5.2km/3.2mi | 4–5 hrs | Alpine Desert",
-      "DAY 6: KARANGA CAMP → BARAFU CAMP: 3.9km/2.4mi | 4–5 hrs | Alpine Desert",
-      "DAY 7: BARAFU CAMP → SUMMIT → MWEKA CAMP: 13km/8mi | 9–11 hrs",
-      "DAY 8: MWEKA CAMP → MWEKA GATE → MOSHI: 9.1km/6mi | 3–4 hrs | Rainforest",
-    ],
+    title: "8-Day Mid-Range Ndutu Migration Footsteps",
+    image: experience3,
+    link: "/ndutu-footsteps",
   },
 ];
 
 const Kilimanjaro = () => {
+  const scrollToExperiences = () => {
+    document.getElementById("experiences-section")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="min-h-screen bg-destinations-bg">
-      <Navigation bgColor="--destinations-bg" />
+    <div className="min-h-screen bg-background">
+      <Navigation bgColor="--background" />
       
       {/* Hero Section */}
-      <section className="relative h-[60vh] w-full flex items-center justify-center mt-20">
+      <section className="relative h-[75vh] w-full flex items-center justify-center">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${kilimanjaroImage})` }}
+          style={{ backgroundImage: `url(${kilimanjaroHero})` }}
         >
-          <div className="absolute inset-0 bg-hero-overlay/30" />
+          <div className="absolute inset-0 bg-black/10" />
         </div>
         
         <div className="relative z-10 text-center px-6">
-          <h1 className="font-playfair text-5xl md:text-7xl font-bold text-hero-text tracking-tight">
+          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-[#3d2418] tracking-tight">
             Mount Kilimanjaro
           </h1>
         </div>
+        
+        {/* Scroll Indicator */}
+        <button 
+          onClick={scrollToExperiences}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#3d2418] animate-bounce hover:text-desert-gold transition-colors"
+          aria-label="Scroll to experiences"
+        >
+          <ChevronDown size={40} />
+        </button>
       </section>
       
-      {/* Route Cards Section */}
-      <section className="container mx-auto px-6 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* First Two Cards */}
-          {routes.slice(0, 2).map((route, index) => (
-            <div key={index} className="bg-card border border-border rounded-lg shadow-sm overflow-hidden flex flex-col">
-              <div className="bg-destinations-title px-6 py-4">
-                <h2 className="font-playfair text-2xl text-card font-semibold">
-                  {route.title}
-                </h2>
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <div className="space-y-3 mb-6 flex-grow">
-                  {route.itinerary.map((day, dayIndex) => (
-                    <p key={dayIndex} className="text-sm text-foreground leading-relaxed">
-                      {day}
-                    </p>
-                  ))}
+      {/* Experiences Section */}
+      <section id="experiences-section" className="bg-white py-20 px-6">
+        <div className="container mx-auto max-w-7xl">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#3d2418] text-center mb-16">
+            Experiences
+          </h2>
+          
+          {/* Experience Cards */}
+          <div className="space-y-12">
+            {experiences.map((experience, index) => (
+              <Link
+                key={index}
+                to={experience.link}
+                className="block group"
+              >
+                <div
+                  className="relative h-64 md:h-80 w-full bg-cover bg-center bg-no-repeat rounded-lg overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-[1.02]"
+                  style={{ backgroundImage: `url(${experience.image})` }}
+                >
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
+                  
+                  <div className="relative h-full flex items-center px-8 md:px-12">
+                    <button className="bg-white rounded-full w-11 h-11 flex items-center justify-center opacity-90 group-hover:opacity-100 transition-opacity shadow-lg flex-shrink-0">
+                      <ChevronRight size={24} className="text-[#3d2418]" />
+                    </button>
+                    
+                    <h3 className="font-playfair text-white text-xl md:text-2xl font-semibold ml-6 drop-shadow-lg">
+                      {experience.title}
+                    </h3>
+                  </div>
                 </div>
-                <Link to="/booking">
-                  <Button 
-                    className="w-full bg-desert-gold hover:bg-desert-gold/90 text-primary-foreground rounded-full py-6 text-base font-medium"
-                  >
-                    Book Now
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-        
-        {/* Third Card Centered */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mt-8">
-          <div className="lg:col-start-1 lg:col-span-2 lg:max-w-[calc(50%-1rem)] lg:mx-auto">
-            <div className="bg-card border border-border rounded-lg shadow-sm overflow-hidden">
-              <div className="bg-destinations-title px-6 py-4">
-                <h2 className="font-playfair text-2xl text-card font-semibold">
-                  {routes[2].title}
-                </h2>
-              </div>
-              <div className="p-6">
-                <div className="space-y-3 mb-6">
-                  {routes[2].itinerary.map((day, dayIndex) => (
-                    <p key={dayIndex} className="text-sm text-foreground leading-relaxed">
-                      {day}
-                    </p>
-                  ))}
-                </div>
-                <Link to="/booking">
-                  <Button 
-                    className="w-full bg-desert-gold hover:bg-desert-gold/90 text-primary-foreground rounded-full py-6 text-base font-medium"
-                  >
-                    Book Now
-                  </Button>
-                </Link>
-              </div>
-            </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
