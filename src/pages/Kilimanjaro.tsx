@@ -57,7 +57,7 @@ const Kilimanjaro = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation bgColor="--background" />
+      <Navigation />
       
       {/* Hero Section */}
       <section className="relative h-[75vh] w-full flex items-center justify-center">
