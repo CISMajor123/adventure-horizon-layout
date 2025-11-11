@@ -130,24 +130,29 @@ const Kilimanjaro = () => {
       </section>
       
       {/* Experiences Section */}
-      <section id="experiences-section" className="bg-white py-20 px-6">
-        <div className="container mx-auto max-w-7xl">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#3d2418] text-center mb-16">
+      <section id="experiences-section" className="bg-white py-20">
+        <div className="w-full">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#3d2418] text-center mb-16 px-6">
             Experiences
           </h2>
           
           {/* Experience Cards - Accordion */}
-          <Accordion type="single" collapsible className="space-y-8">
+          <Accordion type="single" collapsible className="space-y-8 w-full">
             {experiences.map((experience) => (
-              <AccordionItem key={experience.id} value={experience.id} className="border-none">
-                <AccordionTrigger className="hover:no-underline p-0 [&[data-state=open]>div>div>div>div]:rotate-90">
+              <AccordionItem key={experience.id} value={experience.id} className="border-none w-full">
+                <AccordionTrigger className="hover:no-underline p-0 w-full [&[data-state=open]>div>div>div>div]:rotate-90">
                   <div
-                    className="relative h-64 md:h-80 w-full bg-cover bg-center bg-no-repeat rounded-lg overflow-hidden shadow-lg"
-                    style={{ backgroundImage: `url(${experience.image})` }}
+                    className="relative h-64 md:h-80 w-full overflow-hidden"
+                    style={{ 
+                      backgroundImage: `url(${experience.image})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
                   >
                     <div className="absolute inset-0 bg-black/20" />
                     
-                    <div className="relative h-full flex items-center px-8 md:px-12">
+                    <div className="relative h-full flex items-center px-8 md:px-12 max-w-7xl mx-auto">
                       <div className="bg-white rounded-full w-11 h-11 flex items-center justify-center opacity-90 shadow-lg flex-shrink-0">
                         <ChevronRight size={24} className="text-[#3d2418] transition-transform duration-300" />
                       </div>
@@ -160,7 +165,7 @@ const Kilimanjaro = () => {
                 </AccordionTrigger>
                 
                 {experience.content && (
-                  <AccordionContent className="bg-white px-6 py-6 rounded-b-lg">
+                  <AccordionContent className="bg-white w-full py-6 px-10 md:px-10">
                     <div className="prose prose-lg max-w-none text-[#3d2418] whitespace-pre-line">
                       {experience.content}
                     </div>
