@@ -102,10 +102,10 @@ const Kilimanjaro = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      <Navigation bgColor="--destinations-bg" />
       
       {/* Hero Section */}
-      <section className="relative h-[75vh] w-full flex items-center justify-center">
+      <section className="relative h-[75vh] w-full flex items-center justify-center pt-24">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${kilimanjaroHero})` }}
