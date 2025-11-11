@@ -132,9 +132,11 @@ const Kilimanjaro = () => {
       {/* Experiences Section */}
       <section id="experiences-section" className="bg-white py-20">
         <div className="w-full">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#3d2418] text-center mb-16 px-6">
-            Experiences
-          </h2>
+          <div className="max-w-7xl mx-auto px-8 md:px-12">
+            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#3d2418] text-left mb-16">
+              Experiences
+            </h2>
+          </div>
           
           {/* Experience Cards - Accordion */}
           <Accordion type="single" collapsible className="space-y-8 w-full">
