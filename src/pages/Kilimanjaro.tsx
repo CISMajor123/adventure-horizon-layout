@@ -132,8 +132,8 @@ const Kilimanjaro = () => {
       {/* Experiences Section */}
       <section id="experiences-section" className="bg-white pt-20 pb-10">
         <div className="w-full">
-          <div className="max-w-7xl mx-auto px-8 md:px-12">
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#3d2418] text-left mb-0 -mt-8">
+          <div className="max-w-7xl mx-auto px-8 md:px-12 flex items-center min-h-[120px]">
+            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#3d2418] text-left mb-0">
               Experiences
             </h2>
           </div>
