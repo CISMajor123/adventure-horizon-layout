@@ -40,13 +40,58 @@ Highlights:
     id: "experience-2",
     title: "7 Day Mid-Range Epic Adventure (Stay on the Crater Rim)",
     image: experience2,
-    content: "",
+    content: `This 7-day mid-range safari offers an unforgettable journey through Tanzania's most iconic landscapes — from the vast plains of the Serengeti to the breathtaking Ngorongoro Crater rim. You'll enjoy three nights in the Serengeti and explore diverse ecosystems teeming with wildlife, including lions, elephants, leopards, and the famous tree-climbing lions of Manyara. With comfortable lodges and tented camps, you'll experience the perfect balance of adventure and relaxation.
+
+Itinerary Overview
+
+Day 1 – Arrival in Arusha
+Pickup from the airport and transfer to Arusha Planet Lodge for rest and preparation.
+Meals at own expense.
+
+Day 2 – Tarangire National Park
+Game drive among elephants, giraffes, lions, and ancient baobabs. Picnic lunch in the park, then travel to Eileen's Tree Inn in Karatu.
+All meals included (drinks not included).
+
+Day 3 – Karatu to Serengeti
+Scenic drive through Ngorongoro Conservation Area to the Serengeti. Witness vast grasslands and the Great Migration. Overnight at Nyota Luxury Camp.
+
+Day 4 – Serengeti National Park
+Full-day game drives with chances to see lions, cheetahs, leopards, and massive herds. Overnight again at Nyota Luxury Camp.
+
+Day 5 – Serengeti to Ngorongoro (Crater Rim)
+Morning game drive, then continue to Rhino Lodge near the Crater Rim for cooler air and panoramic views.
+
+Day 6 – Ngorongoro Crater
+Descend into the Crater for one of Africa's most wildlife-rich environments — over 30,000 animals, including the black rhino. Overnight at Eileen's Tree Inn in Karatu.
+
+Day 7 – Lake Manyara National Park
+Final game drive through lush forests and lakeside plains. Spot flamingos, elephants, and tree-climbing lions before returning to Arusha or the airport.`,
   },
   {
     id: "experience-3",
     title: "8-Day Mid-Range Ndutu Migration Footsteps",
     image: experience3,
-    content: "",
+    content: `This 8-day mid-range safari follows the path of the Great Migration during its Ndutu and Southern Serengeti season (December–April). Experience Tanzania's most iconic parks — Tarangire, Serengeti, Ndutu, Ngorongoro Crater, and Lake Manyara — while staying in charming lodges and tented camps. Expect diverse landscapes, abundant wildlife, and the unforgettable sight of wildebeest calving season when thousands of young are born on the plains.
+
+Itinerary Overview
+
+Day 1 – Arrival in Arusha: Pickup and transfer to Arusha Planet Lodge for rest and preparation.
+Meals at own expense.
+
+Day 2 – Tarangire National Park: Game drive among elephant herds, lions, giraffes, and ancient baobabs. Picnic lunch inside the park, then continue to Eileen's Tree Inn in Karatu.
+All meals included (drinks not included).
+
+Day 3 – Karatu to Serengeti National Park: Scenic drive through Ngorongoro Conservation Area to the Serengeti, home to lions, cheetahs, leopards, and vast herds. Overnight at Nyota Luxury Camp.
+
+Day 4 – Serengeti National Park: Morning and afternoon game drives with time to relax at camp between safaris. Overnight at Nyota Luxury Camp.
+
+Day 5 – Central Serengeti to Southern Serengeti & Ndutu: Travel south to Ndutu, following Great Migration herds. Visit Lake Ndutu. Overnight at Serengeti Heritage Ndutu Camp.
+
+Day 6 – Ndutu (Migration & Calving Season): Full-day game drive observing wildebeest calving season and predator activity. Overnight at Serengeti Heritage Ndutu Camp.
+
+Day 7 – Ndutu to Ngorongoro Crater: Drive to Ngorongoro and descend into the Crater. Overnight at Eileen's Tree Inn in Karatu.
+
+Day 8 – Lake Manyara to Arusha: Visit Lake Manyara National Park before drop-off in Arusha or the airport.`,
   },
 ];
 
