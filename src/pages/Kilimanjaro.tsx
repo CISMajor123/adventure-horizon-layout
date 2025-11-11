@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import kilimanjaroHero from "@/assets/kilimanjaro_hero.png";
+import kilimanjaroHero from "@/assets/kilimanjaro-trekking-hero.png";
 import experience1 from "@/assets/experience_1.png";
 import experience2 from "@/assets/experience_2.png";
 import experience3 from "@/assets/experience_3.png";
