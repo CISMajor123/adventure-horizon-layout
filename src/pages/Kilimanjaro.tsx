@@ -113,11 +113,6 @@ const Kilimanjaro = () => {
           <div className="absolute inset-0 bg-black/10" />
         </div>
         
-        <div className="relative z-10 text-center px-6">
-          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-[#3d2418] tracking-tight">
-            Mount Kilimanjaro
-          </h1>
-        </div>
         
         {/* Scroll Indicator */}
         <button 
