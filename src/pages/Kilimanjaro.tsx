@@ -130,16 +130,16 @@ const Kilimanjaro = () => {
       </section>
       
       {/* Experiences Section */}
-      <section id="experiences-section" className="bg-white py-20">
+      <section id="experiences-section" className="bg-white py-0">
         <div className="w-full">
           <div className="max-w-7xl mx-auto px-8 md:px-12">
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#3d2418] text-left mb-16">
+            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#3d2418] text-left mb-0">
               Experiences
             </h2>
           </div>
           
           {/* Experience Cards - Accordion */}
-          <Accordion type="single" collapsible className="space-y-8 w-full">
+          <Accordion type="single" collapsible className="w-full">
             {experiences.map((experience) => (
               <AccordionItem key={experience.id} value={experience.id} className="border-none w-full">
                 <AccordionTrigger className="hover:no-underline p-0 w-full [&[data-state=open]>div>div>div>div]:rotate-90">
