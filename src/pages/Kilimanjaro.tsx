@@ -69,7 +69,7 @@ Final game drive through lush forests and lakeside plains. Spot flamingos, eleph
   },
   {
     id: "experience-3",
-    title: "8-Day Mid-Range Ndutu Migration Footsteps",
+    title: "8 Days Mount Kilimanjaro Lemosho Route",
     image: experience3,
     content: `This 8-day mid-range safari follows the path of the Great Migration during its Ndutu and Southern Serengeti season (December–April). Experience Tanzania's most iconic parks — Tarangire, Serengeti, Ndutu, Ngorongoro Crater, and Lake Manyara — while staying in charming lodges and tented camps. Expect diverse landscapes, abundant wildlife, and the unforgettable sight of wildebeest calving season when thousands of young are born on the plains.
 
