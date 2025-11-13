@@ -9,7 +9,7 @@ import experience3 from "@/assets/experience_3.png";
 const experiences = [
   {
     id: "experience-1",
-    title: "6-Day Luxury Highlights of Tanzania Safari",
+    title: "5 Days Mount Kilimanjaro Marangu Route",
     image: experience1,
     content: `This six-day luxury adventure showcases Tanzania's most iconic wildlife destinations, offering high-end lodges, gourmet meals, and exceptional safari experiences. Guests enjoy guided game drives through Tarangire, Serengeti, Ngorongoro Crater, and Lake Manyara—each featuring unique landscapes and rich wildlife, with chances to see the Big Five.
 
