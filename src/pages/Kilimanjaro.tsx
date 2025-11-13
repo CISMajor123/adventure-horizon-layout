@@ -49,27 +49,25 @@ Climbing packages typically include certified guides, porters, meals, drinking w
     id: "experience-3",
     title: "8 Days Mount Kilimanjaro Lemosho Route",
     image: experience3,
-    content: `This 8-day mid-range safari follows the path of the Great Migration during its Ndutu and Southern Serengeti season (December–April). Experience Tanzania's most iconic parks — Tarangire, Serengeti, Ndutu, Ngorongoro Crater, and Lake Manyara — while staying in charming lodges and tented camps. Expect diverse landscapes, abundant wildlife, and the unforgettable sight of wildebeest calving season when thousands of young are born on the plains.
+    content: `The Lemosho Route is one of Kilimanjaro's most beautiful and remote trails, beginning on the western side of the mountain and offering excellent scenery, wildlife sightings, and a gradual acclimatization profile. As a newer route, it is quieter than the popular Machame Route and eventually joins the Southern Circuit, giving trekkers sweeping views of Kilimanjaro from multiple angles. Because it is typically completed in 7–8 days, it provides ample acclimatization and has one of the highest summit success rates of all routes. Difficulty is medium, scenery is excellent, and traffic is moderate.
 
-Itinerary Overview
+Day 1 begins at Lemosho Gate with a gentle climb through lush rainforest to Mti Mkubwa Camp.
 
-Day 1 – Arrival in Arusha: Pickup and transfer to Arusha Planet Lodge for rest and preparation.
-Meals at own expense.
+Day 2 continues upward into moorland terrain with expansive views as the trail reaches the Shira Plateau and Shira I Camp.
 
-Day 2 – Tarangire National Park: Game drive among elephant herds, lions, giraffes, and ancient baobabs. Picnic lunch inside the park, then continue to Eileen's Tree Inn in Karatu.
-All meals included (drinks not included).
+Day 3 explores the high Shira Plateau, passing Shira II and moving toward Moir Hut for additional acclimatization.
 
-Day 3 – Karatu to Serengeti National Park: Scenic drive through Ngorongoro Conservation Area to the Serengeti, home to lions, cheetahs, leopards, and vast herds. Overnight at Nyota Luxury Camp.
+Day 4 ascends toward Lava Tower before descending into the scenic Barranco Valley for an important acclimatization day.
 
-Day 4 – Serengeti National Park: Morning and afternoon game drives with time to relax at camp between safaris. Overnight at Nyota Luxury Camp.
+Day 5 climbs the iconic Barranco Wall and crosses into the Karanga Valley for an overnight at Karanga Camp.
 
-Day 5 – Central Serengeti to Southern Serengeti & Ndutu: Travel south to Ndutu, following Great Migration herds. Visit Lake Ndutu. Overnight at Serengeti Heritage Ndutu Camp.
+Day 6 makes a shorter but steady ascent to Barafu Camp, completing the Southern Circuit and preparing for the summit push.
 
-Day 6 – Ndutu (Migration & Calving Season): Full-day game drive observing wildebeest calving season and predator activity. Overnight at Serengeti Heritage Ndutu Camp.
+Day 7 begins a midnight ascent to Uhuru Peak via Stella Point, followed by a long descent to Mweka Camp.
 
-Day 7 – Ndutu to Ngorongoro Crater: Drive to Ngorongoro and descend into the Crater. Overnight at Eileen's Tree Inn in Karatu.
+Day 8 ends with a final descent through rainforest to Mweka Gate, where trekkers receive certificates before returning to Moshi.
 
-Day 8 – Lake Manyara to Arusha: Visit Lake Manyara National Park before drop-off in Arusha or the airport.`,
+Climbing packages generally include certified guides, porters, meals, drinking water, high-quality equipment, park and camping fees, airport transfers, and pre/post-climb lodging. Exclusions typically cover flights, visas, insurance, tips, personal gear, extra nights, and personal expenses.`,
   },
 ];
 
