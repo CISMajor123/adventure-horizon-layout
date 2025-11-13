@@ -11,30 +11,11 @@ const experiences = [
     id: "experience-1",
     title: "5 Days Mount Kilimanjaro Marangu Route",
     image: experience1,
-    content: `This six-day luxury adventure showcases Tanzania's most iconic wildlife destinations, offering high-end lodges, gourmet meals, and exceptional safari experiences. Guests enjoy guided game drives through Tarangire, Serengeti, Ngorongoro Crater, and Lake Manyara—each featuring unique landscapes and rich wildlife, with chances to see the Big Five.
+    content: `The Marangu (Coca-Cola) Route is one of six established paths up Kilimanjaro, known for its hut accommodations, shorter itinerary, and shared ascent/descent trail. Typically done in 5–6 days, it approaches from the south with medium difficulty, good scenery, and high traffic.
 
-Itinerary Overview:
+Day 1 travels from the Marangu Gate through rainforest to Mandara Huts. Day 2 continues into moorland toward Horombo Huts. Day 3 crosses the high-altitude saddle to Kibo Huts. Day 4 begins a midnight summit push via Gilman's Point to Uhuru Peak, followed by a long descent back toward Horombo. Day 5 completes the descent to Marangu Gate for transfer to Moshi.
 
-Day 1 – Arusha: Airport pickup, relaxation at Gran Melia.
-
-Day 2 – Tarangire: Game drive among elephants, lions, leopards, and baobabs. Overnight at Kitela Lodge.
-
-Day 3 – Serengeti: Travel via Ngorongoro to Serengeti's vast plains; see the Great Migration. Overnight at Nyota Luxury Camp.
-
-Day 4 – Serengeti: Full-day game drive with sightings of big cats and diverse wildlife.
-
-Day 5 – Ngorongoro: Explore the crater's dense animal population, including black rhinos. Return to Kitela Lodge.
-
-Day 6 – Lake Manyara: Visit lush forests and spot tree-climbing lions before return to Arusha or airport.
-
-Included: Park fees, all accommodations, meals, transport, driver/guide, and airport transfers.
-Excluded: International flights, tips, personal expenses, and optional experiences such as balloon safaris or cultural visits.
-
-Highlights:
-- Premium lodges and tented camps
-- Scenic drives through Tanzania's most famous parks
-- Opportunities to witness lions in trees, vast herds of elephants, and the Great Migration
-- Countless 'wow' moments and unforgettable wildlife encounters`,
+Packages include guides, huts, meals, park fees, water, transfers, and pre/post-climb lodging, with flights, visas, insurance, tips, and personal gear excluded.`,
   },
   {
     id: "experience-2",
