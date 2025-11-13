@@ -13,7 +13,15 @@ const experiences = [
     image: experience1,
     content: `The Marangu (Coca-Cola) Route is one of six established paths up Kilimanjaro, known for its hut accommodations, shorter itinerary, and shared ascent/descent trail. Typically done in 5–6 days, it approaches from the south with medium difficulty, good scenery, and high traffic.
 
-Day 1 travels from the Marangu Gate through rainforest to Mandara Huts. Day 2 continues into moorland toward Horombo Huts. Day 3 crosses the high-altitude saddle to Kibo Huts. Day 4 begins a midnight summit push via Gilman's Point to Uhuru Peak, followed by a long descent back toward Horombo. Day 5 completes the descent to Marangu Gate for transfer to Moshi.
+Day 1 travels from the Marangu Gate through rainforest to Mandara Huts.
+
+Day 2 continues into moorland toward Horombo Huts.
+
+Day 3 crosses the high-altitude saddle to Kibo Huts.
+
+Day 4 begins a midnight summit push via Gilman's Point to Uhuru Peak, followed by a long descent back toward Horombo.
+
+Day 5 completes the descent to Marangu Gate for transfer to Moshi.
 
 Packages include guides, huts, meals, park fees, water, transfers, and pre/post-climb lodging, with flights, visas, insurance, tips, and personal gear excluded.`,
   },
