@@ -29,32 +29,21 @@ Packages include guides, huts, meals, park fees, water, transfers, and pre/post-
     id: "experience-2",
     title: "6 Days Mount Kilimanjaro Machame Route",
     image: experience2,
-    content: `This 7-day mid-range safari offers an unforgettable journey through Tanzania's most iconic landscapes — from the vast plains of the Serengeti to the breathtaking Ngorongoro Crater rim. You'll enjoy three nights in the Serengeti and explore diverse ecosystems teeming with wildlife, including lions, elephants, leopards, and the famous tree-climbing lions of Manyara. With comfortable lodges and tented camps, you'll experience the perfect balance of adventure and relaxation.
+    content: `The Machame (Whisky) Route is one of Kilimanjaro's most scenic and popular trails, known for its varied landscapes, excellent acclimatization profile, and high summit success rate. Approaching from the south, it begins in lush rainforest before climbing to the Shira Plateau and traversing beneath Kilimanjaro's dramatic Southern Icefields. The route eventually joins the Barafu summit path and descends via Mweka. Typically completed in 6–7 days, it offers excellent scenery, medium difficulty, and high traffic.
 
-Itinerary Overview
+Day 1 starts at Machame Gate with a steady climb through dense rainforest to Machame Camp.
 
-Day 1 – Arrival in Arusha
-Pickup from the airport and transfer to Arusha Planet Lodge for rest and preparation.
-Meals at own expense.
+Day 2 continues up a rocky ridge into open moorland, ending at Shira Camp.
 
-Day 2 – Tarangire National Park
-Game drive among elephants, giraffes, lions, and ancient baobabs. Picnic lunch in the park, then travel to Eileen's Tree Inn in Karatu.
-All meals included (drinks not included).
+Day 3 focuses on acclimatization, ascending toward the Lava Tower before descending to Barranco Camp.
 
-Day 3 – Karatu to Serengeti
-Scenic drive through Ngorongoro Conservation Area to the Serengeti. Witness vast grasslands and the Great Migration. Overnight at Nyota Luxury Camp.
+Day 4 tackles the Barranco Wall, crosses the Karanga Valley, and climbs to Barafu Camp for the summit preparation.
 
-Day 4 – Serengeti National Park
-Full-day game drives with chances to see lions, cheetahs, leopards, and massive herds. Overnight again at Nyota Luxury Camp.
+Day 5 begins a midnight summit push to Uhuru Peak via Stella Point, followed by a long descent to Mweka Camp.
 
-Day 5 – Serengeti to Ngorongoro (Crater Rim)
-Morning game drive, then continue to Rhino Lodge near the Crater Rim for cooler air and panoramic views.
+Day 6 completes the trek with a final descent through rainforest to Mweka Gate before returning to Moshi.
 
-Day 6 – Ngorongoro Crater
-Descend into the Crater for one of Africa's most wildlife-rich environments — over 30,000 animals, including the black rhino. Overnight at Eileen's Tree Inn in Karatu.
-
-Day 7 – Lake Manyara National Park
-Final game drive through lush forests and lakeside plains. Spot flamingos, elephants, and tree-climbing lions before returning to Arusha or the airport.`,
+Climbing packages typically include certified guides, porters, meals, drinking water, park fees, high-quality equipment, airport transfers, and pre/post-climb lodging. Exclusions generally cover flights, visas, insurance, tips, personal gear, extra nights, and additional personal expenses.`,
   },
   {
     id: "experience-3",
