@@ -38,7 +38,7 @@ Highlights:
   },
   {
     id: "experience-2",
-    title: "7 Day Mid-Range Epic Adventure (Stay on the Crater Rim)",
+    title: "6 Days Mount Kilimanjaro Machame Route",
     image: experience2,
     content: `This 7-day mid-range safari offers an unforgettable journey through Tanzania's most iconic landscapes — from the vast plains of the Serengeti to the breathtaking Ngorongoro Crater rim. You'll enjoy three nights in the Serengeti and explore diverse ecosystems teeming with wildlife, including lions, elephants, leopards, and the famous tree-climbing lions of Manyara. With comfortable lodges and tented camps, you'll experience the perfect balance of adventure and relaxation.
 
