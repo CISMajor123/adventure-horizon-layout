@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import kilimanjaroHero from "@/assets/kilimanjaro-trekking-hero.png";
 import experience1 from "@/assets/kilimanjaro-marangu.jpg";
 import experience2 from "@/assets/kilimanjaro-machame.jpg";
-import experience3 from "@/assets/experience_3.png";
+import experience3 from "@/assets/kilimanjaro-lemosho.jpg";
 
 const experiences = [
   {
