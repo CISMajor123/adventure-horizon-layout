@@ -1,6 +1,11 @@
 import Navigation from "@/components/Navigation";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { useCartStore } from "@/stores/cartStore";
+import { getProducts, ShopifyProduct } from "@/lib/shopify";
+import { useToast } from "@/hooks/use-toast";
+import { useState, useEffect } from "react";
 import kilimanjaroHero from "@/assets/kilimanjaro-trekking-hero.png";
 import experience1 from "@/assets/kilimanjaro-marangu.jpg";
 import experience2 from "@/assets/kilimanjaro-machame.jpg";
@@ -72,6 +77,44 @@ Climbing packages generally include certified guides, porters, meals, drinking w
 ];
 
 const Kilimanjaro = () => {
+  const [maranGuProduct, setMaranguProduct] = useState<ShopifyProduct | null>(null);
+  const addItem = useCartStore(state => state.addItem);
+  const { toast } = useToast();
+
+  useEffect(() => {
+    const fetchMaranguProduct = async () => {
+      try {
+        const products = await getProducts();
+        const marangu = products.find(p => p.node.title === "5 Days Mount Kilimanjaro Marangu Route");
+        if (marangu) {
+          setMaranguProduct(marangu);
+        }
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      }
+    };
+    fetchMaranguProduct();
+  }, []);
+
+  const handleBookMarangu = () => {
+    if (!maranGuProduct) return;
+    
+    const variant = maranGuProduct.node.variants.edges[0].node;
+    addItem({
+      product: maranGuProduct,
+      variantId: variant.id,
+      variantTitle: variant.title,
+      price: variant.price,
+      quantity: 1,
+      selectedOptions: variant.selectedOptions
+    });
+
+    toast({
+      title: "Added to cart",
+      description: "5 Days Mount Kilimanjaro Marangu Route has been added to your cart.",
+    });
+  };
+
   const scrollToExperiences = () => {
     document.getElementById("experiences-section")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -147,6 +190,17 @@ const Kilimanjaro = () => {
                     <div className="prose prose-lg max-w-none text-[#3d2418] whitespace-pre-line">
                       {experience.content}
                     </div>
+                    {experience.id === "experience-1" && maranGuProduct && (
+                      <div className="mt-6 flex justify-end">
+                        <Button 
+                          onClick={handleBookMarangu}
+                          size="lg"
+                          className="bg-[#3d2418] hover:bg-[#2d1810] text-white"
+                        >
+                          Book Now
+                        </Button>
+                      </div>
+                    )}
                   </AccordionContent>
                 )}
               </AccordionItem>
