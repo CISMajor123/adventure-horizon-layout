@@ -78,22 +78,27 @@ Climbing packages generally include certified guides, porters, meals, drinking w
 
 const Kilimanjaro = () => {
   const [maranGuProduct, setMaranguProduct] = useState<ShopifyProduct | null>(null);
+  const [machameProduct, setMachameProduct] = useState<ShopifyProduct | null>(null);
   const addItem = useCartStore(state => state.addItem);
   const { toast } = useToast();
 
   useEffect(() => {
-    const fetchMaranguProduct = async () => {
+    const fetchProducts = async () => {
       try {
         const products = await getProducts();
         const marangu = products.find(p => p.node.title === "5 Days Mount Kilimanjaro Marangu Route");
+        const machame = products.find(p => p.node.title === "6 Days Mount Kilimanjaro Machame Route");
         if (marangu) {
           setMaranguProduct(marangu);
+        }
+        if (machame) {
+          setMachameProduct(machame);
         }
       } catch (error) {
         console.error("Error fetching products:", error);
       }
     };
-    fetchMaranguProduct();
+    fetchProducts();
   }, []);
 
   const handleBookMarangu = () => {
@@ -112,6 +117,25 @@ const Kilimanjaro = () => {
     toast({
       title: "Added to cart",
       description: "5 Days Mount Kilimanjaro Marangu Route has been added to your cart.",
+    });
+  };
+
+  const handleBookMachame = () => {
+    if (!machameProduct) return;
+    
+    const variant = machameProduct.node.variants.edges[0].node;
+    addItem({
+      product: machameProduct,
+      variantId: variant.id,
+      variantTitle: variant.title,
+      price: variant.price,
+      quantity: 1,
+      selectedOptions: variant.selectedOptions
+    });
+
+    toast({
+      title: "Added to cart",
+      description: "6 Days Mount Kilimanjaro Machame Route has been added to your cart.",
     });
   };
 
@@ -194,6 +218,17 @@ const Kilimanjaro = () => {
                       <div className="mt-6 flex justify-end">
                         <Button 
                           onClick={handleBookMarangu}
+                          size="lg"
+                          className="bg-[#3d2418] hover:bg-[#2d1810] text-white"
+                        >
+                          Book Now
+                        </Button>
+                      </div>
+                    )}
+                    {experience.id === "experience-2" && machameProduct && (
+                      <div className="mt-6 flex justify-end">
+                        <Button 
+                          onClick={handleBookMachame}
                           size="lg"
                           className="bg-[#3d2418] hover:bg-[#2d1810] text-white"
                         >
