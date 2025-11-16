@@ -67,18 +67,6 @@ const ZanzibarIsland = () => {
           <div className="absolute inset-0 bg-black/10" />
         </div>
         
-        {/* Hero Title */}
-        <div className="relative z-10 text-center px-6">
-          <h1 
-            className="font-playfair text-6xl md:text-7xl lg:text-8xl font-bold text-white"
-            style={{ 
-              textShadow: '2px 2px 4px rgba(0,0,0,0.8), -1px -1px 2px rgba(0,0,0,0.5)'
-            }}
-          >
-            Zanzibar Island
-          </h1>
-        </div>
-        
         {/* Scroll Indicator */}
         <a 
           href="#experiences" 
