@@ -56,7 +56,7 @@ const experiences = [
 const ZanzibarIsland = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      <Navigation bgColor="--destinations-bg" />
       
       {/* Hero Section */}
       <section className="relative h-screen w-full flex items-start justify-center pt-32">
