@@ -69,7 +69,6 @@ const ZanzibarIsland = () => {
   const addItem = useCartStore(state => state.addItem);
 
   const handleAddToCart = (experienceId: string) => {
-    // Only the first experience has Shopify integration for now
     if (experienceId === "experience-1") {
       const cartItem = {
         product: {
@@ -122,6 +121,59 @@ const ZanzibarIsland = () => {
       addItem(cartItem);
       toast.success("Added to cart", {
         description: "Zanzibar 2 Days / 1 Night Package has been added to your cart"
+      });
+    } else if (experienceId === "experience-2") {
+      const cartItem = {
+        product: {
+          node: {
+            id: "gid://shopify/Product/10855517356225",
+            title: "Zanzibar 3 Days / 2 Nights Package",
+            description: experiences[1].content,
+            handle: "zanzibar-3-days-2-nights-package",
+            priceRange: {
+              minVariantPrice: {
+                amount: "2000.00",
+                currencyCode: "USD"
+              }
+            },
+            images: {
+              edges: [{
+                node: {
+                  url: zanzibarBeachPier,
+                  altText: "Zanzibar beach pier with turquoise water"
+                }
+              }]
+            },
+            variants: {
+              edges: [{
+                node: {
+                  id: "gid://shopify/ProductVariant/49675977097409",
+                  title: "Default Title",
+                  price: {
+                    amount: "2000.00",
+                    currencyCode: "USD"
+                  },
+                  availableForSale: true,
+                  selectedOptions: []
+                }
+              }]
+            },
+            options: []
+          }
+        },
+        variantId: "gid://shopify/ProductVariant/49675977097409",
+        variantTitle: "Default Title",
+        price: {
+          amount: "2000.00",
+          currencyCode: "USD"
+        },
+        quantity: 1,
+        selectedOptions: []
+      };
+      
+      addItem(cartItem);
+      toast.success("Added to cart", {
+        description: "Zanzibar 3 Days / 2 Nights Package has been added to your cart"
       });
     }
   };
@@ -188,7 +240,7 @@ const ZanzibarIsland = () => {
                   <p className="text-[#3d2418] leading-relaxed whitespace-pre-line text-justify">
                     {experience.content}
                   </p>
-                  {experience.id === "experience-1" && (
+                  {(experience.id === "experience-1" || experience.id === "experience-2") && (
                     <div className="flex justify-end mt-6">
                       <Button 
                         onClick={() => handleAddToCart(experience.id)}
