@@ -228,6 +228,165 @@ const ZanzibarIsland = () => {
       toast.success("Added to cart", {
         description: "Zanzibar 4 Days / 3 Nights Package has been added to your cart"
       });
+    } else if (experienceId === "experience-4") {
+      const cartItem = {
+        product: {
+          node: {
+            id: "gid://shopify/Product/10855518404801",
+            title: "Zanzibar 5 Days / 4 Nights Package",
+            description: experiences[3].content,
+            handle: "zanzibar-5-days-4-nights-package",
+            priceRange: {
+              minVariantPrice: {
+                amount: "3000.00",
+                currencyCode: "USD"
+              }
+            },
+            images: {
+              edges: [{
+                node: {
+                  url: zanzibarSandbank,
+                  altText: "Zanzibar sandbank with turquoise water"
+                }
+              }]
+            },
+            variants: {
+              edges: [{
+                node: {
+                  id: "gid://shopify/ProductVariant/49675978834113",
+                  title: "Default Title",
+                  price: {
+                    amount: "3000.00",
+                    currencyCode: "USD"
+                  },
+                  availableForSale: true,
+                  selectedOptions: []
+                }
+              }]
+            },
+            options: []
+          }
+        },
+        variantId: "gid://shopify/ProductVariant/49675978834113",
+        variantTitle: "Default Title",
+        price: {
+          amount: "3000.00",
+          currencyCode: "USD"
+        },
+        quantity: 1,
+        selectedOptions: []
+      };
+      
+      addItem(cartItem);
+      toast.success("Added to cart", {
+        description: "Zanzibar 5 Days / 4 Nights Package has been added to your cart"
+      });
+    } else if (experienceId === "experience-5") {
+      const cartItem = {
+        product: {
+          node: {
+            id: "gid://shopify/Product/10855518470337",
+            title: "Zanzibar 6 Days / 5 Nights Package",
+            description: experiences[4].content,
+            handle: "zanzibar-6-days-5-nights-package",
+            priceRange: {
+              minVariantPrice: {
+                amount: "3500.00",
+                currencyCode: "USD"
+              }
+            },
+            images: {
+              edges: [{
+                node: {
+                  url: zanzibarRockyCoast,
+                  altText: "Zanzibar rocky coastline with turquoise water"
+                }
+              }]
+            },
+            variants: {
+              edges: [{
+                node: {
+                  id: "gid://shopify/ProductVariant/49675978899649",
+                  title: "Default Title",
+                  price: {
+                    amount: "3500.00",
+                    currencyCode: "USD"
+                  },
+                  availableForSale: true,
+                  selectedOptions: []
+                }
+              }]
+            },
+            options: []
+          }
+        },
+        variantId: "gid://shopify/ProductVariant/49675978899649",
+        variantTitle: "Default Title",
+        price: {
+          amount: "3500.00",
+          currencyCode: "USD"
+        },
+        quantity: 1,
+        selectedOptions: []
+      };
+      
+      addItem(cartItem);
+      toast.success("Added to cart", {
+        description: "Zanzibar 6 Days / 5 Nights Package has been added to your cart"
+      });
+    } else if (experienceId === "experience-6") {
+      const cartItem = {
+        product: {
+          node: {
+            id: "gid://shopify/Product/10855518568641",
+            title: "Zanzibar 7 Days / 6 Nights Package",
+            description: experiences[5].content,
+            handle: "zanzibar-7-days-6-nights-package",
+            priceRange: {
+              minVariantPrice: {
+                amount: "4000.00",
+                currencyCode: "USD"
+              }
+            },
+            images: {
+              edges: [{
+                node: {
+                  url: zanzibarPalmSky,
+                  altText: "Zanzibar palm trees reaching to the sky"
+                }
+              }]
+            },
+            variants: {
+              edges: [{
+                node: {
+                  id: "gid://shopify/ProductVariant/49675978997953",
+                  title: "Default Title",
+                  price: {
+                    amount: "4000.00",
+                    currencyCode: "USD"
+                  },
+                  availableForSale: true,
+                  selectedOptions: []
+                }
+              }]
+            },
+            options: []
+          }
+        },
+        variantId: "gid://shopify/ProductVariant/49675978997953",
+        variantTitle: "Default Title",
+        price: {
+          amount: "4000.00",
+          currencyCode: "USD"
+        },
+        quantity: 1,
+        selectedOptions: []
+      };
+      
+      addItem(cartItem);
+      toast.success("Added to cart", {
+        description: "Zanzibar 7 Days / 6 Nights Package has been added to your cart"
+      });
     }
   };
 
@@ -293,7 +452,7 @@ const ZanzibarIsland = () => {
                   <p className="text-[#3d2418] leading-relaxed whitespace-pre-line text-justify">
                     {experience.content}
                   </p>
-                  {(experience.id === "experience-1" || experience.id === "experience-2" || experience.id === "experience-3") && (
+                  {(experience.id === "experience-1" || experience.id === "experience-2" || experience.id === "experience-3" || experience.id === "experience-4" || experience.id === "experience-5" || experience.id === "experience-6") && (
                     <div className="flex justify-end mt-6">
                       <Button 
                         onClick={() => handleAddToCart(experience.id)}
