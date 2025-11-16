@@ -27,7 +27,7 @@ const DestinationCard = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Link to={`/destinations/${slug}`} className="block relative h-[500px]">
+      <Link to={slug.startsWith('/') ? slug : `/destinations/${slug}`} className="block relative h-[500px]">
         <img
           src={image}
           alt={title}
