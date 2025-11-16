@@ -184,8 +184,8 @@ const ZanzibarIsland = () => {
               </div>
               
               <AccordionContent className="bg-white">
-                <div className="px-8 md:px-16 py-8 max-w-5xl">
-                  <p className="text-[#3d2418] leading-relaxed whitespace-pre-line">
+                <div className="px-8 md:px-16 py-8">
+                  <p className="text-[#3d2418] leading-relaxed whitespace-pre-line text-justify">
                     {experience.content}
                   </p>
                   {experience.id === "experience-1" && (
