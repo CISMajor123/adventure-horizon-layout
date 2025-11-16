@@ -1,6 +1,6 @@
 import { ChevronDown, ChevronRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
-import zanzibarBeach from "@/assets/zanzibar-beach.jpg";
+import zanzibarAerial from "@/assets/zanzibar-aerial.jpg";
 import zanzibarSunsetDhow from "@/assets/zanzibar-sunset-dhow.jpg";
 import zanzibarBeachPier from "@/assets/zanzibar-beach-pier.jpg";
 import zanzibarPalmTrees from "@/assets/zanzibar-palm-trees.jpg";
@@ -62,7 +62,7 @@ const ZanzibarIsland = () => {
       <section className="relative h-screen w-full flex items-start justify-center pt-32">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${zanzibarBeach})` }}
+          style={{ backgroundImage: `url(${zanzibarAerial})` }}
         >
           <div className="absolute inset-0 bg-black/10" />
         </div>
