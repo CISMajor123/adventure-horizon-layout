@@ -56,7 +56,9 @@ All activities are scheduled around your arrival and departure for a smooth, enj
     id: "experience-6",
     title: "Zanzibar 7 Days / 6 Nights Package",
     image: zanzibarPalmSky,
-    content: `Coming soon - detailed itinerary for this package.`,
+    content: `Planning a full week in Zanzibar? This 7-day package is designed to give you a complete and stress-free island experience—from rich cultural history to white-sand beaches and crystal-clear waters. Your stay includes time in Stone Town at Mizingani Seafront Hotel, followed by days of ocean relaxation at Smiles Beach Hotel in Nungwi. With airport transfers, full-board meals, and guided activities included, you can simply enjoy the journey while we take care of the details. 
+
+Across your week you will explore Stone Town's history, tour a Spice Farm, and visit Prison Island to meet the Aldabra giant tortoises. You'll also sail and snorkel on the stunning Safari Blue excursion, relax on Nungwi Beach, and enjoy a highlight experience with snorkeling and lunch at the iconic Rock Restaurant overlooking the Indian Ocean. All activities are planned around your arrival and departure to ensure a smooth and relaxing stay. Contact us via our Inquiry page or WhatsApp to customize the itinerary to your needs.`,
   },
 ];
 
