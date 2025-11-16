@@ -46,7 +46,11 @@ Across five days, you'll sail the clear waters of Safari Blue, explore the aroma
     id: "experience-5",
     title: "Zanzibar 6 Days / 5 Nights Package",
     image: zanzibarRockyCoast,
-    content: `Coming soon - detailed itinerary for this package.`,
+    content: `Staying in Zanzibar for 6 days? This package is designed to give you the perfect balance of adventure, culture, and relaxation—all without the stress of planning. Enjoy your stay at Smiles Beach Hotel on beautiful Nungwi Beach, complete with round-trip airport transfers, full-board meals, and guided excursions to help you experience the very best of Zanzibar. 
+
+Throughout your trip, you'll sail and snorkel the crystal waters of Safari Blue, explore the aromatic plantations of a Spice Farm Tour, discover the history of Stone Town, and visit Prison Island to meet the Aldabra giant tortoises. You'll also have a full relaxing day to unwind by the ocean at your resort. Later in the trip, enjoy snorkeling at Blue Lagoon and a memorable lunch with ocean views at the iconic Rock Restaurant, with time to explore nearby beaches like Paje and Jambiani. 
+
+All activities are scheduled around your arrival and departure for a smooth, enjoyable experience. Contact us via our Inquiry page or WhatsApp to customize the itinerary to your needs.`,
   },
   {
     id: "experience-6",
