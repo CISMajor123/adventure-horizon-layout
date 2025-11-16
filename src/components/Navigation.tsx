@@ -9,7 +9,7 @@ interface NavigationProps {
 const Navigation = ({ bgColor = "transparent" }: NavigationProps) => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 ${bgColor === "transparent" ? "bg-transparent" : ""}`} style={bgColor !== "transparent" ? { backgroundColor: `hsl(var(${bgColor}))` } : {}}>
-      <div className="container mx-auto px-6 py-6">
+      <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="transition-opacity hover:opacity-80">
             <img src={logo} alt="Grant Expedition Ltd" className="h-32 w-auto" />
