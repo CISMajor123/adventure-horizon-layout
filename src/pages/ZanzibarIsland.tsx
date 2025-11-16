@@ -1,6 +1,9 @@
 import { ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { useCartStore } from "@/stores/cartStore";
+import { toast } from "sonner";
 import zanzibarAerial from "@/assets/zanzibar-aerial.jpg";
 import zanzibarSunsetDhow from "@/assets/zanzibar-sunset-dhow.jpg";
 import zanzibarBeachPier from "@/assets/zanzibar-beach-pier.jpg";
@@ -63,6 +66,66 @@ Across your week you will explore Stone Town's history, tour a Spice Farm, and v
 ];
 
 const ZanzibarIsland = () => {
+  const addItem = useCartStore(state => state.addItem);
+
+  const handleAddToCart = (experienceId: string) => {
+    // Only the first experience has Shopify integration for now
+    if (experienceId === "experience-1") {
+      const cartItem = {
+        product: {
+          node: {
+            id: "gid://shopify/Product/10855516635329",
+            title: "Zanzibar 2 Days / 1 Night Package",
+            description: experiences[0].content,
+            handle: "zanzibar-2-days-1-night-package",
+            priceRange: {
+              minVariantPrice: {
+                amount: "1400.00",
+                currencyCode: "USD"
+              }
+            },
+            images: {
+              edges: [{
+                node: {
+                  url: zanzibarSunsetDhow,
+                  altText: "Zanzibar sunset with traditional dhow boat"
+                }
+              }]
+            },
+            variants: {
+              edges: [{
+                node: {
+                  id: "gid://shopify/ProductVariant/49675974869185",
+                  title: "Default Title",
+                  price: {
+                    amount: "1400.00",
+                    currencyCode: "USD"
+                  },
+                  availableForSale: true,
+                  selectedOptions: []
+                }
+              }]
+            },
+            options: []
+          }
+        },
+        variantId: "gid://shopify/ProductVariant/49675974869185",
+        variantTitle: "Default Title",
+        price: {
+          amount: "1400.00",
+          currencyCode: "USD"
+        },
+        quantity: 1,
+        selectedOptions: []
+      };
+      
+      addItem(cartItem);
+      toast.success("Added to cart", {
+        description: "Zanzibar 2 Days / 1 Night Package has been added to your cart"
+      });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation bgColor="--destinations-bg" />
@@ -125,6 +188,15 @@ const ZanzibarIsland = () => {
                   <p className="text-[#3d2418] leading-relaxed whitespace-pre-line">
                     {experience.content}
                   </p>
+                  {experience.id === "experience-1" && (
+                    <Button 
+                      onClick={() => handleAddToCart(experience.id)}
+                      className="mt-6"
+                      size="lg"
+                    >
+                      Book Now - $1,400
+                    </Button>
+                  )}
                 </div>
               </AccordionContent>
             </AccordionItem>
