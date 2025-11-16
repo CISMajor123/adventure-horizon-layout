@@ -91,14 +91,10 @@ const ZanzibarIsland = () => {
       {/* Experiences Header Band */}
       <section 
         id="experiences"
-        className="relative w-full overflow-hidden"
-        style={{ 
-          backgroundColor: '#e8e0cd',
-          minHeight: '300px'
-        }}
+        className="bg-white pt-20 pb-10"
       >
-        <div className="relative h-full flex items-center px-8 md:px-16 py-12">
-          <h2 className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-black">
+        <div className="max-w-7xl mx-auto px-8 md:px-16 flex items-center min-h-[120px]">
+          <h2 className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-[#3d2418]">
             Experiences
           </h2>
         </div>
