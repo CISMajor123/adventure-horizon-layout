@@ -38,7 +38,9 @@ During your stay, you'll snorkel and sail the clear waters of Safari Blue, take 
     id: "experience-4",
     title: "Zanzibar 5 Days / 4 Nights Package",
     image: zanzibarSandbank,
-    content: `Coming soon - detailed itinerary for this package.`,
+    content: `Planning to spend 5 days in Zanzibar? This package is designed to make your stay relaxing, immersive, and completely stress-free. Your accommodation will be at Smiles Beach Hotel on the beautiful shores of Nungwi, with airport transfers, full-board meals, and guided activities all included—so you can simply enjoy your vacation while we handle the details. 
+
+Across five days, you'll sail the clear waters of Safari Blue, explore the aromatic plantations of a Spice Farm Tour, discover the rich history of Stone Town, and visit Prison Island to see the Aldabra giant tortoises. You'll also enjoy a day on the southeast coast with snorkeling and a memorable lunch at the iconic Rock Restaurant overlooking the ocean. All activities are scheduled around your arrival and departure to ensure a seamless experience. Contact us via our Inquiry page or WhatsApp to customize the itinerary to your needs.`,
   },
   {
     id: "experience-5",
