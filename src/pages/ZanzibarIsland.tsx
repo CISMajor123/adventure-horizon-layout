@@ -1,12 +1,13 @@
 import { ChevronDown, ChevronRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import zanzibarBeach from "@/assets/zanzibar-beach.jpg";
+import zanzibarSunsetDhow from "@/assets/zanzibar-sunset-dhow.jpg";
 
 const experiences = [
   {
     title: "Zanzibar 2 Days / 1 Night",
     subtitle: "Package",
-    image: zanzibarBeach,
+    image: zanzibarSunsetDhow,
     link: "/zanzibar-2-days",
     textColor: "text-black",
   },
