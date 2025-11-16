@@ -189,13 +189,14 @@ const ZanzibarIsland = () => {
                     {experience.content}
                   </p>
                   {experience.id === "experience-1" && (
-                    <Button 
-                      onClick={() => handleAddToCart(experience.id)}
-                      className="mt-6"
-                      size="lg"
-                    >
-                      Book Now - $1,400
-                    </Button>
+                    <div className="flex justify-end mt-6">
+                      <Button 
+                        onClick={() => handleAddToCart(experience.id)}
+                        size="lg"
+                      >
+                        Book Now
+                      </Button>
+                    </div>
                   )}
                 </div>
               </AccordionContent>
