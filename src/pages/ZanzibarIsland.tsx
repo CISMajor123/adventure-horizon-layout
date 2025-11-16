@@ -175,6 +175,59 @@ const ZanzibarIsland = () => {
       toast.success("Added to cart", {
         description: "Zanzibar 3 Days / 2 Nights Package has been added to your cart"
       });
+    } else if (experienceId === "experience-3") {
+      const cartItem = {
+        product: {
+          node: {
+            id: "gid://shopify/Product/10855517454529",
+            title: "Zanzibar 4 Days / 3 Nights Package",
+            description: experiences[2].content,
+            handle: "zanzibar-4-days-3-nights-package",
+            priceRange: {
+              minVariantPrice: {
+                amount: "2500.00",
+                currencyCode: "USD"
+              }
+            },
+            images: {
+              edges: [{
+                node: {
+                  url: zanzibarPalmTrees,
+                  altText: "Zanzibar palm trees against blue sky"
+                }
+              }]
+            },
+            variants: {
+              edges: [{
+                node: {
+                  id: "gid://shopify/ProductVariant/49675977261249",
+                  title: "Default Title",
+                  price: {
+                    amount: "2500.00",
+                    currencyCode: "USD"
+                  },
+                  availableForSale: true,
+                  selectedOptions: []
+                }
+              }]
+            },
+            options: []
+          }
+        },
+        variantId: "gid://shopify/ProductVariant/49675977261249",
+        variantTitle: "Default Title",
+        price: {
+          amount: "2500.00",
+          currencyCode: "USD"
+        },
+        quantity: 1,
+        selectedOptions: []
+      };
+      
+      addItem(cartItem);
+      toast.success("Added to cart", {
+        description: "Zanzibar 4 Days / 3 Nights Package has been added to your cart"
+      });
     }
   };
 
@@ -240,7 +293,7 @@ const ZanzibarIsland = () => {
                   <p className="text-[#3d2418] leading-relaxed whitespace-pre-line text-justify">
                     {experience.content}
                   </p>
-                  {(experience.id === "experience-1" || experience.id === "experience-2") && (
+                  {(experience.id === "experience-1" || experience.id === "experience-2" || experience.id === "experience-3") && (
                     <div className="flex justify-end mt-6">
                       <Button 
                         onClick={() => handleAddToCart(experience.id)}
