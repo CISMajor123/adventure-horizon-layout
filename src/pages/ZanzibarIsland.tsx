@@ -30,21 +30,9 @@ Over the three days, you'll explore the flavors of a Spice Farm Tour, learn the 
     id: "experience-3",
     title: "Zanzibar 4 Days / 3 Nights Package",
     image: zanzibarPalmTrees,
-    content: `Discover the best of northern Tanzania on this 4-day mid-range safari, exploring diverse landscapes and incredible wildlife. From elephant herds under ancient baobabs in Tarangire to the vast Ngorongoro Crater teeming with lions, rhinos, and zebras, and finally the tree-climbing lions and flamingos of Lake Manyara — this journey offers a perfect mix of scenery, adventure, and comfort. 
+    content: `Have a bit more time to explore Zanzibar? This 4-day package is designed to give you a rich and memorable experience without the stress of planning. Your stay at Mizingani Seafront Hotel in Stone Town includes round-trip airport transfers, full-board meals, and immersive guided activities—allowing you to fully enjoy Zanzibar's culture, cuisine, and tropical beauty. 
 
-Itinerary Highlights: 
-
-Day 1 – Arrival in Arusha: Airport pickup and overnight stay at Arusha Planet Lodge. Meals at own expense. 
-
-Day 2 – Tarangire National Park: Game drive through elephant country and baobab forests. Picnic lunch and overnight at Eileen's Tree Inn, Karatu. 
-
-Day 3 – Ngorongoro Crater: Descend into the world's largest intact caldera to spot the Big Five and over 500 bird species. Return to Eileen's Tree Inn. 
-
-Day 4 – Lake Manyara National Park: Explore forests, Rift Valley escarpment, and flamingo-filled lake before returning to Arusha or airport drop-off. 
-
-Included: Park fees, accommodation, meals (as listed), transport, guide, taxes, and airport transfers. 
-
-Excluded: International flights, tips, personal items, travel insurance, and optional add-ons (e.g., Balloon Safari, Maasai Village Visit, Night Game Drive).`,
+During your stay, you'll snorkel and sail the clear waters of Safari Blue, take in the spices and aromas of a Spice Farm Tour, uncover history on a guided Stone Town Tour, and visit Prison Island to meet the Aldabra giant tortoises. All activities are scheduled around your arrival and departure for a smooth, easy trip. Contact us via WhatsApp or Email to customize this package to your interests.`,
   },
   {
     id: "experience-4",
