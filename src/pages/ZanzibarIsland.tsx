@@ -4,6 +4,7 @@ import zanzibarBeach from "@/assets/zanzibar-beach.jpg";
 import zanzibarSunsetDhow from "@/assets/zanzibar-sunset-dhow.jpg";
 import zanzibarBeachPier from "@/assets/zanzibar-beach-pier.jpg";
 import zanzibarPalmTrees from "@/assets/zanzibar-palm-trees.jpg";
+import zanzibarSandbank from "@/assets/zanzibar-sandbank.jpg";
 
 const experiences = [
   {
@@ -30,7 +31,7 @@ const experiences = [
   {
     title: "Zanzibar 5 Days/ 4 Nights",
     subtitle: "Package",
-    image: zanzibarBeach,
+    image: zanzibarSandbank,
     link: "/zanzibar-5-days",
     textColor: "text-black",
   },
