@@ -98,11 +98,12 @@ const ZanzibarIsland = () => {
         }}
       >
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
-          style={{ backgroundImage: `url(${zanzibarBeach})` }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${zanzibarSunsetDhow})` }}
         />
+        <div className="absolute inset-0 bg-black/20" />
         <div className="relative z-10 h-full flex items-center px-8 md:px-16 py-12">
-          <h2 className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-black">
+          <h2 className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-white" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
             Experiences
           </h2>
         </div>
