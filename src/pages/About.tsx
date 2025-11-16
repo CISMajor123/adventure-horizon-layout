@@ -40,14 +40,24 @@ const About = () => {
                 </p>
               </div>
               
-              <Link to="/destinations">
-                <Button 
-                  className="mt-8 bg-destinations-title hover:bg-destinations-title/90 text-white px-8 py-6 text-base rounded-md transition-all duration-300"
-                  aria-label="Plan Your Trip — go to Destinations"
-                >
-                  Plan Your Trip
-                </Button>
-              </Link>
+              <div className="flex flex-wrap gap-4 mt-8">
+                <Link to="/destinations">
+                  <Button 
+                    className="bg-destinations-title hover:bg-destinations-title/90 text-white px-8 py-6 text-base rounded-md transition-all duration-300"
+                    aria-label="Plan Your Trip — go to Destinations"
+                  >
+                    Plan Your Trip
+                  </Button>
+                </Link>
+                <a href="https://eu.docs.wps.com/module/common/loadPlatform/?sid=sILb_5f2KAfjsqMgG&v=v2" target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    className="bg-destinations-title hover:bg-destinations-title/90 text-white px-8 py-6 text-base rounded-md transition-all duration-300"
+                    aria-label="Link To Certification"
+                  >
+                    Link To Certification
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
           
