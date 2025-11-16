@@ -10,7 +10,7 @@ const destinations = [
     duration: "2–7 Days",
     price: "$1,400 – $4,000",
     image: zanzibarImage,
-    slug: "zanzibar-beach-vacation",
+    slug: "zanzibar-island",
     hoverDescription: "Zanzibar is a tropical paradise off Tanzania's coast, known for its white-sand beaches, turquoise waters, and rich blend of African, Arab, and European cultures. Visitors can explore historic Stone Town, tour fragrant spice plantations, or dive among vibrant coral reefs—all while enjoying stunning sunsets and warm island hospitality.",
   },
   {
