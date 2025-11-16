@@ -118,18 +118,18 @@ const ZanzibarIsland = () => {
             
             <div className="relative z-10 h-full flex items-center px-8 md:px-16 py-20">
               {/* Circle Button */}
-              <div className="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg mr-6 md:mr-8">
-                <ChevronRight className="text-black" size={28} strokeWidth={2} />
+              <div className="flex-shrink-0 w-11 h-11 rounded-full bg-white flex items-center justify-center opacity-90 shadow-lg">
+                <ChevronRight className="text-[#3d2418]" size={24} />
               </div>
               
               {/* Text */}
-              <div className={`${experience.textColor} font-bold`}>
-                <div className="text-2xl md:text-3xl lg:text-4xl leading-tight" style={{ textShadow: experience.textColor === "text-white" ? '2px 2px 4px rgba(0,0,0,0.8)' : '1px 1px 2px rgba(255,255,255,0.5)' }}>
+              <div className="ml-6">
+                <h3 className="font-playfair text-white text-xl md:text-2xl font-semibold drop-shadow-lg text-left">
                   {experience.title}
-                </div>
-                <div className="text-2xl md:text-3xl lg:text-4xl leading-tight" style={{ textShadow: experience.textColor === "text-white" ? '2px 2px 4px rgba(0,0,0,0.8)' : '1px 1px 2px rgba(255,255,255,0.5)' }}>
+                </h3>
+                <h3 className="font-playfair text-white text-xl md:text-2xl font-semibold drop-shadow-lg text-left">
                   {experience.subtitle}
-                </div>
+                </h3>
               </div>
             </div>
           </a>
