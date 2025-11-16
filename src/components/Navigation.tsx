@@ -12,7 +12,7 @@ const Navigation = ({ bgColor = "transparent" }: NavigationProps) => {
       <div className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="transition-opacity hover:opacity-80">
-            <img src={logo} alt="Grant Expedition Ltd" className="h-16 w-auto" />
+            <img src={logo} alt="Grant Expedition Ltd" className="h-32 w-auto" />
           </Link>
           
           <div className="flex items-center gap-8">
