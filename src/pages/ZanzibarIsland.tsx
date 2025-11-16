@@ -14,7 +14,7 @@ const experiences = [
     subtitle: "Package",
     image: zanzibarSunsetDhow,
     link: "/zanzibar-2-days",
-    textColor: "text-black",
+    textColor: "text-white",
   },
   {
     title: "Zanzibar 3 Days/ 2 Nights",
@@ -35,7 +35,7 @@ const experiences = [
     subtitle: "Package",
     image: zanzibarSandbank,
     link: "/zanzibar-5-days",
-    textColor: "text-black",
+    textColor: "text-white",
   },
   {
     title: "Zanzibar 6 Days/ 5",
