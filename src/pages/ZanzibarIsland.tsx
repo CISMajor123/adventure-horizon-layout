@@ -22,7 +22,9 @@ Your experience includes a Spice Farm Tour, a visit to Prison Island with Snorke
     id: "experience-2",
     title: "Zanzibar 3 Days / 2 Nights Package",
     image: zanzibarBeachPier,
-    content: `Coming soon - detailed itinerary for this package.`,
+    content: `Visiting Zanzibar for just a few days? This 3-day package is designed to give you a full and meaningful experience without the stress of planning. Your stay at Mizingani Seafront Hotel in historic Stone Town includes airport transfers, full-board meals, and guided excursions—allowing you to relax and enjoy Zanzibar's culture, history, and natural beauty. 
+
+Over the three days, you'll explore the flavors of a Spice Farm Tour, learn the stories and architecture of Stone Town, and visit Prison Island to see the Aldabra giant tortoises. We align all activities with your arrival and departure times to ensure a seamless and enjoyable trip. Contact us via our Inquiry page or WhatsApp to customize the itinerary to your needs.`,
   },
   {
     id: "experience-3",
