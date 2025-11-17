@@ -10,6 +10,7 @@ import elephantSafari from "@/assets/elephant-safari.jpg";
 import elephantSavannah from "@/assets/elephant-savannah.jpg";
 import giraffeHerd from "@/assets/giraffe-herd.jpg";
 import safariSunsetVehicle from "@/assets/safari-sunset-vehicle.jpg";
+import gazelleSafari from "@/assets/gazelle-safari.jpg";
 
 const experiences = [
   {
@@ -55,7 +56,7 @@ Your journey includes Tarangire's baobab-dotted plains, multiple days exploring 
   {
     id: "experience-6",
     title: "7-Day Luxury Northern Tanzania Safari",
-    image: midRangeSafariHero, // Placeholder - will be replaced with uploaded image
+    image: gazelleSafari,
     content: `Indulge in the ultimate luxury safari experience with this 7-day journey through Northern Tanzania's most iconic wildlife destinations. This premium package offers the perfect combination of world-class game viewing, luxurious accommodations, and personalized service that exceeds expectations.
 
 Explore Tarangire's elephant paradise, witness the Serengeti's incredible wildlife concentrations, experience the wonder of the Ngorongoro Crater, and discover Lake Manyara's unique ecosystems. Stay in exclusive luxury lodges and camps that offer unparalleled comfort, gourmet cuisine, and intimate wildlife encounters, all while enjoying the expertise of your private guide.`,
