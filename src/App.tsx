@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Kilimanjaro from "./pages/Kilimanjaro";
 import Booking from "./pages/Booking";
 import ZanzibarIsland from "./pages/ZanzibarIsland";
+import MidRangeSafari from "./pages/MidRangeSafari";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/kilimanjaro" element={<Kilimanjaro />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/zanzibar-island" element={<ZanzibarIsland />} />
+          <Route path="/mid-range-safari" element={<MidRangeSafari />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
