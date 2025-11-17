@@ -11,6 +11,7 @@ import elephantSavannah from "@/assets/elephant-savannah.jpg";
 import giraffeHerd from "@/assets/giraffe-herd.jpg";
 import safariSunsetVehicle from "@/assets/safari-sunset-vehicle.jpg";
 import gazelleSafari from "@/assets/gazelle-safari.jpg";
+import giraffeMountainSunset from "@/assets/giraffe-mountain-sunset.jpg";
 
 const experiences = [
   {
@@ -64,7 +65,7 @@ Explore Tarangire's elephant paradise, witness the Serengeti's incredible wildli
   {
     id: "experience-7",
     title: "7-Day Western Serengeti Migration Safari",
-    image: midRangeSafariHero, // Placeholder - will be replaced with uploaded image
+    image: giraffeMountainSunset,
     content: `Witness one of nature's most spectacular events with this specialized 7-day migration safari focused on the Western Serengeti. Timed to coincide with the dramatic river crossings, this itinerary places you in the heart of the action as millions of wildebeest and zebra face the treacherous waters of the Grumeti River.
 
 This unique safari combines prime migration viewing with visits to other Northern Circuit highlights including Tarangire and Ngorongoro Crater. Stay in strategically located mid-range accommodations that offer excellent access to migration routes, ensuring you witness this incredible natural phenomenon from the best vantage points.`,
