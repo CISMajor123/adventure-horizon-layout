@@ -12,6 +12,7 @@ import giraffeHerd from "@/assets/giraffe-herd.jpg";
 import safariSunsetVehicle from "@/assets/safari-sunset-vehicle.jpg";
 import gazelleSafari from "@/assets/gazelle-safari.jpg";
 import giraffeMountainSunset from "@/assets/giraffe-mountain-sunset.jpg";
+import hornbillBird from "@/assets/hornbill-bird.jpg";
 
 const experiences = [
   {
@@ -73,7 +74,7 @@ This unique safari combines prime migration viewing with visits to other Norther
   {
     id: "experience-8",
     title: "8-Day Mid-Range Ndutu Migration Footsteps",
-    image: midRangeSafariHero, // Placeholder - will be replaced with uploaded image
+    image: hornbillBird,
     content: `Follow in the footsteps of the Great Migration with this 8-day safari focused on the Ndutu region in the southern Serengeti. This seasonal safari (typically December to March) offers front-row seats to the calving season when hundreds of thousands of wildebeest give birth on the nutrient-rich short grass plains.
 
 This extended itinerary allows for multiple full days in the Ndutu area, maximizing your chances of witnessing dramatic predator-prey interactions as lions, cheetahs, and hyenas take advantage of the abundance of newborn calves. The safari also includes Tarangire, Ngorongoro Crater, and other highlights, with comfortable mid-range accommodations throughout.`,
