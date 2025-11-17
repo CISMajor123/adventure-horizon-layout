@@ -7,6 +7,7 @@ import { toast } from "sonner";
 import midRangeSafariHero from "@/assets/mid-range-safari.jpg";
 import giraffeSunsetSafari from "@/assets/giraffe-sunset-safari.jpg";
 import elephantSafari from "@/assets/elephant-safari.jpg";
+import elephantSavannah from "@/assets/elephant-savannah.jpg";
 
 const experiences = [
   {
@@ -28,7 +29,7 @@ Stay in comfortable mid-range lodges with stunning views, enjoy full-board meals
   {
     id: "experience-3",
     title: "5-Day Tanzania Safari:\nTarangire, Ngorongoro, Serengeti & Lake Manyara",
-    image: midRangeSafariHero, // Placeholder - will be replaced with uploaded image
+    image: elephantSavannah,
     content: `Embark on the ultimate Tanzanian safari experience, exploring four of the country's premier wildlife destinations. This 5-day adventure takes you through the diverse ecosystems of Tarangire, the world-famous Serengeti plains, the spectacular Ngorongoro Crater, and the scenic Lake Manyara National Park.
 
 With comfortable mid-range accommodations strategically located for optimal game viewing, this safari offers the perfect balance of adventure and comfort. Experience the Great Migration (seasonal), witness predator-prey interactions, and create memories that will last a lifetime.`,
