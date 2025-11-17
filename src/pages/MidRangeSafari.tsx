@@ -9,6 +9,7 @@ import giraffeSunsetSafari from "@/assets/giraffe-sunset-safari.jpg";
 import elephantSafari from "@/assets/elephant-safari.jpg";
 import elephantSavannah from "@/assets/elephant-savannah.jpg";
 import giraffeHerd from "@/assets/giraffe-herd.jpg";
+import safariSunsetVehicle from "@/assets/safari-sunset-vehicle.jpg";
 
 const experiences = [
   {
@@ -46,7 +47,7 @@ Visit Tarangire's elephant herds, explore the endless plains of the Serengeti, d
   {
     id: "experience-5",
     title: "7-Day Mid-Range Epic Adventure\n(Stay on the Crater Rim)",
-    image: midRangeSafariHero, // Placeholder - will be replaced with uploaded image
+    image: safariSunsetVehicle,
     content: `Experience Tanzania's wildlife wonders with the added luxury of staying on the rim of the magnificent Ngorongoro Crater. This 7-day epic adventure offers extended time in each destination, allowing for more in-depth game viewing and a deeper connection with the landscape.
 
 Your journey includes Tarangire's baobab-dotted plains, multiple days exploring different regions of the vast Serengeti ecosystem, and the unforgettable experience of the Ngorongoro Crater. With comfortable mid-range accommodations and the unique opportunity to wake up to crater views, this safari offers exceptional value and unforgettable experiences.`,
