@@ -6,6 +6,7 @@ import { useCartStore } from "@/stores/cartStore";
 import { toast } from "sonner";
 import midRangeSafariHero from "@/assets/mid-range-safari.jpg";
 import giraffeSunsetSafari from "@/assets/giraffe-sunset-safari.jpg";
+import elephantSafari from "@/assets/elephant-safari.jpg";
 
 const experiences = [
   {
@@ -19,7 +20,7 @@ Perfect for travelers with limited time, this safari offers an authentic taste o
   {
     id: "experience-2",
     title: "4-Day Tanzania Safari:\nTarangire, Ngorongoro & Lake Manyara",
-    image: midRangeSafariHero, // Placeholder - will be replaced with uploaded image
+    image: elephantSafari,
     content: `Discover three of Tanzania's most spectacular wildlife destinations in this comprehensive 4-day safari adventure. From the elephant paradise of Tarangire to the wildlife-rich crater floor of Ngorongoro, and the tree-climbing lions of Lake Manyara, this journey offers diverse landscapes and incredible game viewing opportunities.
 
 Stay in comfortable mid-range lodges with stunning views, enjoy full-board meals, and benefit from the expertise of professional guides who will enhance your safari experience with their knowledge of wildlife behavior and local ecology.`,
