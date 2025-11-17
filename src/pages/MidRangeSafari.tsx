@@ -13,6 +13,7 @@ import safariSunsetVehicle from "@/assets/safari-sunset-vehicle.jpg";
 import gazelleSafari from "@/assets/gazelle-safari.jpg";
 import giraffeMountainSunset from "@/assets/giraffe-mountain-sunset.jpg";
 import hornbillBird from "@/assets/hornbill-bird.jpg";
+import zebraPair from "@/assets/zebra-pair.jpg";
 
 const experiences = [
   {
@@ -82,7 +83,7 @@ This extended itinerary allows for multiple full days in the Ndutu area, maximiz
   {
     id: "experience-9",
     title: "10-Day Great Migration Safari Itinerary",
-    image: midRangeSafariHero, // Placeholder - will be replaced with uploaded image
+    image: zebraPair,
     content: `Experience the full spectacle of the Great Migration with this comprehensive 10-day safari that follows the movement of over two million wildebeest, zebra, and other animals across the Serengeti ecosystem. This extended itinerary provides ample time to witness different aspects of the migration, from river crossings to calving seasons, depending on the time of year.
 
 Your journey includes multiple destinations across the Northern Circuit, with extended stays in key migration areas to maximize wildlife viewing opportunities. Comfortable mid-range accommodations are strategically selected to place you near the migration action, while also ensuring you experience the diversity of Tanzania's other iconic wildlife destinations including Tarangire, Ngorongoro Crater, and Lake Manyara.`,
