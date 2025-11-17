@@ -8,6 +8,7 @@ import midRangeSafariHero from "@/assets/mid-range-safari.jpg";
 import giraffeSunsetSafari from "@/assets/giraffe-sunset-safari.jpg";
 import elephantSafari from "@/assets/elephant-safari.jpg";
 import elephantSavannah from "@/assets/elephant-savannah.jpg";
+import giraffeHerd from "@/assets/giraffe-herd.jpg";
 
 const experiences = [
   {
@@ -37,7 +38,7 @@ With comfortable mid-range accommodations strategically located for optimal game
   {
     id: "experience-4",
     title: "6-Day Luxury Highlights of Tanzania Safari",
-    image: midRangeSafariHero, // Placeholder - will be replaced with uploaded image
+    image: giraffeHerd,
     content: `Elevate your safari experience with this 6-day luxury adventure through Tanzania's most celebrated wildlife areas. This premium package combines the best game viewing opportunities with top-tier accommodations, gourmet dining, and personalized service.
 
 Visit Tarangire's elephant herds, explore the endless plains of the Serengeti, descend into the Ngorongoro Crater, and discover Lake Manyara's diverse birdlife. Stay in carefully selected luxury lodges and tented camps that offer exceptional comfort, stunning views, and an authentic connection to the wilderness.`,
