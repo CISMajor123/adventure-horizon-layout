@@ -5,12 +5,13 @@ import { Button } from "@/components/ui/button";
 import { useCartStore } from "@/stores/cartStore";
 import { toast } from "sonner";
 import midRangeSafariHero from "@/assets/mid-range-safari.jpg";
+import giraffeSunsetSafari from "@/assets/giraffe-sunset-safari.jpg";
 
 const experiences = [
   {
     id: "experience-1",
     title: "3-Day Taste of Tanzania Safari\n(Tarangire & Ngorongoro)",
-    image: midRangeSafariHero, // Placeholder - will be replaced with uploaded image
+    image: giraffeSunsetSafari,
     content: `Experience the essence of Tanzania's wildlife in just three days. This carefully crafted itinerary takes you to two of Tanzania's most iconic parks: Tarangire National Park, known for its large elephant herds and ancient baobab trees, and the magnificent Ngorongoro Crater, a UNESCO World Heritage Site teeming with wildlife.
 
 Perfect for travelers with limited time, this safari offers an authentic taste of Tanzania's natural wonders with comfortable mid-range accommodations and expert guides to ensure you don't miss any of the action.`,
