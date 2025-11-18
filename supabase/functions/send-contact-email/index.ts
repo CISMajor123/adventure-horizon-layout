@@ -11,9 +11,9 @@ const corsHeaders = {
 const contactSchema = z.object({
   fullName: z.string().trim().min(1).max(100),
   email: z.string().trim().email().max(255),
-  phone: z.string().trim().min(10).max(20),
+  phone: z.string().trim().min(1).max(30), // More flexible for international numbers
   location: z.string().trim().min(1).max(100),
-  message: z.string().trim().min(10).max(2000),
+  message: z.string().trim().min(1).max(2000), // Allow short messages
 });
 
 interface ContactEmailRequest {
