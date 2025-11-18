@@ -458,7 +458,9 @@ const ZanzibarIsland = () => {
                         onClick={() => handleAddToCart(experience.id)}
                         size="lg"
                       >
-                        {experience.id === "experience-1" ? "Book Now - $1,400" : "Book Now"}
+                        {experience.id === "experience-1" ? "Book Now - $1,400" : 
+                         experience.id === "experience-2" ? "Book Now - $2,000" : 
+                         "Book Now"}
                       </Button>
                     </div>
                   )}
