@@ -91,12 +91,20 @@ const handler = async (req: Request): Promise<Response> => {
       },
     });
   } catch (error: any) {
-    console.error("Error in send-contact-email function:", error.name);
+    console.error("Error in send-contact-email function:", error.name, error);
     
-    // Handle validation errors separately
+    // Handle validation errors with detailed messages
     if (error.name === 'ZodError') {
+      const firstError = error.errors[0];
+      const fieldName = firstError.path.join('.');
+      const errorMessage = firstError.message;
+      
       return new Response(
-        JSON.stringify({ error: "Invalid input data" }),
+        JSON.stringify({ 
+          error: "Validation failed",
+          field: fieldName,
+          message: `${fieldName}: ${errorMessage}` 
+        }),
         {
           status: 400,
           headers: { "Content-Type": "application/json", ...corsHeaders },
