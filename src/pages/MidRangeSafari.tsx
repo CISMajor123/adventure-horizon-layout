@@ -219,33 +219,19 @@ Optional activities (Balloon safari, Maasai village visit, Olduvai Gorge, night 
 
 Itinerary Overview
 
-Day 1 – Arrival in Arusha
-Pickup from the airport and transfer to Arusha Planet Lodge for rest.
-Meals at own expense.
+Day 1 – Arrival in Arusha Pickup from the airport and transfer to Arusha Planet Lodge for rest. Meals at own expense.
 
-Day 2 – Tarangire National Park
-Travel through the Masai plains to Tarangire and enjoy an afternoon game drive.
-Stay: Eileen's Tree Inn – All meals included.
+Day 2 – Tarangire National Park Travel through the Masai plains to Tarangire and enjoy an afternoon game drive. Stay: Eileen's Tree Inn – All meals included.
 
-Day 3 – Central Serengeti (Seronera)
-Drive through Ngorongoro highlands into the Serengeti. Afternoon game drive among migrating herds and predators.
-Stay: Nyota Luxury Camp – All meals included.
+Day 3 – Central Serengeti (Seronera) Drive through Ngorongoro highlands into the Serengeti. Afternoon game drive among migrating herds and predators. Stay: Nyota Luxury Camp – All meals included.
 
-Day 4 – Western Serengeti (Grumeti & Mbalageti Rivers)
-Witness migration herds gathering along the riverbanks (May–July). Expect intense predator interactions and dramatic landscapes.
-Stay: Mbalageti Serengeti – All meals included.
+Day 4 – Western Serengeti (Grumeti & Mbalageti Rivers) Witness migration herds gathering along the riverbanks (May–July). Expect intense predator interactions and dramatic landscapes. Stay: Mbalageti Serengeti – All meals included.
 
-Day 5 – Return to Central Serengeti
-Morning game drive in the Western Corridor, then head back to Seronera for more wildlife viewing.
-Stay: Nyota Luxury Camp.
+Day 5 – Return to Central Serengeti Morning game drive in the Western Corridor, then head back to Seronera for more wildlife viewing. Stay: Nyota Luxury Camp.
 
-Day 6 – Ngorongoro Crater
-Descend into the crater for a full-day safari before driving to Karatu.
-Stay: Eileen's Tree Inn – All meals included.
+Day 6 – Ngorongoro Crater Descend into the crater for a full-day safari before driving to Karatu. Stay: Eileen's Tree Inn – All meals included.
 
-Day 7 – Lake Manyara & Departure
-Explore Lake Manyara's lush forests and diverse wildlife before returning to Arusha.
-Stay: Arusha Planet Lodge – Breakfast & lunch included.
+Day 7 – Lake Manyara & Departure Explore Lake Manyara's lush forests and diverse wildlife before returning to Arusha. Stay: Arusha Planet Lodge – Breakfast & lunch included.
 
 Included
 Park fees, accommodations, meals as listed, professional guide, transportation, taxes, and airport transfers.
