@@ -154,9 +154,29 @@ This unique safari combines prime migration viewing with visits to other Norther
     title: "8-Day Mid-Range Ndutu Migration Footsteps",
     price: "$3,300",
     image: hornbillBird,
-    content: `Follow in the footsteps of the Great Migration with this 8-day safari focused on the Ndutu region in the southern Serengeti. This seasonal safari (typically December to March) offers front-row seats to the calving season when hundreds of thousands of wildebeest give birth on the nutrient-rich short grass plains.
+    content: `Follow the path of the Great Migration on this unforgettable 8-day safari through Tanzania's most iconic parks. From the elephant herds of Tarangire and the dramatic Ngorongoro Crater to the legendary plains of the Serengeti and Ndutu—where millions of wildebeest gather to calve between December and April—this journey immerses you in Tanzania's richest wildlife regions. Each day offers breathtaking scenery, diverse habitats, and extraordinary game-viewing opportunities.
 
-This extended itinerary allows for multiple full days in the Ndutu area, maximizing your chances of witnessing dramatic predator-prey interactions as lions, cheetahs, and hyenas take advantage of the abundance of newborn calves. The safari also includes Tarangire, Ngorongoro Crater, and other highlights, with comfortable mid-range accommodations throughout.`,
+Itinerary Highlights:
+
+Day 1 – Arrival in Arusha: Airport pickup and transfer to Arusha Planet Lodge. Time to rest and prepare for your adventure. Meals at own expense.
+
+Day 2 – Tarangire National Park: Game drive among giant baobabs and large elephant herds. Picnic lunch in the park, then continue to Karatu. Overnight at Eileen's Tree Inn.
+
+Day 3 – Karatu to Central Serengeti: Drive through the Ngorongoro Conservation Area, stopping at the crater viewpoint before entering the Serengeti. Game drive en route. Overnight at Nyota Luxury Camp.
+
+Day 4 – Serengeti National Park: Full day of game drives across Serengeti's open plains, spotting lions, cheetahs, elephants, and more. Overnight at Nyota Luxury Camp.
+
+Day 5 – Serengeti to Ndutu (Southern Serengeti): Travel south toward Ndutu, following the Great Migration herds across the plains. Overnight at Serengeti Heritage Ndutu Camp.
+
+Day 6 – Ndutu: Explore the heart of the Migration, where wildebeest calving season takes place (Dec–Apr). Experience predator action and vast herds across the Ndutu landscape. Overnight at Serengeti Heritage Ndutu Camp.
+
+Day 7 – Ngorongoro Crater: Descend into the Crater for a day of incredible wildlife viewing, including black rhinos, lions, and flamingos. Afternoon drive to Karatu. Overnight at Eileen's Tree Inn.
+
+Day 8 – Lake Manyara National Park: Discover this lush, compact park known for its flamingos, elephants, and tree-climbing lions. Picnic lunch and afternoon transfer to Arusha or airport drop-off.
+
+Included: Park fees, accommodation, meals (as listed), transport, professional guide, taxes, and airport transfers.
+
+Excluded: International flights, tips, personal expenses, and optional add-ons (Balloon Safari, Maasai Village Visit, Night Game Drive, Crater Rim Walk, Olduvai Gorge visit).`,
   },
   {
     id: "experience-9",
