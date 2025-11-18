@@ -16,7 +16,8 @@ const Footer = () => {
               <a
                 href="https://www.facebook.com/people/Grant-expedition-ltd/100063871123184/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
+                referrerPolicy="no-referrer"
                 className="w-10 h-10 rounded-full border border-[#d4b896] flex items-center justify-center hover:bg-[#d4b896] hover:text-[#3d3530] transition-colors"
                 aria-label="Visit our Facebook page"
               >
@@ -25,7 +26,8 @@ const Footer = () => {
               <a
                 href="https://www.instagram.com/grant_expedition_ltd/?hl=en"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
+                referrerPolicy="no-referrer"
                 className="w-10 h-10 rounded-full border border-[#d4b896] flex items-center justify-center hover:bg-[#d4b896] hover:text-[#3d3530] transition-colors"
                 aria-label="Visit our Instagram page"
               >
