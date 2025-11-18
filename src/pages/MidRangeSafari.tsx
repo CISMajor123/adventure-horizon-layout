@@ -20,9 +20,19 @@ const experiences = [
     id: "experience-1",
     title: "3-Day Taste of Tanzania Safari\n(Tarangire & Ngorongoro)",
     image: giraffeSunsetSafari,
-    content: `Experience the essence of Tanzania's wildlife in just three days. This carefully crafted itinerary takes you to two of Tanzania's most iconic parks: Tarangire National Park, known for its large elephant herds and ancient baobab trees, and the magnificent Ngorongoro Crater, a UNESCO World Heritage Site teeming with wildlife.
+    content: `Experience the highlights of Tanzania's northern safari circuit on this 3-day adventure. Begin in Arusha, where you'll rest before setting out to explore Tarangire National Park—famous for its vast elephant herds, baobab trees, and rich wildlife. Continue to the breathtaking Ngorongoro Crater, a UNESCO World Heritage Site and home to the Big Five, zebras, wildebeest, and over 500 bird species. Enjoy scenic drives, full-day game viewing, and comfortable lodge stays before returning to Arusha.
 
-Perfect for travelers with limited time, this safari offers an authentic taste of Tanzania's natural wonders with comfortable mid-range accommodations and expert guides to ensure you don't miss any of the action.`,
+Itinerary Highlights:
+
+Day 1 – Arrival in Arusha: Airport pickup, overnight stay at your choice of luxury, mid-range, or budget lodge.
+
+Day 2 – Tarangire National Park: Full-day game drive through savannas and swamps; possible sightings of elephants, lions, and leopards. Overnight near Karatu or Ngorongoro.
+
+Day 3 – Ngorongoro Crater: Descend into the caldera for a wildlife-packed game drive and picnic lunch before returning to Arusha.
+
+Included: Park fees, guided safari, accommodation, meals, transport, taxes, and airport transfers.
+
+Excluded: International flights, tips, travel insurance, and optional add-ons (e.g., Balloon Safari, Maasai Village Visit, Night Game Drive).`,
   },
   {
     id: "experience-2",
