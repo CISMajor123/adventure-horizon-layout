@@ -80,9 +80,25 @@ Excluded: International flights, tips, personal expenses, and optional add-ons (
     id: "experience-4",
     title: "6-Day Luxury Highlights of Tanzania Safari",
     image: giraffeHerd,
-    content: `Elevate your safari experience with this 6-day luxury adventure through Tanzania's most celebrated wildlife areas. This premium package combines the best game viewing opportunities with top-tier accommodations, gourmet dining, and personalized service.
+    content: `Experience the ultimate Tanzanian adventure on this 6-day luxury safari through the country's most iconic parks. Stay in top-tier lodges and camps while exploring Tarangire's elephant herds, the endless Serengeti plains, and the breathtaking Ngorongoro Crater—home to the Big Five. With two nights in the Serengeti and exceptional comfort throughout, this itinerary blends world-class wildlife encounters with unforgettable luxury.
 
-Visit Tarangire's elephant herds, explore the endless plains of the Serengeti, descend into the Ngorongoro Crater, and discover Lake Manyara's diverse birdlife. Stay in carefully selected luxury lodges and tented camps that offer exceptional comfort, stunning views, and an authentic connection to the wilderness.`,
+Itinerary Highlights:
+
+Day 1 – Arrival in Arusha: Airport pickup and overnight stay at Gran Meliá Arusha. Meals at own expense.
+
+Day 2 – Tarangire National Park: Game drive among elephants, baobabs, and diverse wildlife. Overnight at Kitela Lodge, Karatu.
+
+Day 3 – Ngorongoro to Serengeti: Scenic drive through the highlands into the Serengeti. Game drive en route. Overnight at Nyota Luxury Camp.
+
+Day 4 – Serengeti National Park: Full-day game drives in Seronera, known for lions, leopards, and vast herds. Overnight at Nyota Luxury Camp.
+
+Day 5 – Serengeti to Ngorongoro: Morning drive with wildlife viewing, then explore Ngorongoro Crater. Overnight at Kitela Lodge.
+
+Day 6 – Lake Manyara National Park: Discover forests, flamingos, and tree-climbing lions before returning to Arusha or airport drop-off.
+
+Included: Park fees, luxury accommodations, meals and drinks (as listed), private transport, professional guide, taxes, and airport transfers.
+
+Excluded: International flights, tips, personal expenses, and optional activities (e.g., Balloon Safari, Maasai Village Visit, Night Game Drive).`,
   },
   {
     id: "experience-5",
