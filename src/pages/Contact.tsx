@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Send } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
+import Footer from "@/components/Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -207,6 +208,7 @@ const Contact = () => {
           {submitMessage.text}
         </div>
       )}
+      <Footer />
     </div>
   );
 };

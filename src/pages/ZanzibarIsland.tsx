@@ -11,6 +11,7 @@ import zanzibarPalmTrees from "@/assets/zanzibar-palm-trees.jpg";
 import zanzibarSandbank from "@/assets/zanzibar-sandbank.jpg";
 import zanzibarRockyCoast from "@/assets/zanzibar-rocky-coast.jpg";
 import zanzibarPalmSky from "@/assets/zanzibar-palm-sky.jpg";
+import Footer from "@/components/Footer";
 
 const experiences = [
   {
@@ -471,10 +472,11 @@ const ZanzibarIsland = () => {
                 </div>
               </AccordionContent>
             </AccordionItem>
-          ))}
-        </Accordion>
-      </section>
-    </div>
+        ))}
+      </Accordion>
+    </section>
+    <Footer />
+  </div>
   );
 };
 

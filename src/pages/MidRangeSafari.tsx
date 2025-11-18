@@ -14,6 +14,7 @@ import gazelleSafari from "@/assets/gazelle-safari.jpg";
 import giraffeMountainSunset from "@/assets/giraffe-mountain-sunset.jpg";
 import hornbillBird from "@/assets/hornbill-bird.jpg";
 import zebraPair from "@/assets/zebra-pair.jpg";
+import Footer from "@/components/Footer";
 
 const experiences = [
   {
@@ -390,10 +391,11 @@ const MidRangeSafari = () => {
                 </div>
               </AccordionContent>
             </AccordionItem>
-          ))}
-        </Accordion>
-      </section>
-    </div>
+        ))}
+      </Accordion>
+    </section>
+    <Footer />
+  </div>
   );
 };
 

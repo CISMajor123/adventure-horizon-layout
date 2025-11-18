@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import PopularActivities from "@/components/PopularActivities";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -8,6 +9,7 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <PopularActivities />
+      <Footer />
     </div>
   );
 };

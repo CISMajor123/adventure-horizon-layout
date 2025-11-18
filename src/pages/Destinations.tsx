@@ -3,6 +3,7 @@ import DestinationCard from "@/components/DestinationCard";
 import zanzibarImage from "@/assets/zanzibar-beach.jpg";
 import kilimanjaroImage from "@/assets/kilimanjaro-trekking.jpg";
 import midRangeSafariImage from "@/assets/mid-range-safari.jpg";
+import Footer from "@/components/Footer";
 
 const destinations = [
   {
@@ -46,6 +47,7 @@ const Destinations = () => {
           ))}
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

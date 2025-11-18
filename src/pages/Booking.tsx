@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 import bookingBg from "@/assets/booking-background.jpg";
+import Footer from "@/components/Footer";
 
 const bookingSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
@@ -242,6 +243,7 @@ const Booking = () => {
             </form>
         </div>
       </div>
+    </div>
       
       {/* Toast notification - bottom right */}
       {submitMessage && (
@@ -253,7 +255,7 @@ const Booking = () => {
           {submitMessage.text}
         </div>
       )}
-    </div>
+      <Footer />
     </div>
   );
 };
