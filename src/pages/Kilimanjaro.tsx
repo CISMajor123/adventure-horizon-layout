@@ -208,66 +208,62 @@ const Kilimanjaro = () => {
           {/* Experience Cards - Accordion */}
           <Accordion type="single" collapsible className="w-full">
             {experiences.map((experience) => (
-              <AccordionItem key={experience.id} value={experience.id} className="border-none w-full">
-                <AccordionTrigger className="hover:no-underline p-0 w-full [&[data-state=open]>div>div>div>div]:rotate-90">
-                  <div
-                    className="relative h-64 md:h-80 w-full overflow-hidden"
-                    style={{ 
-                      backgroundImage: `url(${experience.image})`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                      backgroundRepeat: 'no-repeat'
-                    }}
+              <AccordionItem key={experience.id} value={experience.id} className="border-none">
+                <div className="relative w-full overflow-hidden h-64 md:h-80">
+                  <div 
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                    style={{ backgroundImage: `url(${experience.image})` }}
                   >
-                    <div className="absolute inset-0 bg-black/20" />
-                    
-                    <div className="relative h-full flex items-center px-8 md:px-12 max-w-7xl mx-auto">
-                      <div className="bg-white rounded-full w-11 h-11 flex items-center justify-center opacity-90 shadow-lg flex-shrink-0">
-                        <ChevronRight size={24} className="text-[#3d2418] transition-transform duration-300" />
-                      </div>
-                      
-                      <h3 className="font-playfair text-white text-xl md:text-2xl font-semibold ml-6 drop-shadow-lg text-left">
+                    <div className="absolute inset-0 bg-black/30" />
+                  </div>
+                  
+                  <AccordionTrigger className="relative z-10 h-full flex items-center justify-start px-8 md:px-16 hover:no-underline [&[data-state=open]>svg]:rotate-180">
+                    <div className="flex items-center w-full">
+                      <ChevronDown className="h-8 w-8 text-white mr-6 shrink-0 transition-transform duration-200" />
+                      <h3 className="font-playfair text-white text-xl md:text-2xl lg:text-3xl font-semibold drop-shadow-lg text-left">
                         {experience.title}
                       </h3>
                     </div>
-                  </div>
-                </AccordionTrigger>
+                  </AccordionTrigger>
+                </div>
                 
                 {experience.content && (
-                  <AccordionContent className="bg-white w-full py-6 px-10 md:px-10">
-                    <div className="prose prose-lg max-w-none text-[#3d2418] whitespace-pre-line">
-                      {experience.content}
+                  <AccordionContent className="bg-white">
+                    <div className="px-8 md:px-16 py-8">
+                      <p className="text-[#3d2418] leading-relaxed whitespace-pre-line text-justify">
+                        {experience.content}
+                      </p>
+                      {experience.id === "experience-1" && maranGuProduct && (
+                        <div className="mt-6 flex justify-end">
+                          <Button 
+                            onClick={handleBookMarangu}
+                            size="lg"
+                          >
+                            Book Now - ${parseFloat(maranGuProduct.node.variants.edges[0].node.price.amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}
+                          </Button>
+                        </div>
+                      )}
+                      {experience.id === "experience-2" && machameProduct && (
+                        <div className="mt-6 flex justify-end">
+                          <Button 
+                            onClick={handleBookMachame}
+                            size="lg"
+                          >
+                            Book Now - ${parseFloat(machameProduct.node.variants.edges[0].node.price.amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}
+                          </Button>
+                        </div>
+                      )}
+                      {experience.id === "experience-3" && lemoshoProduct && (
+                        <div className="mt-6 flex justify-end">
+                          <Button 
+                            onClick={handleBookLemosho}
+                            size="lg"
+                          >
+                            Book Now - ${parseFloat(lemoshoProduct.node.variants.edges[0].node.price.amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}
+                          </Button>
+                        </div>
+                      )}
                     </div>
-                    {experience.id === "experience-1" && maranGuProduct && (
-                      <div className="mt-6 flex justify-end">
-                        <Button 
-                          onClick={handleBookMarangu}
-                          size="lg"
-                        >
-                          Book Now - ${parseFloat(maranGuProduct.node.variants.edges[0].node.price.amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}
-                        </Button>
-                      </div>
-                    )}
-                    {experience.id === "experience-2" && machameProduct && (
-                      <div className="mt-6 flex justify-end">
-                        <Button 
-                          onClick={handleBookMachame}
-                          size="lg"
-                        >
-                          Book Now - ${parseFloat(machameProduct.node.variants.edges[0].node.price.amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}
-                        </Button>
-                      </div>
-                    )}
-                    {experience.id === "experience-3" && lemoshoProduct && (
-                      <div className="mt-6 flex justify-end">
-                        <Button 
-                          onClick={handleBookLemosho}
-                          size="lg"
-                        >
-                          Book Now - ${parseFloat(lemoshoProduct.node.variants.edges[0].node.price.amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}
-                        </Button>
-                      </div>
-                    )}
                   </AccordionContent>
                 )}
               </AccordionItem>
