@@ -19,16 +19,9 @@ const About = () => {
     elfsightScript.async = true;
     document.body.appendChild(elfsightScript);
     
-    // Load Google Maps Extended Component Library
-    const googleMapsScript = document.createElement('script');
-    googleMapsScript.src = "https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js";
-    googleMapsScript.type = "module";
-    document.body.appendChild(googleMapsScript);
-    
     return () => {
       document.body.removeChild(commonNinjaScript);
       document.body.removeChild(elfsightScript);
-      document.body.removeChild(googleMapsScript);
     };
   }, []);
 
@@ -86,17 +79,6 @@ const About = () => {
               />
             </div>
           </div>
-        </div>
-
-        {/* Google Maps Section */}
-        <div className="mt-20 max-w-7xl mx-auto">
-          <gmpx-api-loader key="AIzaSyBBS-liBydot5O4OK6gfZmMAqI9G5s1Co4" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
-          <gmp-map center="40.749933,-73.98633" zoom="13" map-id="DEMO_MAP_ID" style={{ width: '100%', height: '500px' }}>
-            <div slot="control-block-start-inline-start" className="place-picker-container">
-              <gmpx-place-picker placeholder="Enter an address"></gmpx-place-picker>
-            </div>
-            <gmp-advanced-marker></gmp-advanced-marker>
-          </gmp-map>
         </div>
 
         {/* Google Reviews Section */}
