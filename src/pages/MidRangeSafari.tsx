@@ -143,38 +143,38 @@ Itinerary Overview
 Day 1 – Arrival in Arusha
 
 Arrive in Tanzania and meet your Grant Expedition representative for transfer to your accommodation. Enjoy time to rest and prepare for the adventure ahead.
-Stay: Gran Melia
-Meals: At own expense
+ Stay: Gran Melia
+ Meals: At own expense
 
 Day 2 – Tarangire National Park
 
 Travel to Tarangire, famous for its large elephant herds, 500+ bird species, and ancient baobab trees that dominate the landscape. Enjoy a picnic lunch and afternoon game drive before heading to your lodge.
-Stay: Kitela Lodge
-Meals & Drinks: All meals included (premium drinks excluded)
+ Stay: Kitela Lodge
+ Meals & Drinks: All meals included (premium drinks excluded)
 
 Day 3 – Lake Manyara National Park
 
 Explore Lake Manyara, a compact but diverse park known for tree-climbing lions, large elephant herds, and over 400 bird species. Enjoy scenic woodlands, Rift Valley views, and wildlife along the lakeshore.
-Stay: Kitela Lodge
-Meals & Drinks: All meals included (premium drinks excluded)
+ Stay: Kitela Lodge
+ Meals & Drinks: All meals included (premium drinks excluded)
 
 Day 4 – Serengeti National Park
 
 Drive through the Ngorongoro highlands with a stop at the crater viewpoint before entering the Serengeti. Famous for its vast grasslands and the Great Migration, the Serengeti offers some of the best wildlife viewing on Earth.
-Stay: Nyota Luxury Camp
-Meals & Drinks: All meals included (premium drinks excluded)
+ Stay: Nyota Luxury Camp
+ Meals & Drinks: All meals included (premium drinks excluded)
 
 Day 5 – Serengeti National Park
 
 Enjoy a full day in the Serengeti with the option of early morning and late afternoon drives or a full-day safari with picnic lunch. Known for its stable ecosystem and thriving predator populations, the Serengeti is ideal for spotting lions, cheetahs, and leopards.
-Stay: Nyota Luxury Camp
-Meals & Drinks: All meals included (premium drinks excluded)
+ Stay: Nyota Luxury Camp
+ Meals & Drinks: All meals included (premium drinks excluded)
 
 Day 6 – Serengeti to Ngorongoro Crater
 
 Descend into the world's largest intact volcanic caldera—home to 30,000 animals, including wildebeest, zebra, gazelle, and the endangered black rhino. After your crater game drive, continue to Karatu for dinner and overnight rest.
-Stay: Kitela Lodge
-Meals & Drinks: All meals included (premium drinks excluded)
+ Stay: Kitela Lodge
+ Meals & Drinks: All meals included (premium drinks excluded)
 
 Day 7 – Departure
 
@@ -182,33 +182,11 @@ Transfer to Arusha Town, Arusha Airport, or Kilimanjaro Airport depending on you
 
 Included
 
-Park fees
-
-All activities (unless optional)
-
-All accommodations (unless upgraded)
-
-Professional driver/guide
-
-Transportation
-
-All Taxes/VAT
-
-Roundtrip airport transfer
-
-Meals and drinks as listed
+Park fees, All activities (unless optional) , All accommodations (unless upgraded), Professional driver/guide, Transportation, All Taxes/VAT, Roundtrip airport transfer, Meals and drinks as listed
 
 Excluded
 
-International flights
-
-Additional accommodation before/after the tour
-
-Tips (recommended $15 per person/day)
-
-Personal items (souvenirs, insurance, visas, etc.)
-
-Optional activities (Balloon safari, Maasai village visit, Olduvai Gorge, night game drives)`,
+International flights, Additional accommodation before/after the tour, Tips (recommended $15 per person/day), Personal items (souvenirs, insurance, visas, etc.), Optional activities (Balloon safari, Maasai village visit, Olduvai Gorge, night game drives)`,
   },
   {
     id: "experience-7",
