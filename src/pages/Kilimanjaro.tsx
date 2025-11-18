@@ -6,7 +6,7 @@ import { useCartStore } from "@/stores/cartStore";
 import { getProducts, ShopifyProduct } from "@/lib/shopify";
 import { useToast } from "@/hooks/use-toast";
 import { useState, useEffect } from "react";
-import kilimanjaroHero from "@/assets/kilimanjaro-trekking-hero.png";
+import kilimanjaroHero from "@/assets/kilimanjaro-hero-new.png";
 import experience1 from "@/assets/kilimanjaro-marangu.jpg";
 import experience2 from "@/assets/kilimanjaro-machame.jpg";
 import experience3 from "@/assets/kilimanjaro-lemosho.jpg";
