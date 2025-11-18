@@ -178,7 +178,37 @@ Meals & Drinks: All meals included (premium drinks excluded)
 
 Day 7 – Departure
 
-Transfer to Arusha Town, Arusha Airport, or Kilimanjaro Airport depending on your travel plans. Your luxury safari adventure comes to an end.`,
+Transfer to Arusha Town, Arusha Airport, or Kilimanjaro Airport depending on your travel plans. Your luxury safari adventure comes to an end.
+
+Included
+
+Park fees
+
+All activities (unless optional)
+
+All accommodations (unless upgraded)
+
+Professional driver/guide
+
+Transportation
+
+All Taxes/VAT
+
+Roundtrip airport transfer
+
+Meals and drinks as listed
+
+Excluded
+
+International flights
+
+Additional accommodation before/after the tour
+
+Tips (recommended $15 per person/day)
+
+Personal items (souvenirs, insurance, visas, etc.)
+
+Optional activities (Balloon safari, Maasai village visit, Olduvai Gorge, night game drives)`,
   },
   {
     id: "experience-7",
