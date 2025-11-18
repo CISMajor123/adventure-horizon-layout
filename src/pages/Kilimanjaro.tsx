@@ -172,7 +172,7 @@ const Kilimanjaro = () => {
       <Navigation bgColor="--destinations-bg" />
       
       {/* Hero Section */}
-      <section className="relative h-[75vh] w-full flex items-center justify-center pt-24">
+      <section className="relative h-screen w-full flex flex-col items-center justify-center pt-32">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${kilimanjaroHero})` }}
@@ -180,20 +180,19 @@ const Kilimanjaro = () => {
           <div className="absolute inset-0 bg-black/10" />
         </div>
         
-        <div className="relative z-10 text-center px-6">
-          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-white tracking-tight">
+        <div className="relative z-10 text-center">
+          <h1 className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
             Mount Kilimanjaro
           </h1>
         </div>
         
         {/* Scroll Indicator */}
-        <button 
-          onClick={scrollToExperiences}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#3d2418] animate-bounce hover:text-desert-gold transition-colors"
-          aria-label="Scroll to experiences"
+        <a 
+          href="#experiences-section" 
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white animate-bounce z-10"
         >
-          <ChevronDown size={40} />
-        </button>
+          <ChevronDown size={40} strokeWidth={2} />
+        </a>
       </section>
       
       {/* Experiences Section */}
