@@ -460,6 +460,7 @@ const ZanzibarIsland = () => {
                       >
                         {experience.id === "experience-1" ? "Book Now - $1,400" : 
                          experience.id === "experience-2" ? "Book Now - $2,000" : 
+                         experience.id === "experience-3" ? "Book Now - $2,500" : 
                          "Book Now"}
                       </Button>
                     </div>
