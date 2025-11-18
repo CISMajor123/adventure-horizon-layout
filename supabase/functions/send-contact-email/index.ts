@@ -8,12 +8,12 @@ const corsHeaders = {
 };
 
 // Input validation schema
-const contactEmailSchema = z.object({
+const contactSchema = z.object({
   fullName: z.string().trim().min(1).max(100),
   email: z.string().trim().email().max(255),
   phone: z.string().trim().min(10).max(20),
   location: z.string().trim().min(1).max(100),
-  message: z.string().trim().min(1).max(2000),
+  message: z.string().trim().min(10).max(2000),
 });
 
 interface ContactEmailRequest {
@@ -44,30 +44,12 @@ const handler = async (req: Request): Promise<Response> => {
     const requestData: ContactEmailRequest = await req.json();
     
     // Validate input
-    const validationResult = contactEmailSchema.safeParse(requestData);
-    
-    if (!validationResult.success) {
-      return new Response(
-        JSON.stringify({ error: "Invalid input data", details: validationResult.error.issues }),
-        {
-          status: 400,
-          headers: { "Content-Type": "application/json", ...corsHeaders },
-        }
-      );
-    }
-
-    const { fullName, email, phone, location, message } = validationResult.data;
+    const validatedData = contactSchema.parse(requestData);
+    const { fullName, email, phone, location, message } = validatedData;
 
     console.log("Sending contact inquiry email...");
 
     const resendApiKey = Deno.env.get("RESEND_API_KEY");
-    
-    // Sanitize all user inputs before inserting into HTML
-    const safeName = escapeHtml(fullName);
-    const safeEmail = escapeHtml(email);
-    const safePhone = escapeHtml(phone);
-    const safeLocation = escapeHtml(location);
-    const safeMessage = escapeHtml(message);
     
     // Send email to owner using Resend API
     const emailResponse = await fetch("https://api.resend.com/emails", {
@@ -79,15 +61,15 @@ const handler = async (req: Request): Promise<Response> => {
       body: JSON.stringify({
         from: "onboarding@resend.dev",
         to: ["power2md@dukes.jmu.edu"],
-        subject: `New Contact Inquiry from ${safeName}`,
+        subject: `New Contact Inquiry from ${escapeHtml(fullName)}`,
         html: `
           <h2>New Contact Inquiry</h2>
-          <p><strong>Name:</strong> ${safeName}</p>
-          <p><strong>Email:</strong> ${safeEmail}</p>
-          <p><strong>Phone:</strong> ${safePhone}</p>
-          <p><strong>Preferred Location:</strong> ${safeLocation}</p>
+          <p><strong>Name:</strong> ${escapeHtml(fullName)}</p>
+          <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+          <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
+          <p><strong>Preferred Location:</strong> ${escapeHtml(location)}</p>
           <p><strong>Message:</strong></p>
-          <p>${safeMessage}</p>
+          <p>${escapeHtml(message)}</p>
         `,
       }),
     });
@@ -109,7 +91,19 @@ const handler = async (req: Request): Promise<Response> => {
       },
     });
   } catch (error: any) {
-    console.error("Error in send-contact-email function");
+    console.error("Error in send-contact-email function:", error.name);
+    
+    // Handle validation errors separately
+    if (error.name === 'ZodError') {
+      return new Response(
+        JSON.stringify({ error: "Invalid input data" }),
+        {
+          status: 400,
+          headers: { "Content-Type": "application/json", ...corsHeaders },
+        }
+      );
+    }
+    
     return new Response(
       JSON.stringify({ error: "Failed to send email" }),
       {
