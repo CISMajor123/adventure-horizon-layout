@@ -163,9 +163,52 @@ This extended itinerary allows for multiple full days in the Ndutu area, maximiz
     title: "10-Day Great Migration Safari Itinerary",
     price: "$4,800",
     image: zebraPair,
-    content: `Experience the full spectacle of the Great Migration with this comprehensive 10-day safari that follows the movement of over two million wildebeest, zebra, and other animals across the Serengeti ecosystem. This extended itinerary provides ample time to witness different aspects of the migration, from river crossings to calving seasons, depending on the time of year.
+    content: `This 10-day safari follows the world-famous Great Migration through Tanzania's most iconic parks, including Tarangire, Serengeti, Ngorongoro Crater, and Lake Manyara. From dramatic Mara River crossings to Big Five encounters, this route showcases the best of northern Tanzania.
 
-Your journey includes multiple destinations across the Northern Circuit, with extended stays in key migration areas to maximize wildlife viewing opportunities. Comfortable mid-range accommodations are strategically selected to place you near the migration action, while also ensuring you experience the diversity of Tanzania's other iconic wildlife destinations including Tarangire, Ngorongoro Crater, and Lake Manyara.`,
+Itinerary Overview
+
+Day 1 – Arrival in Arusha
+Airport pickup and transfer to Arusha Planet Lodge for rest.
+Meals: At own expense.
+
+Day 2 – Tarangire National Park
+Scenic drive to Tarangire for a game drive among elephants, lions, and ancient baobabs.
+Stay: Eileen's Tree Inn – All meals included.
+
+Day 3 – Central Serengeti (Seronera)
+Travel through Ngorongoro highlands into the Serengeti. Game drive to Nyota Luxury Camp.
+All meals included.
+
+Days 4–5 – North Serengeti (Migration Region)
+Continue to the Mara River region to witness river crossings and large predators during migration season (Aug–Oct).
+Stay: Mara Heritage Camp – All meals included.
+
+Day 6 – Central Serengeti
+Return to Seronera, home to lions, cheetahs, leopards, and year-round wildlife.
+Stay: Nyota Luxury Camp.
+
+Day 7 – Ngorongoro Crater Rim
+Scenic drive toward Ngorongoro, overnighting at the crater rim.
+Stay: Rhino Lodge – All meals included.
+
+Day 8 – Ngorongoro Crater
+Descend into the crater for a full-day game drive—one of the best places to see the Big Five.
+Stay: Eileen's Tree Inn – All meals included.
+
+Day 9 – Lake Manyara
+Explore Lake Manyara's forests and flamingo-filled lake before returning to Arusha.
+Stay: Arusha Planet Lodge – Breakfast & lunch included.
+
+Day 10 – Departure
+Transfer to the airport for onward travel.
+
+Included
+
+Park fees, accommodations, listed meals, professional driver/guide, transportation, taxes, and airport transfers.
+
+Excluded
+
+International flights, optional activities, additional nights, tips, personal expenses, visas, insurance.`,
   },
 ];
 
