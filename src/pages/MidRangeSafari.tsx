@@ -58,9 +58,23 @@ Excluded: International flights, tips, personal items, travel insurance, and opt
     id: "experience-3",
     title: "5-Day Tanzania Safari:\nTarangire, Ngorongoro, Serengeti & Lake Manyara",
     image: elephantSavannah,
-    content: `Embark on the ultimate Tanzanian safari experience, exploring four of the country's premier wildlife destinations. This 5-day adventure takes you through the diverse ecosystems of Tarangire, the world-famous Serengeti plains, the spectacular Ngorongoro Crater, and the scenic Lake Manyara National Park.
+    content: `Experience Tanzania's most iconic parks on this 5-day adventure through the Northern Safari Circuit. Spot elephants beneath ancient baobabs in Tarangire, descend into the wildlife-rich Ngorongoro Crater, witness the vast Serengeti plains and (with luck) the Great Migration, and end at Lake Manyara—home to flamingos and tree-climbing lions. From lush forests to endless savannas, every day brings breathtaking scenery and unforgettable wildlife encounters.
 
-With comfortable mid-range accommodations strategically located for optimal game viewing, this safari offers the perfect balance of adventure and comfort. Experience the Great Migration (seasonal), witness predator-prey interactions, and create memories that will last a lifetime.`,
+Itinerary Highlights:
+
+Day 1 – Arrival in Arusha: Airport pickup and overnight stay at Arusha Planet Lodge. Meals at own expense.
+
+Day 2 – Tarangire National Park: Game drive through elephant country and baobab forests. Picnic lunch and overnight at Eileen's Tree Inn, Karatu.
+
+Day 3 – Ngorongoro Crater & Serengeti: Descend into the crater to spot the Big Five, then continue to the Serengeti. Overnight at Nyota Luxury Camp.
+
+Day 4 – Serengeti to Karatu: Morning game drive across the Serengeti plains; afternoon return to Eileen's Tree Inn.
+
+Day 5 – Lake Manyara National Park: Explore forests, flamingo-covered lake, and Rift Valley escarpment before returning to Arusha or airport drop-off.
+
+Included: Park fees, accommodation, meals (as listed), transport, professional guide, taxes, and airport transfers.
+
+Excluded: International flights, tips, personal expenses, and optional add-ons (e.g., Balloon Safari, Maasai Village Visit, Night Game Drive).`,
   },
   {
     id: "experience-4",
