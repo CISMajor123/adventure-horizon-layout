@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#3d3530] text-[#d4b896] py-16">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           {/* Grant Expedition Column */}
           <div>
             <h3 className="text-xl font-bold mb-4">Grant Expedition</h3>
@@ -52,33 +52,6 @@ const Footer = () => {
                 <Link to="/contact" className="hover:text-white transition-colors">
                   Contact
                 </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Support Column */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Support</h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Newsletter
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Terms & Conditions
-                </a>
               </li>
             </ul>
           </div>
