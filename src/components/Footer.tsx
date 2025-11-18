@@ -34,28 +34,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Main Menu Column */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Main Menu</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link to="/" className="hover:text-white transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/destinations" className="hover:text-white transition-colors">
-                  Tours
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="hover:text-white transition-colors">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-
           {/* Contact Us Column */}
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
@@ -76,6 +54,28 @@ const Footer = () => {
                 <span className="font-bold">Address:</span> Arusha, Tanzania
               </p>
             </div>
+          </div>
+
+          {/* Main Menu Column */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">Main Menu</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/" className="hover:text-white transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/destinations" className="hover:text-white transition-colors">
+                  Tours
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-white transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 
