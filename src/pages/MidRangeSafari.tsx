@@ -38,9 +38,21 @@ Excluded: International flights, tips, travel insurance, and optional add-ons (e
     id: "experience-2",
     title: "4-Day Tanzania Safari:\nTarangire, Ngorongoro & Lake Manyara",
     image: elephantSafari,
-    content: `Discover three of Tanzania's most spectacular wildlife destinations in this comprehensive 4-day safari adventure. From the elephant paradise of Tarangire to the wildlife-rich crater floor of Ngorongoro, and the tree-climbing lions of Lake Manyara, this journey offers diverse landscapes and incredible game viewing opportunities.
+    content: `Discover the best of northern Tanzania on this 4-day mid-range safari, exploring diverse landscapes and incredible wildlife. From elephant herds under ancient baobabs in Tarangire to the vast Ngorongoro Crater teeming with lions, rhinos, and zebras, and finally the tree-climbing lions and flamingos of Lake Manyara — this journey offers a perfect mix of scenery, adventure, and comfort.
 
-Stay in comfortable mid-range lodges with stunning views, enjoy full-board meals, and benefit from the expertise of professional guides who will enhance your safari experience with their knowledge of wildlife behavior and local ecology.`,
+Itinerary Highlights:
+
+Day 1 – Arrival in Arusha: Airport pickup and overnight stay at Arusha Planet Lodge. Meals at own expense.
+
+Day 2 – Tarangire National Park: Game drive through elephant country and baobab forests. Picnic lunch and overnight at Eileen's Tree Inn, Karatu.
+
+Day 3 – Ngorongoro Crater: Descend into the world's largest intact caldera to spot the Big Five and over 500 bird species. Return to Eileen's Tree Inn.
+
+Day 4 – Lake Manyara National Park: Explore forests, Rift Valley escarpment, and flamingo-filled lake before returning to Arusha or airport drop-off.
+
+Included: Park fees, accommodation, meals (as listed), transport, guide, taxes, and airport transfers.
+
+Excluded: International flights, tips, personal items, travel insurance, and optional add-ons (e.g., Balloon Safari, Maasai Village Visit, Night Game Drive).`,
   },
   {
     id: "experience-3",
