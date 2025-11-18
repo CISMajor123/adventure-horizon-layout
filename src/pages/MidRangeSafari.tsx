@@ -136,9 +136,49 @@ Excluded: International flights, tips, personal expenses, and optional add-ons (
     title: "7-Day Luxury Northern Tanzania Safari",
     price: "$4,500",
     image: gazelleSafari,
-    content: `Indulge in the ultimate luxury safari experience with this 7-day journey through Northern Tanzania's most iconic wildlife destinations. This premium package offers the perfect combination of world-class game viewing, luxurious accommodations, and personalized service that exceeds expectations.
+    content: `Experience Tanzania's premier wildlife destinations in comfort and style on this 7-day luxury safari. From Tarangire's towering baobabs to the endless plains of the Serengeti and the breathtaking Ngorongoro Crater, this journey offers world-class lodges, diverse landscapes, and unforgettable wildlife encounters.
 
-Explore Tarangire's elephant paradise, witness the Serengeti's incredible wildlife concentrations, experience the wonder of the Ngorongoro Crater, and discover Lake Manyara's unique ecosystems. Stay in exclusive luxury lodges and camps that offer unparalleled comfort, gourmet cuisine, and intimate wildlife encounters, all while enjoying the expertise of your private guide.`,
+Itinerary Overview
+
+Day 1 – Arrival in Arusha
+
+Arrive in Tanzania and meet your Grant Expedition representative for transfer to your accommodation. Enjoy time to rest and prepare for the adventure ahead.
+Stay: Gran Melia
+Meals: At own expense
+
+Day 2 – Tarangire National Park
+
+Travel to Tarangire, famous for its large elephant herds, 500+ bird species, and ancient baobab trees that dominate the landscape. Enjoy a picnic lunch and afternoon game drive before heading to your lodge.
+Stay: Kitela Lodge
+Meals & Drinks: All meals included (premium drinks excluded)
+
+Day 3 – Lake Manyara National Park
+
+Explore Lake Manyara, a compact but diverse park known for tree-climbing lions, large elephant herds, and over 400 bird species. Enjoy scenic woodlands, Rift Valley views, and wildlife along the lakeshore.
+Stay: Kitela Lodge
+Meals & Drinks: All meals included (premium drinks excluded)
+
+Day 4 – Serengeti National Park
+
+Drive through the Ngorongoro highlands with a stop at the crater viewpoint before entering the Serengeti. Famous for its vast grasslands and the Great Migration, the Serengeti offers some of the best wildlife viewing on Earth.
+Stay: Nyota Luxury Camp
+Meals & Drinks: All meals included (premium drinks excluded)
+
+Day 5 – Serengeti National Park
+
+Enjoy a full day in the Serengeti with the option of early morning and late afternoon drives or a full-day safari with picnic lunch. Known for its stable ecosystem and thriving predator populations, the Serengeti is ideal for spotting lions, cheetahs, and leopards.
+Stay: Nyota Luxury Camp
+Meals & Drinks: All meals included (premium drinks excluded)
+
+Day 6 – Serengeti to Ngorongoro Crater
+
+Descend into the world's largest intact volcanic caldera—home to 30,000 animals, including wildebeest, zebra, gazelle, and the endangered black rhino. After your crater game drive, continue to Karatu for dinner and overnight rest.
+Stay: Kitela Lodge
+Meals & Drinks: All meals included (premium drinks excluded)
+
+Day 7 – Departure
+
+Transfer to Arusha Town, Arusha Airport, or Kilimanjaro Airport depending on your travel plans. Your luxury safari adventure comes to an end.`,
   },
   {
     id: "experience-7",
