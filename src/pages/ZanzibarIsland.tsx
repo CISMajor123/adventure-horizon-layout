@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { useCartStore } from "@/stores/cartStore";
 import { toast } from "sonner";
-import zanzibarAerial from "@/assets/zanzibar-aerial.jpg";
+import zanzibarHero from "@/assets/zanzibar-hero.png";
 import zanzibarSunsetDhow from "@/assets/zanzibar-sunset-dhow.jpg";
 import zanzibarBeachPier from "@/assets/zanzibar-beach-pier.jpg";
 import zanzibarPalmTrees from "@/assets/zanzibar-palm-trees.jpg";
@@ -398,7 +398,7 @@ const ZanzibarIsland = () => {
       <section className="relative h-screen w-full flex items-start justify-center pt-32">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${zanzibarAerial})` }}
+          style={{ backgroundImage: `url(${zanzibarHero})` }}
         >
           <div className="absolute inset-0 bg-black/10" />
         </div>
