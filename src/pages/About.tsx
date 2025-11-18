@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import teamPhoto from "@/assets/team-photo.png";
 import { useEffect } from "react";
+import Footer from "@/components/Footer";
 
 const About = () => {
   useEffect(() => {
@@ -78,6 +79,7 @@ const About = () => {
           <div className="commonninja_component pid-2e72d824-b5b8-4dc5-bb75-5921103e655b"></div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

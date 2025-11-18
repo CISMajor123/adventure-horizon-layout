@@ -10,6 +10,7 @@ import kilimanjaroHero from "@/assets/kilimanjaro-hero-new.png";
 import experience1 from "@/assets/kilimanjaro-marangu.jpg";
 import experience2 from "@/assets/kilimanjaro-machame.jpg";
 import experience3 from "@/assets/kilimanjaro-lemosho.jpg";
+import Footer from "@/components/Footer";
 
 const experiences = [
   {
@@ -260,11 +261,12 @@ const Kilimanjaro = () => {
                   </AccordionContent>
                 )}
               </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
-    </div>
+          ))}
+        </Accordion>
+      </div>
+    </section>
+    <Footer />
+  </div>
   );
 };
 
