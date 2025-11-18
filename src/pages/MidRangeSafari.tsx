@@ -215,9 +215,45 @@ Optional activities (Balloon safari, Maasai village visit, Olduvai Gorge, night 
     title: "7-Day Western Serengeti Migration Safari",
     price: "$3,100",
     image: giraffeMountainSunset,
-    content: `Witness one of nature's most spectacular events with this specialized 7-day migration safari focused on the Western Serengeti. Timed to coincide with the dramatic river crossings, this itinerary places you in the heart of the action as millions of wildebeest and zebra face the treacherous waters of the Grumeti River.
+    content: `This 7-day adventure highlights the Great Migration through the Western Corridor of the Serengeti—home to the Grumeti and Mbalageti Rivers, where predator action peaks as herds make daring river crossings.
 
-This unique safari combines prime migration viewing with visits to other Northern Circuit highlights including Tarangire and Ngorongoro Crater. Stay in strategically located mid-range accommodations that offer excellent access to migration routes, ensuring you witness this incredible natural phenomenon from the best vantage points.`,
+Itinerary Overview
+
+Day 1 – Arrival in Arusha
+Pickup from the airport and transfer to Arusha Planet Lodge for rest.
+Meals at own expense.
+
+Day 2 – Tarangire National Park
+Travel through the Masai plains to Tarangire and enjoy an afternoon game drive.
+Stay: Eileen's Tree Inn – All meals included.
+
+Day 3 – Central Serengeti (Seronera)
+Drive through Ngorongoro highlands into the Serengeti. Afternoon game drive among migrating herds and predators.
+Stay: Nyota Luxury Camp – All meals included.
+
+Day 4 – Western Serengeti (Grumeti & Mbalageti Rivers)
+Witness migration herds gathering along the riverbanks (May–July). Expect intense predator interactions and dramatic landscapes.
+Stay: Mbalageti Serengeti – All meals included.
+
+Day 5 – Return to Central Serengeti
+Morning game drive in the Western Corridor, then head back to Seronera for more wildlife viewing.
+Stay: Nyota Luxury Camp.
+
+Day 6 – Ngorongoro Crater
+Descend into the crater for a full-day safari before driving to Karatu.
+Stay: Eileen's Tree Inn – All meals included.
+
+Day 7 – Lake Manyara & Departure
+Explore Lake Manyara's lush forests and diverse wildlife before returning to Arusha.
+Stay: Arusha Planet Lodge – Breakfast & lunch included.
+
+Included
+
+Park fees, accommodations, meals as listed, professional guide, transportation, taxes, and airport transfers.
+
+Excluded
+
+International flights, extra nights, optional excursions, tips, personal expenses.`,
   },
   {
     id: "experience-8",
