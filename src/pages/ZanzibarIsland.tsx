@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { useCartStore } from "@/stores/cartStore";
 import { toast } from "sonner";
-import zanzibarHero from "@/assets/zanzibar-hero.png";
+import zanzibarHero from "@/assets/zanzibar-hero-new.png";
 import zanzibarSunsetDhow from "@/assets/zanzibar-sunset-dhow.jpg";
 import zanzibarBeachPier from "@/assets/zanzibar-beach-pier.jpg";
 import zanzibarPalmTrees from "@/assets/zanzibar-palm-trees.jpg";
