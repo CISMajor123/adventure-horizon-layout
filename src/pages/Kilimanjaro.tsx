@@ -180,12 +180,6 @@ const Kilimanjaro = () => {
           <div className="absolute inset-0 bg-black/10" />
         </div>
         
-        <div className="relative z-10 text-center">
-          <h1 className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-            Mount Kilimanjaro
-          </h1>
-        </div>
-        
         {/* Scroll Indicator */}
         <a 
           href="#experiences-section" 
