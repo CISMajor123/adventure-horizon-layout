@@ -8,13 +8,20 @@ import Footer from "@/components/Footer";
 const About = () => {
   useEffect(() => {
     // Load CommonNinja script for Google Reviews widget
-    const script = document.createElement('script');
-    script.src = "https://cdn.commoninja.com/sdk/latest/commonninja.js";
-    script.defer = true;
-    document.body.appendChild(script);
+    const commonNinjaScript = document.createElement('script');
+    commonNinjaScript.src = "https://cdn.commoninja.com/sdk/latest/commonninja.js";
+    commonNinjaScript.defer = true;
+    document.body.appendChild(commonNinjaScript);
+    
+    // Load Elfsight script for TripAdvisor Reviews widget
+    const elfsightScript = document.createElement('script');
+    elfsightScript.src = "https://elfsightcdn.com/platform.js";
+    elfsightScript.async = true;
+    document.body.appendChild(elfsightScript);
     
     return () => {
-      document.body.removeChild(script);
+      document.body.removeChild(commonNinjaScript);
+      document.body.removeChild(elfsightScript);
     };
   }, []);
 
@@ -77,6 +84,11 @@ const About = () => {
         {/* Google Reviews Section */}
         <div className="mt-20 max-w-7xl mx-auto">
           <div className="commonninja_component pid-2e72d824-b5b8-4dc5-bb75-5921103e655b"></div>
+        </div>
+
+        {/* TripAdvisor Reviews Section */}
+        <div className="mt-20 max-w-7xl mx-auto">
+          <div className="elfsight-app-1a198ad5-3e51-4c22-a421-b20046e5fe3a" data-elfsight-app-lazy></div>
         </div>
       </main>
       <Footer />
