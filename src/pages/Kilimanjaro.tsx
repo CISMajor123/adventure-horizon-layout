@@ -245,7 +245,7 @@ const Kilimanjaro = () => {
                           size="lg"
                           className="bg-[#3d2418] hover:bg-[#2d1810] text-white"
                         >
-                          Book Now - ${parseFloat(maranGuProduct.node.variants.edges[0].node.price.amount).toFixed(0)}
+                          Book Now - ${parseFloat(maranGuProduct.node.variants.edges[0].node.price.amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}
                         </Button>
                       </div>
                     )}
@@ -256,7 +256,7 @@ const Kilimanjaro = () => {
                           size="lg"
                           className="bg-[#3d2418] hover:bg-[#2d1810] text-white"
                         >
-                          Book Now - ${parseFloat(machameProduct.node.variants.edges[0].node.price.amount).toFixed(0)}
+                          Book Now - ${parseFloat(machameProduct.node.variants.edges[0].node.price.amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}
                         </Button>
                       </div>
                     )}
@@ -267,7 +267,7 @@ const Kilimanjaro = () => {
                           size="lg"
                           className="bg-[#3d2418] hover:bg-[#2d1810] text-white"
                         >
-                          Book Now - ${parseFloat(lemoshoProduct.node.variants.edges[0].node.price.amount).toFixed(0)}
+                          Book Now - ${parseFloat(lemoshoProduct.node.variants.edges[0].node.price.amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}
                         </Button>
                       </div>
                     )}
