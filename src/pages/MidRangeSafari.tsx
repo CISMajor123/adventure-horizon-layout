@@ -104,9 +104,27 @@ Excluded: International flights, tips, personal expenses, and optional activitie
     id: "experience-5",
     title: "7-Day Mid-Range Epic Adventure\n(Stay on the Crater Rim)",
     image: safariSunsetVehicle,
-    content: `Experience Tanzania's wildlife wonders with the added luxury of staying on the rim of the magnificent Ngorongoro Crater. This 7-day epic adventure offers extended time in each destination, allowing for more in-depth game viewing and a deeper connection with the landscape.
+    content: `Experience the best of Tanzania on this 7-day journey through its most famous national parks. From elephant herds beneath Tarangire's ancient baobabs to the endless plains of the Serengeti and the dramatic Ngorongoro Crater teeming with wildlife, this safari delivers unforgettable moments each day. Spend three nights in the Serengeti, where vast herds of wildebeest and zebra roam and predators lie in wait, and finish your adventure at Lake Manyara—home to flamingos and tree-climbing lions.
 
-Your journey includes Tarangire's baobab-dotted plains, multiple days exploring different regions of the vast Serengeti ecosystem, and the unforgettable experience of the Ngorongoro Crater. With comfortable mid-range accommodations and the unique opportunity to wake up to crater views, this safari offers exceptional value and unforgettable experiences.`,
+Itinerary Highlights:
+
+Day 1 – Arrival in Arusha: Airport pickup and transfer to Arusha Planet Lodge. Time to rest and prepare for your safari. Meals at own expense.
+
+Day 2 – Tarangire National Park: Game drive among baobab trees and large elephant herds. Picnic lunch inside the park, then continue to Karatu. Overnight at Eileen's Tree Inn.
+
+Day 3 – Karatu to Serengeti: Drive through the Ngorongoro Conservation Area with a stop at the crater viewpoint before entering the Serengeti. Game drive en route. Overnight at Nyota Luxury Camp.
+
+Day 4 – Serengeti National Park: Full day exploring the Serengeti's diverse wildlife, from lions and leopards to wildebeest herds and hippos. Overnight at Nyota Luxury Camp.
+
+Day 5 – Serengeti to Ngorongoro: Morning game drive as you depart the Serengeti. Continue to the Ngorongoro area for dinner and overnight at Rhino Lodge.
+
+Day 6 – Ngorongoro Crater: Descend into the crater for one of Africa's greatest wildlife spectacles. Spot rhinos, lions, zebras, and flamingos before returning to Karatu. Overnight at Eileen's Tree Inn.
+
+Day 7 – Lake Manyara National Park: Explore this compact park famous for flamingos, elephants, and tree-climbing lions. Picnic lunch and afternoon drive to Arusha or airport drop-off.
+
+Included: Park fees, accommodation, meals (as listed), transport, professional guide, taxes, and airport transfers.
+
+Excluded: International flights, tips, personal expenses, and optional add-ons (Balloon Safari, Maasai Village Visit, Night Game Drive, Crater Rim Walk, Olduvai Gorge visit).`,
   },
   {
     id: "experience-6",
