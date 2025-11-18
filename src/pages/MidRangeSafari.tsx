@@ -19,6 +19,7 @@ const experiences = [
   {
     id: "experience-1",
     title: "3-Day Taste of Tanzania Safari\n(Tarangire & Ngorongoro)",
+    price: "$950",
     image: giraffeSunsetSafari,
     content: `Experience the highlights of Tanzania's northern safari circuit on this 3-day adventure. Begin in Arusha, where you'll rest before setting out to explore Tarangire National Park—famous for its vast elephant herds, baobab trees, and rich wildlife. Continue to the breathtaking Ngorongoro Crater, a UNESCO World Heritage Site and home to the Big Five, zebras, wildebeest, and over 500 bird species. Enjoy scenic drives, full-day game viewing, and comfortable lodge stays before returning to Arusha.
 
@@ -37,6 +38,7 @@ Excluded: International flights, tips, travel insurance, and optional add-ons (e
   {
     id: "experience-2",
     title: "4-Day Tanzania Safari:\nTarangire, Ngorongoro & Lake Manyara",
+    price: "$1,250",
     image: elephantSafari,
     content: `Discover the best of northern Tanzania on this 4-day mid-range safari, exploring diverse landscapes and incredible wildlife. From elephant herds under ancient baobabs in Tarangire to the vast Ngorongoro Crater teeming with lions, rhinos, and zebras, and finally the tree-climbing lions and flamingos of Lake Manyara — this journey offers a perfect mix of scenery, adventure, and comfort.
 
@@ -57,6 +59,7 @@ Excluded: International flights, tips, personal items, travel insurance, and opt
   {
     id: "experience-3",
     title: "5-Day Tanzania Safari:\nTarangire, Ngorongoro, Serengeti & Lake Manyara",
+    price: "$1,750",
     image: elephantSavannah,
     content: `Experience Tanzania's most iconic parks on this 5-day adventure through the Northern Safari Circuit. Spot elephants beneath ancient baobabs in Tarangire, descend into the wildlife-rich Ngorongoro Crater, witness the vast Serengeti plains and (with luck) the Great Migration, and end at Lake Manyara—home to flamingos and tree-climbing lions. From lush forests to endless savannas, every day brings breathtaking scenery and unforgettable wildlife encounters.
 
@@ -79,6 +82,7 @@ Excluded: International flights, tips, personal expenses, and optional add-ons (
   {
     id: "experience-4",
     title: "6-Day Luxury Highlights of Tanzania Safari",
+    price: "$3,200",
     image: giraffeHerd,
     content: `Experience the ultimate Tanzanian adventure on this 6-day luxury safari through the country's most iconic parks. Stay in top-tier lodges and camps while exploring Tarangire's elephant herds, the endless Serengeti plains, and the breathtaking Ngorongoro Crater—home to the Big Five. With two nights in the Serengeti and exceptional comfort throughout, this itinerary blends world-class wildlife encounters with unforgettable luxury.
 
@@ -103,6 +107,7 @@ Excluded: International flights, tips, personal expenses, and optional activitie
   {
     id: "experience-5",
     title: "7-Day Mid-Range Epic Adventure\n(Stay on the Crater Rim)",
+    price: "$2,450",
     image: safariSunsetVehicle,
     content: `Experience the best of Tanzania on this 7-day journey through its most famous national parks. From elephant herds beneath Tarangire's ancient baobabs to the endless plains of the Serengeti and the dramatic Ngorongoro Crater teeming with wildlife, this safari delivers unforgettable moments each day. Spend three nights in the Serengeti, where vast herds of wildebeest and zebra roam and predators lie in wait, and finish your adventure at Lake Manyara—home to flamingos and tree-climbing lions.
 
@@ -129,6 +134,7 @@ Excluded: International flights, tips, personal expenses, and optional add-ons (
   {
     id: "experience-6",
     title: "7-Day Luxury Northern Tanzania Safari",
+    price: "$4,500",
     image: gazelleSafari,
     content: `Indulge in the ultimate luxury safari experience with this 7-day journey through Northern Tanzania's most iconic wildlife destinations. This premium package offers the perfect combination of world-class game viewing, luxurious accommodations, and personalized service that exceeds expectations.
 
@@ -137,6 +143,7 @@ Explore Tarangire's elephant paradise, witness the Serengeti's incredible wildli
   {
     id: "experience-7",
     title: "7-Day Western Serengeti Migration Safari",
+    price: "$3,100",
     image: giraffeMountainSunset,
     content: `Witness one of nature's most spectacular events with this specialized 7-day migration safari focused on the Western Serengeti. Timed to coincide with the dramatic river crossings, this itinerary places you in the heart of the action as millions of wildebeest and zebra face the treacherous waters of the Grumeti River.
 
@@ -145,6 +152,7 @@ This unique safari combines prime migration viewing with visits to other Norther
   {
     id: "experience-8",
     title: "8-Day Mid-Range Ndutu Migration Footsteps",
+    price: "$3,300",
     image: hornbillBird,
     content: `Follow in the footsteps of the Great Migration with this 8-day safari focused on the Ndutu region in the southern Serengeti. This seasonal safari (typically December to March) offers front-row seats to the calving season when hundreds of thousands of wildebeest give birth on the nutrient-rich short grass plains.
 
@@ -153,6 +161,7 @@ This extended itinerary allows for multiple full days in the Ndutu area, maximiz
   {
     id: "experience-9",
     title: "10-Day Great Migration Safari Itinerary",
+    price: "$4,800",
     image: zebraPair,
     content: `Experience the full spectacle of the Great Migration with this comprehensive 10-day safari that follows the movement of over two million wildebeest, zebra, and other animals across the Serengeti ecosystem. This extended itinerary provides ample time to witness different aspects of the migration, from river crossings to calving seasons, depending on the time of year.
 
@@ -244,7 +253,7 @@ const MidRangeSafari = () => {
                       onClick={() => handleAddToCart(experience.id)}
                       size="lg"
                     >
-                      Book Now
+                      Book Now - {experience.price}
                     </Button>
                   </div>
                 </div>
