@@ -248,11 +248,9 @@ Explore Lake Manyara's lush forests and diverse wildlife before returning to Aru
 Stay: Arusha Planet Lodge – Breakfast & lunch included.
 
 Included
-
 Park fees, accommodations, meals as listed, professional guide, transportation, taxes, and airport transfers.
 
 Excluded
-
 International flights, extra nights, optional excursions, tips, personal expenses.`,
   },
   {
