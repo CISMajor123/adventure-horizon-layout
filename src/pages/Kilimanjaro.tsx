@@ -243,7 +243,6 @@ const Kilimanjaro = () => {
                         <Button 
                           onClick={handleBookMarangu}
                           size="lg"
-                          className="bg-[#3d2418] hover:bg-[#2d1810] text-white"
                         >
                           Book Now - ${parseFloat(maranGuProduct.node.variants.edges[0].node.price.amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}
                         </Button>
@@ -254,7 +253,6 @@ const Kilimanjaro = () => {
                         <Button 
                           onClick={handleBookMachame}
                           size="lg"
-                          className="bg-[#3d2418] hover:bg-[#2d1810] text-white"
                         >
                           Book Now - ${parseFloat(machameProduct.node.variants.edges[0].node.price.amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}
                         </Button>
@@ -265,7 +263,6 @@ const Kilimanjaro = () => {
                         <Button 
                           onClick={handleBookLemosho}
                           size="lg"
-                          className="bg-[#3d2418] hover:bg-[#2d1810] text-white"
                         >
                           Book Now - ${parseFloat(lemoshoProduct.node.variants.edges[0].node.price.amount).toLocaleString('en-US', { maximumFractionDigits: 0 })}
                         </Button>
