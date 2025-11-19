@@ -20,7 +20,7 @@ const experiences = [
   {
     id: "experience-1",
     title: "3-Day Taste of Tanzania Safari\n(Tarangire & Ngorongoro)",
-    price: "$950",
+    price: "$1,850",
     image: giraffeSunsetSafari,
     content: `Experience the highlights of Tanzania's northern safari circuit on this 3-day adventure. Begin in Arusha, where you'll rest before setting out to explore Tarangire National Park—famous for its vast elephant herds, baobab trees, and rich wildlife. Continue to the breathtaking Ngorongoro Crater, a UNESCO World Heritage Site and home to the Big Five, zebras, wildebeest, and over 500 bird species. Enjoy scenic drives, full-day game viewing, and comfortable lodge stays before returning to Arusha.
 
@@ -39,7 +39,7 @@ Excluded: International flights, tips, travel insurance, and optional add-ons (e
   {
     id: "experience-2",
     title: "4-Day Tanzania Safari:\nTarangire, Ngorongoro & Lake Manyara",
-    price: "$1,250",
+    price: "$2,120",
     image: elephantSafari,
     content: `Discover the best of northern Tanzania on this 4-day mid-range safari, exploring diverse landscapes and incredible wildlife. From elephant herds under ancient baobabs in Tarangire to the vast Ngorongoro Crater teeming with lions, rhinos, and zebras, and finally the tree-climbing lions and flamingos of Lake Manyara — this journey offers a perfect mix of scenery, adventure, and comfort.
 
@@ -60,7 +60,7 @@ Excluded: International flights, tips, personal items, travel insurance, and opt
   {
     id: "experience-3",
     title: "5-Day Tanzania Safari:\nTarangire, Ngorongoro, Serengeti & Lake Manyara",
-    price: "$1,750",
+    price: "$2,390",
     image: elephantSavannah,
     content: `Experience Tanzania's most iconic parks on this 5-day adventure through the Northern Safari Circuit. Spot elephants beneath ancient baobabs in Tarangire, descend into the wildlife-rich Ngorongoro Crater, witness the vast Serengeti plains and (with luck) the Great Migration, and end at Lake Manyara—home to flamingos and tree-climbing lions. From lush forests to endless savannas, every day brings breathtaking scenery and unforgettable wildlife encounters.
 
@@ -83,7 +83,7 @@ Excluded: International flights, tips, personal expenses, and optional add-ons (
   {
     id: "experience-4",
     title: "6-Day Luxury Highlights of Tanzania Safari",
-    price: "$3,200",
+    price: "$2,670",
     image: giraffeHerd,
     content: `Experience the ultimate Tanzanian adventure on this 6-day luxury safari through the country's most iconic parks. Stay in top-tier lodges and camps while exploring Tarangire's elephant herds, the endless Serengeti plains, and the breathtaking Ngorongoro Crater—home to the Big Five. With two nights in the Serengeti and exceptional comfort throughout, this itinerary blends world-class wildlife encounters with unforgettable luxury.
 
@@ -108,7 +108,7 @@ Excluded: International flights, tips, personal expenses, and optional activitie
   {
     id: "experience-5",
     title: "7-Day Mid-Range Epic Adventure\n(Stay on the Crater Rim)",
-    price: "$2,450",
+    price: "$2,940",
     image: safariSunsetVehicle,
     content: `Experience the best of Tanzania on this 7-day journey through its most famous national parks. From elephant herds beneath Tarangire's ancient baobabs to the endless plains of the Serengeti and the dramatic Ngorongoro Crater teeming with wildlife, this safari delivers unforgettable moments each day. Spend three nights in the Serengeti, where vast herds of wildebeest and zebra roam and predators lie in wait, and finish your adventure at Lake Manyara—home to flamingos and tree-climbing lions.
 
@@ -135,7 +135,7 @@ Excluded: International flights, tips, personal expenses, and optional add-ons (
   {
     id: "experience-6",
     title: "7-Day Luxury Northern Tanzania Safari",
-    price: "$4,500",
+    price: "$3,210",
     image: gazelleSafari,
     content: `Experience Tanzania's premier wildlife destinations in comfort and style on this 7-day luxury safari. From Tarangire's towering baobabs to the endless plains of the Serengeti and the breathtaking Ngorongoro Crater, this journey offers world-class lodges, diverse landscapes, and unforgettable wildlife encounters.
 
@@ -192,7 +192,7 @@ International flights, Additional accommodation before/after the tour, Tips (rec
   {
     id: "experience-7",
     title: "7-Day Western Serengeti Migration Safari",
-    price: "$3,100",
+    price: "$3,480",
     image: giraffeMountainSunset,
     content: `This 7-day adventure highlights the Great Migration through the Western Corridor of the Serengeti—home to the Grumeti and Mbalageti Rivers, where predator action peaks as herds make daring river crossings.
 
@@ -221,7 +221,7 @@ International flights, extra nights, optional excursions, tips, personal expense
   {
     id: "experience-8",
     title: "8-Day Mid-Range Ndutu Migration Footsteps",
-    price: "$3,300",
+    price: "$3,760",
     image: hornbillBird,
     content: `Follow the path of the Great Migration on this unforgettable 8-day safari through Tanzania's most iconic parks. From the elephant herds of Tarangire and the dramatic Ngorongoro Crater to the legendary plains of the Serengeti and Ndutu—where millions of wildebeest gather to calve between December and April—this journey immerses you in Tanzania's richest wildlife regions. Each day offers breathtaking scenery, diverse habitats, and extraordinary game-viewing opportunities.
 
@@ -250,7 +250,7 @@ Excluded: International flights, tips, personal expenses, and optional add-ons (
   {
     id: "experience-9",
     title: "10-Day Great Migration Safari Itinerary",
-    price: "$4,800",
+    price: "$4,300",
     image: zebraPair,
     content: `This 10-day safari follows the world-famous Great Migration through Tanzania's most iconic parks, including Tarangire, Serengeti, Ngorongoro Crater, and Lake Manyara. From dramatic Mara River crossings to Big Five encounters, this route showcases the best of northern Tanzania.
 
