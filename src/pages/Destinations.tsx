@@ -35,7 +35,7 @@ const destinations = [
 const Destinations = () => {
   return (
     <div className="min-h-screen bg-destinations-bg">
-      <Navigation />
+      <Navigation bgColor="--destinations-bg" />
       <main className="container mx-auto px-6 pt-32 pb-20">
         <h1 className="font-playfair text-6xl md:text-7xl text-center text-destinations-title mb-16">
           DESTINATIONS
