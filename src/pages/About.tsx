@@ -90,6 +90,24 @@ const About = () => {
         <div className="mt-20 max-w-7xl mx-auto">
           <div className="elfsight-app-1a198ad5-3e51-4c22-a421-b20046e5fe3a" data-elfsight-app-lazy></div>
         </div>
+
+        {/* Google Maps Section */}
+        <div className="mt-20 max-w-7xl mx-auto">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-destinations-title mb-8 text-center italic">
+            Find Us
+          </h2>
+          <div className="rounded-lg overflow-hidden shadow-lg border border-foreground/20">
+            <iframe
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBBS-liBydot5O4OK6gfZmMAqI9G5s1Co4&q=Grant+Expedition+Ltd,Usa+River+23301,Tanzania`}
+            ></iframe>
+          </div>
+        </div>
       </main>
       <Footer />
     </div>
