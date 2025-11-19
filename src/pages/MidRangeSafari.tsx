@@ -4,6 +4,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { useCartStore } from "@/stores/cartStore";
 import { toast } from "sonner";
+import { useEffect, useState } from "react";
+import { storefrontApiRequest, ShopifyProduct } from "@/lib/shopify";
 import midRangeSafariHero from "@/assets/mid-range-safari.jpg";
 import giraffeSunsetSafari from "@/assets/giraffe-sunset-safari.jpg";
 import elephantSafari from "@/assets/elephant-safari.jpg";
@@ -303,11 +305,128 @@ International flights, optional activities, additional nights, tips, personal ex
 
 const MidRangeSafari = () => {
   const addItem = useCartStore(state => state.addItem);
+  const [products, setProducts] = useState<ShopifyProduct[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  const handleAddToCart = (experienceId: string) => {
-    // Placeholder for future cart functionality
-    toast.success("Coming soon", {
-      description: "Safari booking functionality will be added soon"
+  // Map experience SKUs to their data
+  const experienceSKUs = [
+    "SAFARI-3DAY-TN",
+    "SAFARI-4DAY-TNL", 
+    "SAFARI-5DAY-TNSL",
+    "SAFARI-6DAY-LUXURY",
+    "SAFARI-7DAY-EPIC",
+    "SAFARI-7DAY-LUXURY-NT",
+    "SAFARI-7DAY-MIGRATION",
+    "SAFARI-8DAY-NDUTU",
+    "SAFARI-10DAY-MIGRATION"
+  ];
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const STOREFRONT_QUERY = `
+          query GetProducts($first: Int!) {
+            products(first: $first) {
+              edges {
+                node {
+                  id
+                  title
+                  description
+                  handle
+                  priceRange {
+                    minVariantPrice {
+                      amount
+                      currencyCode
+                    }
+                  }
+                  images(first: 5) {
+                    edges {
+                      node {
+                        url
+                        altText
+                      }
+                    }
+                  }
+                  variants(first: 10) {
+                    edges {
+                      node {
+                        id
+                        title
+                        sku
+                        price {
+                          amount
+                          currencyCode
+                        }
+                        availableForSale
+                        selectedOptions {
+                          name
+                          value
+                        }
+                      }
+                    }
+                  }
+                  options {
+                    name
+                    values
+                  }
+                }
+              }
+            }
+          }
+        `;
+
+        const data = await storefrontApiRequest(STOREFRONT_QUERY, { first: 20 });
+        if (data?.data?.products?.edges) {
+          setProducts(data.data.products.edges);
+        }
+      } catch (error) {
+        console.error('Error fetching products:', error);
+        toast.error("Failed to load safari packages");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  const handleAddToCart = (experienceIndex: number) => {
+    const sku = experienceSKUs[experienceIndex];
+    
+    // Find the product by SKU
+    const product = products.find(p => 
+      p.node.variants.edges.some(v => v.node.sku === sku)
+    );
+
+    if (!product) {
+      toast.error("Product not found", {
+        description: "Unable to add this safari package to cart"
+      });
+      return;
+    }
+
+    const variant = product.node.variants.edges.find(v => v.node.sku === sku)?.node;
+    
+    if (!variant) {
+      toast.error("Variant not found");
+      return;
+    }
+
+    const cartItem = {
+      product,
+      variantId: variant.id,
+      variantTitle: variant.title,
+      price: {
+        amount: variant.price.amount,
+        currencyCode: variant.price.currencyCode
+      },
+      quantity: 1,
+      selectedOptions: variant.selectedOptions
+    };
+
+    addItem(cartItem);
+    toast.success("Added to cart", {
+      description: `${product.node.title} has been added to your cart`
     });
   };
 
@@ -355,7 +474,7 @@ const MidRangeSafari = () => {
       {/* Experience Cards with Accordion */}
       <section className="w-full">
         <Accordion type="single" collapsible className="w-full">
-          {experiences.map((experience) => (
+          {experiences.map((experience, index) => (
             <AccordionItem key={experience.id} value={experience.id} className="border-none">
               <div className="relative w-full overflow-hidden h-64 md:h-80">
                 <div 
@@ -382,8 +501,9 @@ const MidRangeSafari = () => {
                   </p>
                   <div className="flex justify-end mt-6">
                     <Button 
-                      onClick={() => handleAddToCart(experience.id)}
+                      onClick={() => handleAddToCart(index)}
                       size="lg"
+                      disabled={loading}
                     >
                       Book Now - {experience.price}
                     </Button>

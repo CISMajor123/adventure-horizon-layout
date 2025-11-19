@@ -28,6 +28,7 @@ export interface ShopifyProduct {
         node: {
           id: string;
           title: string;
+          sku: string;
           price: {
             amount: string;
             currencyCode: string;
@@ -75,6 +76,7 @@ const STOREFRONT_QUERY = `
               node {
                 id
                 title
+                sku
                 price {
                   amount
                   currencyCode

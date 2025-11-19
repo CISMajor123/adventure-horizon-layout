@@ -97,6 +97,7 @@ const ZanzibarIsland = () => {
                 node: {
                   id: "gid://shopify/ProductVariant/49675974869185",
                   title: "Default Title",
+                  sku: "ZANZIBAR-2DAY",
                   price: {
                     amount: "1400.00",
                     currencyCode: "USD"
@@ -150,6 +151,7 @@ const ZanzibarIsland = () => {
                 node: {
                   id: "gid://shopify/ProductVariant/49675977097409",
                   title: "Default Title",
+                  sku: "ZANZIBAR-3DAY",
                   price: {
                     amount: "2000.00",
                     currencyCode: "USD"
@@ -203,6 +205,7 @@ const ZanzibarIsland = () => {
                 node: {
                   id: "gid://shopify/ProductVariant/49675977261249",
                   title: "Default Title",
+                  sku: "ZANZIBAR-4DAY",
                   price: {
                     amount: "2500.00",
                     currencyCode: "USD"
@@ -256,6 +259,7 @@ const ZanzibarIsland = () => {
                 node: {
                   id: "gid://shopify/ProductVariant/49675978834113",
                   title: "Default Title",
+                  sku: "ZANZIBAR-5DAY",
                   price: {
                     amount: "3000.00",
                     currencyCode: "USD"
@@ -309,6 +313,7 @@ const ZanzibarIsland = () => {
                 node: {
                   id: "gid://shopify/ProductVariant/49675978899649",
                   title: "Default Title",
+                  sku: "ZANZIBAR-6DAY",
                   price: {
                     amount: "3500.00",
                     currencyCode: "USD"
@@ -362,6 +367,7 @@ const ZanzibarIsland = () => {
                 node: {
                   id: "gid://shopify/ProductVariant/49675978997953",
                   title: "Default Title",
+                  sku: "ZANZIBAR-7DAY",
                   price: {
                     amount: "4000.00",
                     currencyCode: "USD"
