@@ -29,29 +29,29 @@ const About = () => {
     <div className="min-h-screen bg-destinations-bg">
       <Navigation bgColor="--destinations-bg" />
       
-      <main className="container mx-auto px-6 pt-32 pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto mb-20">
+      <main className="container mx-auto px-4 md:px-6 pt-28 md:pt-40 pb-12 md:pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 max-w-7xl mx-auto mb-12 md:mb-20">
           {/* Left Column - Text Content */}
           <div className="flex flex-col justify-center">
-            <div className="bg-white border border-foreground/20 rounded-lg p-10 md:p-12 shadow-sm h-full flex flex-col justify-center">
-              <h1 className="font-playfair text-4xl md:text-5xl font-bold text-destinations-title mb-8 italic">
+            <div className="bg-white border border-foreground/20 rounded-lg p-6 md:p-10 lg:p-12 shadow-sm h-full flex flex-col justify-center">
+              <h1 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-destinations-title mb-6 md:mb-8 italic">
                 What We Do
               </h1>
               
-              <div className="space-y-6 text-foreground/80 leading-relaxed">
-                <p className="text-base md:text-lg">
+              <div className="space-y-4 md:space-y-6 text-foreground/80 leading-relaxed">
+                <p className="text-sm md:text-base lg:text-lg">
                   At Grant Expedition, we specialize in creating unforgettable safari experiences across Tanzania's most stunning landscapes. From the vast plains of Serengeti to the majestic Mount Kilimanjaro, our expertly crafted tours connect you with nature, culture, and adventure. We deliver personalized itineraries blending luxury, comfort, and authenticity.
                 </p>
                 
-                <p className="text-base md:text-lg">
+                <p className="text-sm md:text-base lg:text-lg">
                   Whether you are seeking thrilling wildlife encounters, breathtaking natural wonders, or immersive cultural experiences, Grant Expedition is your trusted partner in discovering the best of Tanzania.
                 </p>
               </div>
               
-              <div className="flex flex-wrap gap-4 mt-8">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mt-6 md:mt-8">
                 <Link to="/destinations">
                   <Button 
-                    className="bg-destinations-title hover:bg-destinations-title/90 text-white px-8 py-6 text-base rounded-md transition-all duration-300"
+                    className="w-full sm:w-auto bg-destinations-title hover:bg-destinations-title/90 text-white px-6 md:px-8 py-5 md:py-6 text-sm md:text-base rounded-md transition-all duration-300"
                     aria-label="Plan Your Trip — go to Destinations"
                   >
                     Plan Your Trip
@@ -59,7 +59,7 @@ const About = () => {
                 </Link>
                 <a href="https://eu.docs.wps.com/module/common/loadPlatform/?sid=sILb_5f2KAfjsqMgG&v=v2" target="_blank" rel="noopener noreferrer">
                   <Button 
-                    className="bg-destinations-title hover:bg-destinations-title/90 text-white px-8 py-6 text-base rounded-md transition-all duration-300"
+                    className="w-full sm:w-auto bg-destinations-title hover:bg-destinations-title/90 text-white px-6 md:px-8 py-5 md:py-6 text-sm md:text-base rounded-md transition-all duration-300"
                     aria-label="Link To Certification"
                   >
                     Link To Certification
@@ -69,9 +69,9 @@ const About = () => {
             </div>
           </div>
           
-          {/* Right Column - Zebra Image */}
-          <div className="flex items-stretch">
-            <div className="w-full rounded-lg overflow-hidden shadow-lg">
+          {/* Right Column - Team Image */}
+          <div className="flex items-stretch order-first lg:order-last">
+            <div className="w-full rounded-lg overflow-hidden shadow-lg h-64 md:h-80 lg:h-auto">
               <img 
                 src={teamPhoto} 
                 alt="Grant Expedition team with clients and safari vehicle"

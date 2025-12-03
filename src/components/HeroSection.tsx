@@ -15,8 +15,8 @@ const HeroSection = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 text-center px-6">
-        <h1 className="text-5xl md:text-7xl font-bold text-hero-text mb-8 tracking-tight">
+      <div className="relative z-10 text-center px-4 md:px-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-hero-text mb-6 md:mb-8 tracking-tight leading-tight">
           FILL YOUR LIFE<br />WITH ADVENTURE
         </h1>
         
@@ -24,7 +24,7 @@ const HeroSection = () => {
           <Button
             variant="outline"
             size="lg"
-            className="border-2 border-hero-text text-hero-text bg-transparent hover:bg-hero-text hover:text-hero-overlay text-lg px-10 py-6 rounded-full transition-all duration-300"
+            className="border-2 border-hero-text text-hero-text bg-transparent hover:bg-hero-text hover:text-hero-overlay text-base md:text-lg px-8 md:px-10 py-5 md:py-6 rounded-full transition-all duration-300"
           >
             Learn More
           </Button>

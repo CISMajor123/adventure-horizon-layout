@@ -87,20 +87,20 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-destinations-bg">
       <Navigation bgColor="--destinations-bg" />
-      <main className="min-h-screen flex items-center justify-center px-6 pt-32 pb-24 md:pt-40">
+      <main className="min-h-screen flex items-center justify-center px-4 md:px-6 pt-28 md:pt-40 pb-16 md:pb-24">
         <div className="w-full max-w-4xl">
           {/* Heading */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3 md:mb-4">
               Send us your Inquiry
             </h1>
-            <p className="text-muted-foreground text-base md:text-lg">
+            <p className="text-muted-foreground text-sm md:text-base lg:text-lg">
               Fill out the form below and we'll get back to you within 24 hours
             </p>
           </div>
 
           {/* Contact Form Card */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+          <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 lg:p-12">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Row 1: Full Name and Phone */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

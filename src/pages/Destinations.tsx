@@ -36,12 +36,12 @@ const Destinations = () => {
   return (
     <div className="min-h-screen bg-destinations-bg">
       <Navigation bgColor="--destinations-bg" />
-      <main className="container mx-auto px-6 pt-40 pb-20">
-        <h1 className="font-playfair text-6xl md:text-7xl text-center text-destinations-title mb-16">
+      <main className="container mx-auto px-4 md:px-6 pt-28 md:pt-40 pb-12 md:pb-20">
+        <h1 className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center text-destinations-title mb-8 md:mb-16">
           DESTINATIONS
         </h1>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
           {destinations.map((destination) => (
             <DestinationCard key={destination.slug} {...destination} />
           ))}
