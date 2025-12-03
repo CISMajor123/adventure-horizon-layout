@@ -173,7 +173,7 @@ const Kilimanjaro = () => {
       <Navigation bgColor="--destinations-bg" />
       
       {/* Hero Section */}
-      <section className="relative h-screen w-full flex flex-col items-center justify-center pt-32">
+      <section className="relative h-[70vh] md:h-screen w-full flex flex-col items-center justify-center pt-24 md:pt-32">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${kilimanjaroHero})` }}
@@ -184,17 +184,17 @@ const Kilimanjaro = () => {
         {/* Scroll Indicator */}
         <a 
           href="#experiences-section" 
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white animate-bounce z-10"
+          className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 text-white animate-bounce z-10"
         >
-          <ChevronDown size={40} strokeWidth={2} />
+          <ChevronDown size={32} className="md:w-10 md:h-10" strokeWidth={2} />
         </a>
       </section>
       
       {/* Experiences Section */}
-      <section id="experiences-section" className="bg-white pt-20 pb-10">
+      <section id="experiences-section" className="bg-white pt-12 md:pt-20 pb-6 md:pb-10">
         <div className="w-full">
-          <div className="max-w-7xl mx-auto px-8 md:px-12 flex items-center min-h-[120px]">
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#3d2418] text-left mb-0">
+          <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12 flex items-center min-h-[80px] md:min-h-[120px]">
+            <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#3d2418] text-left mb-0">
               Experiences
             </h2>
           </div>
@@ -203,7 +203,7 @@ const Kilimanjaro = () => {
           <Accordion type="single" collapsible className="w-full">
             {experiences.map((experience) => (
               <AccordionItem key={experience.id} value={experience.id} className="border-none">
-                <div className="relative w-full overflow-hidden h-64 md:h-80">
+                <div className="relative w-full overflow-hidden h-48 md:h-64 lg:h-80">
                   <div 
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{ backgroundImage: `url(${experience.image})` }}
@@ -211,10 +211,10 @@ const Kilimanjaro = () => {
                     <div className="absolute inset-0 bg-black/30" />
                   </div>
                   
-                  <AccordionTrigger className="relative z-10 h-full flex items-center justify-start px-8 md:px-16 hover:no-underline [&[data-state=open]>svg]:rotate-180">
+                  <AccordionTrigger className="relative z-10 h-full flex items-center justify-start px-4 md:px-8 lg:px-16 hover:no-underline [&[data-state=open]>svg]:rotate-180">
                     <div className="flex items-center w-full">
-                      <ChevronDown className="h-8 w-8 text-white mr-6 shrink-0 transition-transform duration-200" />
-                      <h3 className="font-playfair text-white text-xl md:text-2xl lg:text-3xl font-semibold drop-shadow-lg text-left">
+                      <ChevronDown className="h-6 w-6 md:h-8 md:w-8 text-white mr-3 md:mr-6 shrink-0 transition-transform duration-200" />
+                      <h3 className="font-playfair text-white text-base sm:text-lg md:text-2xl lg:text-3xl font-semibold drop-shadow-lg text-left">
                         {experience.title}
                       </h3>
                     </div>
@@ -223,8 +223,8 @@ const Kilimanjaro = () => {
                 
                 {experience.content && (
                   <AccordionContent className="bg-white">
-                    <div className="px-8 md:px-16 py-8">
-                      <p className="text-[#3d2418] leading-relaxed whitespace-pre-line text-justify">
+                    <div className="px-4 md:px-8 lg:px-16 py-6 md:py-8">
+                      <p className="text-[#3d2418] leading-relaxed whitespace-pre-line text-justify text-sm md:text-base">
                         {experience.content}
                       </p>
                       {experience.id === "experience-1" && maranGuProduct && (

@@ -110,16 +110,16 @@ const Booking = () => {
       />
       
       {/* Static Heading */}
-      <div className="container mx-auto px-6 pt-32 pb-8">
-        <h1 className="font-serif text-5xl md:text-6xl xl:text-7xl text-[#2C1810] italic text-center">
+      <div className="container mx-auto px-4 md:px-6 pt-28 md:pt-32 pb-6 md:pb-8">
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#2C1810] italic text-center">
           Booking Form
         </h1>
       </div>
       
-      <div className="container mx-auto px-6 pb-16">
+      <div className="container mx-auto px-4 md:px-6 pb-12 md:pb-16">
         <div className="flex justify-center">
           {/* Form Container - Centered */}
-          <div className="bg-[#E8DCC8] border-2 border-[#2C1810] p-10 max-w-lg w-full">
+          <div className="bg-[#E8DCC8] border-2 border-[#2C1810] p-6 md:p-10 max-w-lg w-full">
             <form className="space-y-5" onSubmit={handleSubmit}>
               {/* Name */}
               <div>
