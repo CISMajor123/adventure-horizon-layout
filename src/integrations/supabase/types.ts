@@ -86,6 +86,51 @@ export type Database = {
         }
         Relationships: []
       }
+      safari_inquiries: {
+        Row: {
+          additional_info: string | null
+          adults: number
+          arrival_date: string
+          budget: string
+          children: number
+          created_at: string
+          email: string
+          first_name: string
+          id: string
+          last_name: string
+          nationality: string
+          phone: string
+        }
+        Insert: {
+          additional_info?: string | null
+          adults?: number
+          arrival_date: string
+          budget: string
+          children?: number
+          created_at?: string
+          email: string
+          first_name: string
+          id?: string
+          last_name: string
+          nationality: string
+          phone: string
+        }
+        Update: {
+          additional_info?: string | null
+          adults?: number
+          arrival_date?: string
+          budget?: string
+          children?: number
+          created_at?: string
+          email?: string
+          first_name?: string
+          id?: string
+          last_name?: string
+          nationality?: string
+          phone?: string
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string
