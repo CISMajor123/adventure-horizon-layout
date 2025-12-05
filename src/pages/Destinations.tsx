@@ -45,7 +45,7 @@ const destinations = [
     duration: "Custom",
     price: "Contact Us",
     image: buildYourSafariImage,
-    slug: "/booking",
+    slug: "/build-your-own-safari",
     hoverDescription: "Get a custom safari trip to your specific requested locations! Work with our expert team to design your perfect African adventure, tailored to your interests, timeline, and budget.",
   },
 ];
