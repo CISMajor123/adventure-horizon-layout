@@ -74,8 +74,10 @@ const Destinations = () => {
           >
             <CarouselContent className="-ml-4">
               {destinations.map((destination) => (
-                <CarouselItem key={destination.slug} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
-                  <DestinationCard {...destination} />
+                <CarouselItem key={destination.slug} className="pl-4 basis-full">
+                  <div className="max-w-md mx-auto">
+                    <DestinationCard {...destination} />
+                  </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
