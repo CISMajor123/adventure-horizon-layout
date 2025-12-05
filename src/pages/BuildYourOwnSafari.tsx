@@ -125,7 +125,7 @@ const BuildYourOwnSafari = () => {
         style={{ backgroundImage: `url(${buildSafariBg})` }}
       >
         <div className="absolute inset-0 bg-hero-overlay/50" />
-        <Navigation bgColor="--hero-overlay" />
+        <Navigation bgColor="--destinations-bg" />
         <div className="relative z-10 text-center pt-24">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-hero-text tracking-wide">
             Build Your Own Safari
