@@ -1,1 +1,7 @@
 project_id = "xsvmeetqtsjrbxmslouw"
+
+[functions.send-contact-email]
+verify_jwt = false
+
+[functions.send-safari-booking-email]
+verify_jwt = false

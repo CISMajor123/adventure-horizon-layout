@@ -63,7 +63,8 @@ const BuildYourOwnSafari = () => {
     try {
       const validatedData = buildSafariSchema.parse(data);
 
-      const { error } = await supabase.from("bookings").insert({
+      // Save to database
+      const { error: dbError } = await supabase.from("bookings").insert({
         name: `${validatedData.firstName} ${validatedData.lastName}`,
         email: validatedData.email,
         arrival_date: validatedData.arrivalDate,
@@ -75,7 +76,20 @@ const BuildYourOwnSafari = () => {
         additional_info: `Nationality: ${validatedData.nationality}\nPhone: ${validatedData.phone}\n${validatedData.additionalInfo || ""}`,
       });
 
-      if (error) throw error;
+      if (dbError) {
+        console.error("Database error:", dbError);
+        throw dbError;
+      }
+
+      // Send email notifications
+      const { error: emailError } = await supabase.functions.invoke("send-safari-booking-email", {
+        body: validatedData,
+      });
+
+      if (emailError) {
+        console.error("Email error:", emailError);
+        // Don't throw - booking was saved successfully
+      }
 
       toast({
         title: "Request Submitted!",
