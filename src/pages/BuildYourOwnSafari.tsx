@@ -15,7 +15,7 @@ import {
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
-import buildSafariBg from "@/assets/build-your-safari.png";
+import buildSafariBg from "@/assets/build-safari-hero.png";
 
 const buildSafariSchema = z.object({
   firstName: z.string().trim().min(1, "First name is required").max(100),
