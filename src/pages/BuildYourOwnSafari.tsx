@@ -121,12 +121,12 @@ const BuildYourOwnSafari = () => {
     <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
       <div 
-        className="relative min-h-[50vh] md:min-h-[60vh] bg-cover bg-center flex items-center justify-center"
+        className="relative min-h-[55vh] md:min-h-[65vh] bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${buildSafariBg})` }}
       >
         <div className="absolute inset-0 bg-hero-overlay/50" />
         <Navigation bgColor="--destinations-bg" />
-        <div className="relative z-10 text-center pt-32 md:pt-40 pb-12">
+        <div className="relative z-10 text-center pt-36 md:pt-44 pb-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-hero-text tracking-wide">
             Build Your Own Safari
           </h1>
