@@ -17,17 +17,51 @@ import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 import buildSafariBg from "@/assets/build-safari-hero.png";
 
+// Get tomorrow's date for minimum arrival date
+const getTomorrowDate = () => {
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  return tomorrow.toISOString().split('T')[0];
+};
+
 const buildSafariSchema = z.object({
-  firstName: z.string().trim().min(1, "First name is required").max(100),
-  lastName: z.string().trim().min(1, "Last name is required").max(100),
-  email: z.string().trim().email("Invalid email address").max(255),
+  firstName: z.string().trim()
+    .min(1, "First name is required")
+    .max(50, "First name must be less than 50 characters")
+    .regex(/^[a-zA-Z\s'-]+$/, "First name can only contain letters, spaces, hyphens, and apostrophes"),
+  lastName: z.string().trim()
+    .min(1, "Last name is required")
+    .max(50, "Last name must be less than 50 characters")
+    .regex(/^[a-zA-Z\s'-]+$/, "Last name can only contain letters, spaces, hyphens, and apostrophes"),
+  email: z.string().trim()
+    .email("Please enter a valid email address")
+    .max(255, "Email must be less than 255 characters"),
   nationality: z.string().min(1, "Please select your nationality"),
-  phone: z.string().trim().min(1, "Phone number is required").max(50),
-  arrivalDate: z.string().min(1, "Arrival date is required"),
-  adults: z.number().min(1, "At least 1 adult is required"),
-  children: z.number().min(0),
-  budget: z.string().trim().min(1, "Budget is required"),
-  additionalInfo: z.string().max(2000).optional(),
+  phone: z.string().trim()
+    .min(7, "Phone number must be at least 7 digits")
+    .max(20, "Phone number must be less than 20 characters")
+    .regex(/^[\d\s+()-]+$/, "Please enter a valid phone number (digits, spaces, +, -, () allowed)"),
+  arrivalDate: z.string()
+    .min(1, "Arrival date is required")
+    .refine((date) => {
+      const selected = new Date(date);
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      tomorrow.setHours(0, 0, 0, 0);
+      return selected >= tomorrow;
+    }, "Arrival date must be at least tomorrow"),
+  adults: z.number()
+    .min(1, "At least 1 adult is required")
+    .max(20, "Maximum 20 adults allowed"),
+  children: z.number()
+    .min(0, "Children cannot be negative")
+    .max(15, "Maximum 15 children allowed"),
+  budget: z.string().trim()
+    .min(1, "Budget is required")
+    .max(100, "Budget description must be less than 100 characters"),
+  additionalInfo: z.string()
+    .max(2000, "Additional information must be less than 2000 characters")
+    .optional(),
 });
 
 const nationalities = [
@@ -160,6 +194,9 @@ const BuildYourOwnSafari = () => {
                   id="firstName"
                   name="firstName"
                   required
+                  maxLength={50}
+                  pattern="[a-zA-Z\s'\-]+"
+                  title="Only letters, spaces, hyphens, and apostrophes allowed"
                   className="border-foreground/30 focus:border-primary"
                 />
               </div>
@@ -172,6 +209,9 @@ const BuildYourOwnSafari = () => {
                   id="lastName"
                   name="lastName"
                   required
+                  maxLength={50}
+                  pattern="[a-zA-Z\s'\-]+"
+                  title="Only letters, spaces, hyphens, and apostrophes allowed"
                   className="border-foreground/30 focus:border-primary"
                 />
               </div>
@@ -185,6 +225,7 @@ const BuildYourOwnSafari = () => {
                   name="email"
                   type="email"
                   required
+                  maxLength={255}
                   className="border-foreground/30 focus:border-primary"
                 />
               </div>
@@ -216,6 +257,11 @@ const BuildYourOwnSafari = () => {
                   name="phone"
                   type="tel"
                   required
+                  minLength={7}
+                  maxLength={20}
+                  pattern="[\d\s+\-()]*"
+                  title="Only digits, spaces, +, -, and parentheses allowed"
+                  placeholder="+1 (555) 123-4567"
                   className="border-foreground/30 focus:border-primary"
                 />
               </div>
@@ -229,6 +275,7 @@ const BuildYourOwnSafari = () => {
                   name="arrivalDate"
                   type="date"
                   required
+                  min={getTomorrowDate()}
                   className="border-foreground/30 focus:border-primary"
                 />
               </div>
@@ -241,7 +288,8 @@ const BuildYourOwnSafari = () => {
                   id="adults"
                   name="adults"
                   type="number"
-                  min="1"
+                  min={1}
+                  max={20}
                   defaultValue="1"
                   required
                   className="border-foreground/30 focus:border-primary"
@@ -256,7 +304,8 @@ const BuildYourOwnSafari = () => {
                   id="children"
                   name="children"
                   type="number"
-                  min="0"
+                  min={0}
+                  max={15}
                   defaultValue="0"
                   required
                   className="border-foreground/30 focus:border-primary"
@@ -271,6 +320,7 @@ const BuildYourOwnSafari = () => {
                   id="budget"
                   name="budget"
                   required
+                  maxLength={100}
                   placeholder="e.g. $5,000 - $10,000"
                   className="border-foreground/30 focus:border-primary"
                 />
@@ -284,6 +334,7 @@ const BuildYourOwnSafari = () => {
                   id="additionalInfo"
                   name="additionalInfo"
                   rows={4}
+                  maxLength={2000}
                   className="border-foreground/30 focus:border-primary resize-y"
                   placeholder="Tell us about your dream safari..."
                 />
