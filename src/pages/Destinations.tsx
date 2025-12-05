@@ -3,7 +3,17 @@ import DestinationCard from "@/components/DestinationCard";
 import zanzibarImage from "@/assets/zanzibar-beach.jpg";
 import kilimanjaroImage from "@/assets/kilimanjaro-trekking.jpg";
 import midRangeSafariImage from "@/assets/mid-range-safari.jpg";
+import buildYourSafariImage from "@/assets/build-your-safari.png";
 import Footer from "@/components/Footer";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 const destinations = [
   {
@@ -30,9 +40,21 @@ const destinations = [
     slug: "/mid-range-safari",
     hoverDescription: "A Tanzania safari is an unforgettable journey through some of Africa's most iconic landscapes. From the vast plains of the Serengeti—home to the Great Migration—to the wildlife-rich Ngorongoro Crater and the elephants of Tarangire National Park, visitors can witness Africa's Big Five up close. With breathtaking scenery, diverse wildlife, and warm local hospitality, Tanzania offers the ultimate African safari experience.",
   },
+  {
+    title: "Build Your Own Safari",
+    duration: "Custom",
+    price: "Contact Us",
+    image: buildYourSafariImage,
+    slug: "/booking",
+    hoverDescription: "Get a custom safari trip to your specific requested locations! Work with our expert team to design your perfect African adventure, tailored to your interests, timeline, and budget.",
+  },
 ];
 
 const Destinations = () => {
+  const plugin = useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: true })
+  );
+
   return (
     <div className="min-h-screen bg-destinations-bg">
       <Navigation bgColor="--destinations-bg" />
@@ -41,10 +63,25 @@ const Destinations = () => {
           DESTINATIONS
         </h1>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
-          {destinations.map((destination) => (
-            <DestinationCard key={destination.slug} {...destination} />
-          ))}
+        <div className="max-w-7xl mx-auto px-8 md:px-16">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[plugin.current]}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {destinations.map((destination) => (
+                <CarouselItem key={destination.slug} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <DestinationCard {...destination} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex -left-12 bg-destinations-title/20 border-destinations-title/30 text-destinations-title hover:bg-destinations-title/40" />
+            <CarouselNext className="hidden md:flex -right-12 bg-destinations-title/20 border-destinations-title/30 text-destinations-title hover:bg-destinations-title/40" />
+          </Carousel>
         </div>
       </main>
       <Footer />
