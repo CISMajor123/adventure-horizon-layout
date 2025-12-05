@@ -71,6 +71,8 @@ const Destinations = () => {
             }}
             plugins={[plugin.current]}
             className="w-full"
+            onMouseEnter={() => plugin.current.stop()}
+            onMouseLeave={() => plugin.current.play()}
           >
             <CarouselContent className="-ml-4">
               {destinations.map((destination) => (
