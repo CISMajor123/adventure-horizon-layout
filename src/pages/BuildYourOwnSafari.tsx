@@ -64,16 +64,17 @@ const BuildYourOwnSafari = () => {
       const validatedData = buildSafariSchema.parse(data);
 
       // Save to database
-      const { error: dbError } = await supabase.from("bookings").insert({
-        name: `${validatedData.firstName} ${validatedData.lastName}`,
+      const { error: dbError } = await supabase.from("safari_inquiries").insert({
+        first_name: validatedData.firstName,
+        last_name: validatedData.lastName,
         email: validatedData.email,
+        nationality: validatedData.nationality,
+        phone: validatedData.phone,
         arrival_date: validatedData.arrivalDate,
         adults: validatedData.adults,
         children: validatedData.children,
         budget: validatedData.budget,
-        destination: "Build Your Own Safari",
-        duration: "Custom",
-        additional_info: `Nationality: ${validatedData.nationality}\nPhone: ${validatedData.phone}\n${validatedData.additionalInfo || ""}`,
+        additional_info: validatedData.additionalInfo || null,
       });
 
       if (dbError) {
