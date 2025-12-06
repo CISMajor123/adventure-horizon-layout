@@ -1,21 +1,45 @@
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "@/assets/logo.png";
 import { CartDrawer } from "./CartDrawer";
 
 interface NavigationProps {
   bgColor?: string;
+  solidOnScroll?: boolean;
 }
 
-const Navigation = ({ bgColor = "transparent" }: NavigationProps) => {
+const Navigation = ({ bgColor = "transparent", solidOnScroll = false }: NavigationProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    if (!solidOnScroll) return;
+
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [solidOnScroll]);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
+  const showSolidBg = solidOnScroll && isScrolled;
+
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 ${bgColor === "transparent" ? "bg-transparent" : ""}`} style={bgColor !== "transparent" ? { backgroundColor: `hsl(var(${bgColor}))` } : {}}>
+    <nav 
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
+        showSolidBg 
+          ? "bg-destinations-bg" 
+          : bgColor === "transparent" 
+            ? "bg-transparent" 
+            : ""
+      }`} 
+      style={!showSolidBg && bgColor !== "transparent" ? { backgroundColor: `hsl(var(${bgColor}))` } : {}}
+    >
       <div className="container mx-auto px-4 md:px-6 py-2 md:py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="transition-opacity hover:opacity-80">
